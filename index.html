@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bars Behind Bars</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+
+    <!--jQuery and scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="./scripts/script.js"></script>
+
+</head>
+<body class="bg-[#CCC8BC] text-[#161616]">
+
+    <header class="fixed w-[100%] z-10 bg-transparent backdrop-blur-3xl border-b-2 2xl:border-b-[3px] border-b-[#161616]">
+        <nav class="px-6 2xl:px-12 py-4 h-[60px] 2xl:h-[80px]">
+            <div id="nav-h-container" class="h-[100%] flex flex-row items-center justify-between">
+                <a href="#" class="leading-[1!important] text-2xl lg:text-3xl  2xl:text-4xl font-semibold">BhB</a>
+                <div class="hidden leading-leading-[1!important] sm:block text-lg lg:text-xl 2xl:text-2xl">
+                    <a class="pr-5" href="">Project</a>
+                    <a class="px-5" href="">Datasets</a>
+                    <a class="px-5" href="">Visualizations</a>
+                    <a class="pl-5" href="">About</a>
+                </div>
+                <button id="mobile-menu-btn" class="sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>      
+                </button>
+            </div>
+            <div id="mobile-menu-dropdown" class="w-[100%] hidden sm:hidden">
+                <div class="w-[100%] flex flex-col items-end bg-white rounded-md">
+                    <a class="pt-4 pb-2" href="">Project</a>
+                    <a class="py-2" href="">Datasets</a>
+                    <a class="py-2" href="">Visualizations</a>
+                    <a class="pt-2" href="">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!--HERO SECTION-->
+    <div id="site-banner" class="w-[100%] h-[100vh] pt-[60px] md:pt-[80px] 2xl:pt-[100px] pb-[8px] 2xl:pb-[10px] flex flex-col md:flex-row items-center overflow-hidden space-y-10 md:space-y-0 border-[#161616] border-b-2 2xl:border-b-[3px]">
+        <div id="banner-left" class="w-[90%] md:w-1/2 md:pl-[10%] md:pb-[5%] mt-[8%] md:mt-0">
+            <div class="flex flex-col space-y-6 md:space-y-7">
+                <div id="banner-text-container" class="flex flex-col space-y-2 md:space-y-3">
+                    <h1 id="title" class="roboto-condensed text-center md:text-left text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-semibold tracking-[-0.03em]">Bars</br>Behind Bars</span></h1>
+                    <p id="banner-text-block" class="font-regular text-center md:text-left pl-[0.5px] text-base sm:text-lg lg:text-xl 2xl:text-3xl">
+                        Closed doors, closed records, <span class="font-semibold">open data</span>: what the numbers reveal about suicide behind bars across <span class="font-semibold">Europe</span>.
+                    </p>
+                </div>
+                <div  class="w-full flex justify-center md:justify-start">
+                    <button id="banner-btn" class="roboto-condensed font-semibold text-base sm:text-lg lg:text-xl 2xl:text-3xl box-border w-[fit-content] px-4 py-2 md:px-5 md:py-3 2xl:px-7 2xl:py-5 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[400ms]">
+                        Explore the project
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="banner-right" class="w-[70%] flex flex-row md:h-[100%] md:w-1/2 md:justify-end lg:space-x-8 lg:pr-[8px] overflow-visible">
+                <img id="prisoner-illustration" class="md:object-cover object-contain object-left-top" src="./assets/imgs/prisoner_illustration2.svg">
+                <img id="timeline" class="hidden lg:block lg:h-[100%] md:object-cover" src="./assets/imgs/timeline2.svg">
+        </div>
+        </div>
+    </div>
+
+    <main class="px-8 md:px-[10%] 2xl:px-[15%]">
+        <div id="the-project-main" class="mt-20 md:mt-40 2xl:mt-60 w-full">
+            <h2 class="roboto-condensed text-center text-4xl sm:text-5xl md:text-6xl  2xl:text-7xl font-semibold tracking-[-0.03em] mb-10 md:mb-28 2xl:mb-40">The project</h2>
+            <div class="flex flex-col-reverse md:flex-row justify-between items-center pb-5 md:pb-10 2xl:pb-20 border-[#161616] border-b-2 2xl:border-b-[3px]">
+                <div id="project-left-text-block" class="w-full md:w-[45%]">
+                    <p class="font-regular text-left text-base sm:text-lg lg:text-xl 2xl:text-3xl">Bars Behind Bars is a project developed for the Open Access and Digital Ethics course of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
+                    <p class="font-regular text-left text-base sm:text-lg lg:text-xl 2xl:text-3xl">This website works as a documentation of the process leading from the choice of the datasets along with their ethical, technological, legal, and qualitative analyses, to the visualisation of the results. </p>
+                </div>
+                <div id="project-numbers-right-block" class="flex flex-row w-full md:w-[45%] justify-between mb-8 md:mb-0">
+                    <div class="flex flex-col items-center">
+                        <div class="flex h-[60px] md:h-[70px] 2xl:h-[110px] aspect-square mb-4 md:mb-6 2xl:mb-9">
+                            <img class="w-[100%]" src="./assets/icons/barchart.svg">
+                        </div>
+                        <p class="font-semibold text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl">12</p>
+                        <p class="font-regular text-base sm:text-lg lg:text-xl 2xl:text-3xl">Datasets</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex h-[60px] md:h-[70px] 2xl:h-[110px] aspect-square mb-4 md:mb-6 2xl:mb-9">
+                            <img class="w-[100%]" src="./assets/icons/flag.svg">
+                        </div>
+                        <p class="font-semibold text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl">27</p>
+                        <p class="font-regular text-base sm:text-lg lg:text-xl 2xl:text-3xl">Countries</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex h-[60px] md:h-[70px] 2xl:h-[110px] aspect-square mb-4 md:mb-6 2xl:mb-9">
+                            <img class="w-[100%]" src="./assets/icons/timeline.svg">
+                        </div>
+                        <p class="font-semibold text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl">5</p>
+                        <p class="font-regular text-base sm:text-lg lg:text-xl 2xl:text-3xl">Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="the-project-research-questions">
+
+        </div>
+
+    </main>
+
+
+
+    
+
+</body>
+</html>

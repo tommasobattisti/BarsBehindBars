@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#timeline {
+    animation: timeline 2s ease-in-out 1 forwards;
+}
+
+#prisoner-illustration {
+    animation: prisoner-illustration 2s ease-in-out 1 forwards;
+
+}
+
+#title {
+    animation: title 2s ease-in-out 1 forwards;
+}
+
+#banner-btn {
+    animation: banner-btn 2s ease-in-out 1 forwards;
+}
+
+#banner-text-block {
+    animation: banner-text-block 2s ease-in-out 1 forwards;
+}
+
+
+@keyframes banner-text-block {
+    from {
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes title {
+    from {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes banner-btn {
+    from {
+        transform: translateY(1500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes timeline {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes prisoner-illustration {
+    from {
+        transform: translateY(2000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
