@@ -44,5 +44,5 @@
 
 
 li {
-    @apply before:font-medium before:text-2xl before:text-[#E95122] before:content-['+'] before:pr-[0.8em];
+    @apply before:font-medium before:text-base sm:before:text-lg lg:before:text-xl 2xl:before:text-2xl before:text-[#E95122] before:content-['+'] before:pr-[0.8em];
 }
