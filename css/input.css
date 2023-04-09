@@ -74,11 +74,11 @@ li {
 }
 
 .active-section {
-    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px];
+    @apply text-[#ffffff] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
 }
 
 .inactive-section {
-    @apply text-[rgba(22,22,22,0.8)] no-underline;
+    @apply text-[rgba(255,255,255,0.8)] no-underline;
 }
 
 .active-section-inverse {
