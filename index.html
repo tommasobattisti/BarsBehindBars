@@ -26,7 +26,7 @@
 <body class="bg-[#CCC8BC] text-[#161616]">
 
     <header class="text-[#CCC8BC] fixed w-[100%] z-10 mix-blend-difference">
-        <nav class="px-[10%] 2xl:px-12 py-4 h-[60px] 2xl:h-[80px]">
+        <nav class="px-[7.5%] sm:px-[15%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
             <div id="nav-h-container" class="h-[100%] flex flex-row items-center justify-between">
                 <a href="#" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold">BhB</a>
                 <div class="hidden leading-[1!important] sm:block paragraph">
@@ -55,13 +55,13 @@
 
 
     <!--HERO SECTION-->
-    <div id="site-banner" class="w-[100%] h-[100vh] pt-[60px] md:pt-[80px] 2xl:pt-[100px] pb-[8px] 2xl:pb-[10px] flex flex-col md:flex-row items-center overflow-hidden space-y-10 md:space-y-0 prison-border-bottom">
-        <div id="banner-left" class="w-[90%] md:w-1/2 md:pl-[10%] md:pb-[5%] mt-[8%] md:mt-0">
+    <div id="site-banner" class="w-[100%] h-[100vh] pt-[60px] md:pt-[80px] 2xl:pt-[100px] pb-[8px] 2xl:pb-[10px] flex flex-col md:flex-row items-center justify-between overflow-hidden space-y-10 md:space-y-0 prison-border-bottom">
+        <div id="banner-left" class="w-[90%] md:w-6/12 md:pl-[10%] md:pb-[5%] mt-[8%] md:mt-0">
             <div class="flex flex-col space-y-6 md:space-y-7">
                 <div id="banner-text-container" class="flex flex-col space-y-2 md:space-y-3">
-                    <h1 id="title" class="roboto-condensed text-center md:text-left text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-semibold tracking-[-0.03em]">Bars</br>Behind Bars</span></h1>
+                    <h1 id="title" class="roboto-condensed text-center md:text-left text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-normal uppercase tracking-[-0.05em]">Bars</br>Behind Bars</span></h1>
                     <p id="banner-text-block" class="text-center md:text-left pl-[0.5px] paragraph">
-                        Closed doors, closed records, <span class="font-medium">open data</span>: what the numbers reveal about suicide behind bars across <span class="font-medium">Europe</span>.
+                        Closed doors, closed records, <span class="keyword">open data</span>: what the numbers reveal about suicide behind bars across <span class="keyword">Europe</span>.
                     </p>
                 </div>
                 <div  class="w-full flex justify-center md:justify-start">
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div id="banner-right" class="w-[70%] flex flex-row md:h-[100%] md:w-1/2 md:justify-end lg:space-x-8 lg:pr-[8px] overflow-visible">
+        <div id="banner-right" class="w-[70%] flex flex-row md:h-[100%] md:w-4/12 md:justify-end lg:space-x-8 lg:pr-[8px] overflow-visible">
                 <img id="prisoner-illustration" class="md:object-cover object-contain object-left-top" src="./assets/imgs/prisoner_illustration2.svg">
                 <img id="timeline" class="hidden lg:block lg:h-[100%] md:object-cover" src="./assets/imgs/timeline2.svg">
         </div>
@@ -80,13 +80,15 @@
     </div>
 
     <main class="px-[7.5%] sm:px-[15%] md:px-[10%] 2xl:px-[15%]">
+
+        <!--PROJECT-->
         <div id="the-project-main" class="section-margins w-full">
-            <h2 class="roboto-condensed prison-h2 text-center mb-10 md:mb-28 2xl:mb-40">The project</h2>
+            <h2 class="roboto-condensed prison-h2">The project</h2>
             <div class="flex flex-col-reverse md:flex-row justify-between items-center prison-padding-bottom prison-border-bottom">
                 <div id="project-left-text-block" class="w-full md:w-[45%]">
-                    <p class="text-left paragraph">Bars Behind Bars is a project developed for the Open Access and Digital Ethics course of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
+                    <p class="text-left paragraph">Bars Behind Bars is a project developed for the <a class="in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Open Access and Digital Ethics course</a> of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
                     <p class="text-left paragraph">This website works as a documentation of the process leading from the choice of the datasets along with their ethical, technological, legal, and qualitative analyses, to the visualisation of the results. </p>
-                    <p class="text-left paragraph">Further information can be found on GitHub.</p>
+                    <p class="text-left paragraph">Further information can be found on <a  class="in-text-a" href="https://github.com/Prisoner-s-Dilemma" target="_blank">GitHub</a>.</p>
                 </div>
                 <div id="project-numbers-right-block" class="flex flex-row w-full md:w-[45%] justify-between mb-8 md:mb-0">
                     <div class="flex flex-col items-center">
@@ -113,18 +115,19 @@
                 </div>
             </div>
         </div>
-        <div id="the-project-research-questions" class="flex flex-col-reverse md:flex-row justify-between w-full h-fit prison-padding-top">
-            <div id="rq-left-block" class="w-[45%] h-fill">
-                <div class="h-1/2 flex justify-start">
-                    <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] ml-1">+</span><span class="pl-[1.2rem] roboto-condensed">A Good Research</br>Starts With Good</br>Research Questions</span></h3>
+        <!--Research questions-->
+        <div id="the-project-research-questions" class="flex flex-col md:flex-row justify-between w-full h-fit prison-padding-top">
+            <div id="rq-left-block" class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
+                <div class="h-1/2 flex justify-start w-full sm:w-[80%] md:w-full xl:w-[80%]">
+                    <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">A Good Research Starts With Good Research Questions</span></h3>
                 </div>
-                <div class="h-1/2 flex justify-end items-end">
+                <div class="h-1/2 flex justify-end items-end prison-padding-top md:pt-0">
                     <div class="icon-container">
-                        <img src="./assets/icons/arrow_insert.svg">
+                        <img class="rotate-90 md:rotate-0 aspect-square" src="./assets/icons/arrow_insert.svg">
                     </div>
                 </div>
             </div>
-            <div id="rq-right-block" class="w-[45%]">
+            <div id="rq-right-block" class="w-full md:w-[45%]">
                 <p class="sub-section-title roboto-condensed mb-[0.15rem]">Money, Government, and Life Conditions</p>
                 <ul>
                     <li class="paragraph pl-5">How does expenditure correlate with justice perception and conditions of living in prison?</li>
@@ -139,7 +142,80 @@
             </div>
         </div>
 
+        <!--DATASETS-->
+        <div id="datasets-section-main" class="section-margins">
+            <h2 class="prison-h2 roboto-condensed">Datasets</h2>
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom">
+
+                <div id="datasets-left-block" class="w-full md:w-[45%]">
+                    <p class="paragraph">Datasets have been chosen for the relevance of their contents from <a class="in-text-a">Source 1</a>, <a class="in-text-a">Source 2</a>, and <a class="in-text-a">Source 3</a>.</p>
+                    <p class="paragraph pt-[3px]">After the downloads, data have been cleaned by deleting irrelevant entries, duplicates, and columns with non-useful charcaterizations.</p>
+                    <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which visualizations and results are derived.</p>
+                    <p class="paragraph prison-padding-top"><span class="keyword">SD:</span> Source Dataset</p>
+                    <p class="paragraph"><span class="keyword">MUD:</span> Mashed-Up Dataset</p>
+                </div>
+
+                <div id="datasets-right-block" class="w-full md:w-[45%]">
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom">
+                            <p class="paragraph keyword">SD1 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">SD2 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">SD3 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">SD4 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">SD5 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">SD6 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">MUD1 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">MUD2 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                    <div class="prison-border-bottom">
+                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                            <p class="paragraph keyword">MUD3 - Dataset name</p>
+                            <p class="plus-icons font-light">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+
 
 
 
