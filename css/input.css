@@ -53,11 +53,11 @@ li {
 }
 
 .prison-padding-bottom {
-    @apply pb-5 md:pb-10 2xl:pb-20;
+    @apply pb-8 md:pb-10 2xl:pb-20;
 }
 
 .prison-padding-top {
-    @apply pt-5 md:pt-10 2xl:pt-20;
+    @apply pt-8 md:pt-10 2xl:pt-20;
 }
 
 .section-margins {
@@ -65,3 +65,26 @@ li {
 }
 
 
+.active-analysis {
+    @apply text-[#161616];
+}
+
+.inactive-analysis {
+    @apply text-[rgba(22,22,22,0.5)];
+}
+
+.active-section {
+    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px];
+}
+
+.inactive-section {
+    @apply text-[rgba(22,22,22,0.8)] no-underline;
+}
+
+.active-section-inverse {
+    @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px];
+}
+
+.inactive-section-inverse {
+    @apply text-[rgba(22,22,22,0.8)] no-underline;
+}

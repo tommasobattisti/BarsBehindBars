@@ -23,34 +23,34 @@
     <script src="./scripts/script.js"></script>
 
 </head>
-<body class="bg-[#CCC8BC] text-[#161616]">
+<body class="bg-[#ccc8bc] text-[#161616]">
 
-    <header class="text-[#CCC8BC] fixed w-[100%] z-10 mix-blend-difference">
-        <nav class="px-[7.5%] sm:px-[15%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
+    <header class="fixed w-[100%] z-10 text-[#ccc8bc] mix-blend-difference md:text-[#161616] md:mix-blend-normal md:border-[#161616] md:border-b-[3px] 2xl:border-b-4 md:backdrop-blur-xl">
+        <nav class="px-[7.5%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
             <div id="nav-h-container" class="h-[100%] flex flex-row items-center justify-between">
                 <a href="#" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold">BhB</a>
-                <div class="hidden leading-[1!important] sm:block paragraph">
-                    <a class="pr-5" href="">Project</a>
-                    <a class="px-5" href="">Datasets</a>
-                    <a class="px-5" href="">Visualizations</a>
-                    <a class="pl-5" href="">About</a>
+                <div class="hidden leading-[1!important] md:block paragraph">
+                    <a class="pr-5 active-section-inverse" href="">Project</a>
+                    <a class="px-5 inactive-section-inverse" href="">Datasets</a>
+                    <a class="px-5 inactive-section-inverse" href="">Visualizations</a>
+                    <a class="pl-5 inactive-section-inverse" href="">About</a>
                 </div>
-                <button id="mobile-menu-btn" class="sm:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>      
                 </button>
             </div>
-            <div id="mobile-menu-dropdown" class="w-[100%] hidden sm:hidden">
-                <div class="w-[100%] flex flex-col items-end bg-white rounded-md">
-                    <a class="pt-4 pb-2" href="">Project</a>
-                    <a class="py-2" href="">Datasets</a>
-                    <a class="py-2" href="">Visualizations</a>
-                    <a class="pt-2" href="">About</a>
-                </div>
-            </div>
         </nav>
     </header>
+    <div id="mobile-menu-dropdown" class="fixed top-[60px] left-0 w-full h-fit z-10 px-[7.5%] sm:px-[15%] hidden md:hidden">
+        <div class="w-[100%] flex flex-col items-start pl-5 bg-white/40 backdrop-blur-lg rounded-md prison-padding-top prison-padding-bottom">
+            <a class="prison-h3 active-section" href="">Project</a>
+            <a class="prison-h3 inactive-section" href="">Datasets</a>
+            <a class="prison-h3 inactive-section" href="">Visualizations</a>
+            <a class="prison-h3 inactive-section mb-[0!important]" href="">About</a>
+        </div>
+    </div>
 
 
 
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <main class="px-[7.5%] sm:px-[15%] md:px-[10%] 2xl:px-[15%]">
+    <main class="px-[7.5%] md:px-[10%] 2xl:px-[15%]">
 
         <!--PROJECT-->
         <div id="the-project-main" class="section-margins w-full">
@@ -145,9 +145,9 @@
         <!--DATASETS-->
         <div id="datasets-section-main" class="section-margins">
             <h2 class="prison-h2 roboto-condensed">Datasets</h2>
-            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom">
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
 
-                <div id="datasets-left-block" class="w-full md:w-[45%]">
+                <div id="datasets-left-block" class="w-full md:w-[45%] prison-padding-bottom md:pb-0">
                     <p class="paragraph">Datasets have been chosen for the relevance of their contents from <a class="in-text-a">Source 1</a>, <a class="in-text-a">Source 2</a>, and <a class="in-text-a">Source 3</a>.</p>
                     <p class="paragraph pt-[3px]">After the downloads, data have been cleaned by deleting irrelevant entries, duplicates, and columns with non-useful charcaterizations.</p>
                     <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which visualizations and results are derived.</p>
@@ -204,15 +204,54 @@
                             <p class="plus-icons font-light">+</p>
                         </div>
                     </div>
-                    <div class="prison-border-bottom">
-                        <div class="flex items-center justify-between prison-padding-bottom prison-padding-top">
+                    <div>
+                        <div class="flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword">MUD3 - Dataset name</p>
                             <p class="plus-icons font-light">+</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="flex flex-col justify-between items-start prison-padding-top">
+                <p class="prison-h3">Datasets analyses</p>
+                <div class="flex flex-row prison-padding-top justify-between w-full">
+                    <h3 class="prison-h3 active-analysis"><span class="data-plus-span float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Qualitative</span></h3>
+                    <h3 class="prison-h3 inactive-analysis"><span class="data-plus-span hidden float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Legal</span></h3>
+                    <h3 class="prison-h3 inactive-analysis"><span class="data-plus-span hidden float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Ethical</span></h3>
+                    <h3 class="prison-h3 inactive-analysis"><span class="data-plus-span hidden float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Technical</span></h3>
+                </div>
+                <table class="w-full table-fixed">
+                    <thead>
+                      <tr>
+                        <th>Song</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+                        <td>Malcolm Lockyer</td>
+                        <td>1961</td>
+                      </tr>
+                      <tr>
+                        <td>Witchy Woman</td>
+                        <td>The Eagles</td>
+                        <td>1972</td>
+                      </tr>
+                      <tr>
+                        <td>Shining Star</td>
+                        <td>Earth, Wind, and Fire</td>
+                        <td>1975</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+            </div>
+            
         </div>
+
 
     </main>
 
