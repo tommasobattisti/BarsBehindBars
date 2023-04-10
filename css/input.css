@@ -49,8 +49,11 @@ li {
 }
 
 .icon-container {
-    @apply flex h-[40px] md:h-[60px] 2xl:h-[100px] aspect-square
+    @apply flex h-[60px] md:h-[80px] 2xl:h-[120px] aspect-square
 }
+
+
+
 
 .prison-padding-bottom {
     @apply pb-8 md:pb-10 2xl:pb-20;
@@ -65,13 +68,17 @@ li {
 }
 
 
+
+
+.analysis-h3 {
+    @apply text-[rgba(22,22,22,0.5)];
+}
+
 .active-analysis {
     @apply text-[#161616];
 }
 
-.inactive-analysis {
-    @apply text-[rgba(22,22,22,0.5)];
-}
+
 
 .active-section {
     @apply text-[#ffffff] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
@@ -87,4 +94,19 @@ li {
 
 .inactive-section-inverse {
     @apply text-[rgba(22,22,22,0.8)] no-underline;
+}
+
+
+
+td, th {
+    @apply py-5 px-5;
+}
+
+
+tbody tr {
+    @apply hover:bg-[#161616]/10;
+}
+
+.table-check-container {
+    @apply flex h-[3em] w-full justify-center;
 }
