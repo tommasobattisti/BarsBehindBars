@@ -8,24 +8,24 @@
 }
 
 .prison-h3 {
-    @apply text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl tracking-[-0.03em];
+    @apply text-4xl md:text-5xl 2xl:text-6xl tracking-[-0.03em];
 }
 
 .sub-section-title {
-    @apply paragraph uppercase font-semibold tracking-[0.01em] text-sm sm:text-base lg:text-lg  2xl:text-xl;
+    @apply paragraph uppercase font-semibold tracking-[0.01em] text-base lg:text-lg  2xl:text-xl;
 }
 
 .paragraph {
-  @apply text-sm sm:text-base lg:text-lg 2xl:text-xl;
+  @apply text-base lg:text-lg 2xl:text-xl;
 }
 
 .prison-btn {
-    @apply font-medium text-sm sm:text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-3 py-2 md:px-4 md:py-3 2xl:px-5 2xl:py-4 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[400ms]
+    @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-3 py-2 md:px-4 md:py-3 2xl:px-5 2xl:py-4 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[400ms]
 }
 
 
 li {
-    @apply before:font-semibold before:text-sm sm:before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#E95122] before:content-['-'] before:pr-[0.8rem];
+    @apply before:font-semibold before:text-base lg:before:text-lg 2xl:before:text-xl before:text-[#E95122] before:content-['-'] before:pr-[0.8rem];
 }
 
 
@@ -39,7 +39,7 @@ li {
 }
 
 .plus-icons {
-    @apply text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[-0.03em];
+    @apply text-3xl md:text-4xl 2xl:text-5xl tracking-[-0.03em];
 }
 
 
@@ -77,7 +77,6 @@ li {
 .active-analysis {
     @apply text-[#161616];
 }
-
 
 
 .active-section {
