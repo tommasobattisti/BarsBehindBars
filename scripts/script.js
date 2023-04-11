@@ -26,6 +26,42 @@ $(document).ready(function() {
         activateAnalysisSection('technical');
     });
 
+
+    $('#sd1-toggle-btn').click(function() {
+        openDatasetDescription('sd1');
+    });
+
+    $('#sd2-toggle-btn').click(function() {
+        openDatasetDescription('sd2');
+    });
+
+    $('#sd3-toggle-btn').click(function() {
+        openDatasetDescription('sd3');
+    });
+
+    $('#sd4-toggle-btn').click(function() {
+        openDatasetDescription('sd4');
+    });
+
+    $('#sd5-toggle-btn').click(function() {
+        openDatasetDescription('sd5');
+    });
+
+    $('#sd6-toggle-btn').click(function() {
+        openDatasetDescription('sd6');
+    });
+
+    $('#mud1-toggle-btn').click(function() {
+        openDatasetDescription('mud1');
+    });
+
+    $('#mud2-toggle-btn').click(function() {
+        openDatasetDescription('mud2');
+    });
+
+
+
+
 });
 
 
@@ -38,4 +74,15 @@ function activateAnalysisSection(section) {
     $('.analysis-spin').addClass('hidden');
     $('#' + section + '-h3').addClass('active-analysis');
     $('#' + section + '-spin').removeClass('hidden');
+}
+
+
+function openDatasetDescription(dataset) {
+    if ($('#' + dataset + '-toggle-container').hasClass('hidden')) {
+        $('#' + dataset + '-toggle-container').removeClass('hidden');
+        $('#' + dataset + '-activation-icon').html('–')
+    } else {
+        $('#' + dataset + '-toggle-container').addClass('hidden');
+        $('#' + dataset + '-activation-icon').html('+')
+    }
 }

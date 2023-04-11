@@ -605,6 +605,10 @@ video {
   height: fit-content;
 }
 
+.w-7\/12 {
+  width: 58.333333%;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -625,22 +629,6 @@ video {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-4\/12 {
-  width: 33.333333%;
-}
-
-.w-8\/12 {
-  width: 66.666667%;
-}
-
-.w-7\/12 {
-  width: 58.333333%;
-}
-
 .table-auto {
   table-layout: auto;
 }
@@ -658,6 +646,10 @@ video {
 
 .animate-spin {
   animation: spin 1s linear infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -989,6 +981,25 @@ video {
   }
 }
 
+.paragraph-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .paragraph-small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .paragraph-small {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .prison-btn {
   box-sizing: border-box;
   width: -moz-fit-content;
@@ -1313,20 +1324,16 @@ tbody tr:hover {
     width: 58.333333%;
   }
 
+  .md\:w-8\/12 {
+    width: 66.666667%;
+  }
+
   .md\:w-\[45\%\] {
     width: 45%;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-8\/12 {
-    width: 66.666667%;
-  }
-
-  .md\:w-10\/12 {
-    width: 83.333333%;
   }
 
   .md\:rotate-0 {
