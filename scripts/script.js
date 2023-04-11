@@ -80,6 +80,10 @@ $(document).ready(function() {
         openTable('economical-conditions');
     });
 
+    $('#temporary-aspects-toggle-btn').click(function() {
+        openTable('temporary-aspects');
+    });
+
 
 });
 

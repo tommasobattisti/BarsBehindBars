@@ -153,6 +153,9 @@
                     <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which visualizations and results are derived.</p>
                     <p class="paragraph prison-padding-top"><span class="keyword">SD:</span> Source Dataset</p>
                     <p class="paragraph"><span class="keyword">MUD:</span> Mashed-Up Dataset</p>
+                    <div class="prison-padding-top">
+                        <p class="paragraph"><span class="keyword">*</span>    <q>All data and metadata provided on UNdata’s website are available free of charge and may be copied freely, duplicated and further distributed provided that UNdata is cited as the reference</q>. <a class="in-text-a" href="https://dataunodc.un.org/termsofuse" target="_blank">See reference here</a>.</p>
+                    </div>
                 </div>
 
                 <div id="datasets-right-block" class="w-full md:w-[45%]">
@@ -267,7 +270,7 @@
                     <button id="quality-btn" class="analysis-btn">
                         <h3 id="quality-h3" class="analysis-h3 prison-h3 active-analysis">
                             <span id="quality-spin" class="analysis-spin float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span>
-                            <span class="pl-3 roboto-condensed">Qualitative</span>
+                            <span class="pl-3 roboto-condensed">Quality</span>
                         </h3>
                     </button>
                     <button id="legal-btn" class="analysis-btn">
@@ -763,14 +766,73 @@
                                                 <td>Not needed</td>
                                                 <td>Not needed</td>
                                                 <td>Not needed</td>
-                                            </tr>
-                                            
+                                            </tr> 
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
 
-
+                            <!--TEMPORARY ASPECTS-->
+                            <div id="temporary-aspects-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="temporary-aspects-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Temporary aspects</p>
+                                    <p id="temporary-aspects-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="temporary-aspects-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="temporary-aspects-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                            <tr>
+                                                <th class="text-left" scope="col">Checklist</th>
+                                                <th scope="col">DS1</th>
+                                                <th scope="col">DS2</th>
+                                                <th scope="col">DS3</th>
+                                                <th scope="col">DS4</th>
+                                                <th scope="col">DS5</th>
+                                                <th scope="col">DS6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Do you have a temporary policy for updating the dataset?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Do you have some mechanism for informing the end-user that the dataset is updated at a given time to avoid misusage and so potential risk of damage?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if the dataset for some reason can’t be indexed by the research engines (e.g., Google, Yahoo, etc.)?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">In case of personal data, do you have a reasonable technical mechanism for collecting request of deletion (e.g., right to be forgotten)?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -799,7 +861,7 @@
                                     <p class="sub-section-title roboto-condensed">United Nations - dataUNODC</p>
                                 </div>
                                 <div class="w-full md:w-8/12">
-                                    <p class="paragraph">The “standards and methods” page located on the official website of the United Nations, refers to a default anonymization, given both by the good ethical practices internationally estabilished and by the large geographical area covered by dataUNODC’s investigations. 
+                                    <p class="paragraph">The “<a class="in-text-a" href="https://unstats.un.org/unsd/methods/statorg/principles_stat_activities/principles_stat_activities.asp">standards and methods</a>” page located on the official website of the United Nations, refers to a default anonymization, given both by the good ethical practices internationally estabilished and by the large geographical area covered by dataUNODC’s investigations. 
                                     The data gathered by dataUNODC is obtained from organisations, agencies and experts collaborating or recognized by the United Nations, and the integration of <span class="keyword">microdata</span>, just like in the case of Eurostat, reassures an overall <span class="keyword">transparency</span> and <span class="keyword">lack of prejudice</span>. 
                                     </p>
                                 </div>
