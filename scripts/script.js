@@ -60,6 +60,25 @@ $(document).ready(function() {
     });
 
 
+    $('#privacy-issues-toggle-btn').click(function() {
+        openTable('privacy-issues');
+    });
+
+    $('#datasets-ipr-toggle-btn').click(function() {
+        openTable('datasets-ipr');
+    });
+
+    $('#lpa-toggle-btn').click(function() {
+        openTable('lpa');
+    });
+
+    $('#licenses-toggle-btn').click(function() {
+        openTable('licenses');
+    });
+
+    $('#economical-conditions-toggle-btn').click(function() {
+        openTable('economical-conditions');
+    });
 
 
 });
@@ -79,10 +98,23 @@ function activateAnalysisSection(section) {
 
 function openDatasetDescription(dataset) {
     if ($('#' + dataset + '-toggle-container').hasClass('hidden')) {
+
         $('#' + dataset + '-toggle-container').removeClass('hidden');
         $('#' + dataset + '-activation-icon').html('–')
     } else {
         $('#' + dataset + '-toggle-container').addClass('hidden');
         $('#' + dataset + '-activation-icon').html('+')
+    }
+}
+
+
+function openTable(table) {
+    if ($('#' + table + '-toggle-container').hasClass('hidden')) {
+
+        $('#' + table + '-toggle-container').removeClass('hidden');
+        $('#' + table + '-activation-icon').html('–')
+    } else {
+        $('#' + table + '-toggle-container').addClass('hidden');
+        $('#' + table + '-activation-icon').html('+')
     }
 }

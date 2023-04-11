@@ -316,42 +316,42 @@
                                 </thead>
                                 <tbody class="divide-y-2 divide-[#161616]/80">
                                 <tr>
-                                    <td>SD1</td>
+                                    <td class="paragraph">SD1</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                 </tr>
                                 <tr>
-                                    <td>SD2</td>
+                                    <td class="paragraph">SD2</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                 </tr>
                                 <tr>
-                                    <td>SD3</td>
+                                    <td class="paragraph">SD3</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                 </tr>
                                 <tr>
-                                    <td>SD4</td>
+                                    <td class="paragraph">SD4</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                 </tr>
                                 <tr>
-                                    <td>SD5</td>
+                                    <td class="paragraph">SD5</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                 </tr>
                                 <tr>
-                                    <td>SD6</td>
+                                    <td class="paragraph">SD6</td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
                                     <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
@@ -362,8 +362,419 @@
                         </div>
                     </div>
                     <div id="legal-analysis" class="analysis-container hidden">
+                        <div class="w-7/12 prison-padding-bottom">
+                            <p class="paragraph">In order to verify the legal aspects of the source datasets, the following topics are analyzed in different tables: <span class="keyword">privacy issues</span>, <span class="keyword">IPR policy</span>, <span class="keyword">licenses</span>, <span class="keyword">limitations on public access</span>, <span class="keyword">economical conditions</span>, <span class="keyword">temporal aspects</span> of the dataset. In particular, each table contain a checklist to assess the compliance with each different topic, as well as the <span class="keyword">datasets sustainibility</span> from both a service-related and temporal point of view.</p>
+                        </div>
+                        <div id="legal-checklists-container" class="w-full">
+                            <!--PRIVACY ISSUES-->
+                            <div id="privacy-issues-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="privacy-issues-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Privacy issues</p>
+                                    <p id="privacy-issues-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="privacy-issues-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="privacy-issues-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                        <tr>
+                                            <th class="text-left" scope="col">Checklist</th>
+                                            <th scope="col">DS1</th>
+                                            <th scope="col">DS2</th>
+                                            <th scope="col">DS3</th>
+                                            <th scope="col">DS4</th>
+                                            <th scope="col">DS5</th>
+                                            <th scope="col">DS6</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Is the dataset free of any personal data as defined in the Regulation (EU) 2016/679?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Is the dataset free of any indirect personal data that could be used for identifying the natural person?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Is the dataset free of any particular personal data (art. 9 GDPR)?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Is the dataset free of any information that combined with common data available in the web, could identify the person?
+                                                </td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Is the dataset free of any information related to human rights (e.g. refugees, witness protection, etc.)?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">did you use a tool for calculating the range of the risk of de-anonymization?
+                                                did you anonymize the dataset? With which technique?
+                                                Did you check the three mandatory parameters: singling out, linking out, inference out?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Are you using geolocalization capabilities?
+                                                    did you check that the geolocalization process can’t identify single individuals in some circumstances?</td>
+                                                <td>No/Not needed</td>
+                                                <td>No/Not needed</td>
+                                                <td>No/Not needed</td>
+                                                <td>No/Not needed</td>
+                                                <td>No/Not needed</td>
+                                                <td>No/Not needed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check that the open data platform respect all the privacy regulations (registration of the end-user, profiling, cookies, analytics, etc.)?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Do you know who are in the open data platform the Controller and Processor of the privacy data of the system?</td>
+                                                <td>UN Privacy Policy Group</td>
+                                                <td>UN Privacy Policy Group</td>
+                                                <td>European Statistical System Committee</td>
+                                                <td>European Statistical System Committee</td>
+                                                <td>European Statistical System Committee</td>
+                                                <td>European Statistical System Committee</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Where the datasets are physically stored (country and jurisdiction)?</td>
+                                                <td>New York City, USA</td>
+                                                <td>New York City, USA</td>
+                                                <td>European Union</td>
+                                                <td>European Union</td>
+                                                <td>European Union</td>
+                                                <td>European Union</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Do you have non-personal data?
+                                                    Are you sure that are not “mixed data”?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
 
+                            <!--DATASETS IPR-->
+                            <div id="datasets-ipr-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="datasets-ipr-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Intellectual Property Rights</p>
+                                    <p id="datasets-ipr-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="datasets-ipr-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="datasets-ipr-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                            <tr>
+                                                <th class="text-left" scope="col">Checklist</th>
+                                                <th scope="col">DS1</th>
+                                                <th scope="col">DS2</th>
+                                                <th scope="col">DS3</th>
+                                                <th scope="col">DS4</th>
+                                                <th scope="col">DS5</th>
+                                                <th scope="col">DS6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you create and generate the dataset?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Are you the owner of the dataset? How is the owner?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Are you sure to not use third party data without the proper authorization and license? Are the dataset free from third party licenses or patents?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if there are some limitations in your national legal system for releasing some kind of datasets with open license?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--LIMITATIONS ON PUBLIC ACCESS-->
+                            <div id="lpa-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="lpa-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Limitations on public access</p>
+                                    <p id="lpa-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="lpa-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="lpa-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                            <tr>
+                                                <th class="text-left" scope="col">Checklist</th>
+                                                <th scope="col">DS1</th>
+                                                <th scope="col">DS2</th>
+                                                <th scope="col">DS3</th>
+                                                <th scope="col">DS4</th>
+                                                <th scope="col">DS5</th>
+                                                <th scope="col">DS6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check that the dataset concerns your institutional competences, scope and finality?
+                                                Did you check if the dataset concerns other public administration competences?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check the limitations for the publication stated by your national legislation or by the EU directives?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if there are some limitations connected to the international relations, public security or national defence?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if there are some limitations concerning the public interest?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check the international law limitations?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check the INSPIRE law limitations for the spatial data?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--LICENSES-->
+                            <div id="licenses-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="licenses-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Licenses</p>
+                                    <p id="licenses-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="licenses-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="licenses-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                            <tr>
+                                                <th class="text-left" scope="col">Checklist</th>
+                                                <th scope="col">DS1</th>
+                                                <th scope="col">DS2</th>
+                                                <th scope="col">DS3</th>
+                                                <th scope="col">DS4</th>
+                                                <th scope="col">DS5</th>
+                                                <th scope="col">DS6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you release the dataset with an open data license? In case of the use of CC0 did you check that you have all the right necessary for this particular kind of license (e.g., jurisdiction)?
+                                                </td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you include the clause: "In any case the dataset can’t be used for re-identifying the person"?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you release the API (in case you have) with an open source license?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/close.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check that the open data/API platform license regime is compliant with your IPR policy?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!--ECONOMICAL CONDITIONS-->
+                            <div id="economical-conditions-section" class="prison-padding-bottom prison-border-bottom">
+                                <div id="economical-conditions-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                    <p class="paragraph keyword pr-5">Economical conditions</p>
+                                    <p id="economical-conditions-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                </div>
+                                <div id="economical-conditions-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                    <table id="economical-conditions-table" class="w-full table-auto text-center">
+                                        <thead class="prison-border-bottom">
+                                            <tr>
+                                                <th class="text-left" scope="col">Checklist</th>
+                                                <th scope="col">DS1</th>
+                                                <th scope="col">DS2</th>
+                                                <th scope="col">DS3</th>
+                                                <th scope="col">DS4</th>
+                                                <th scope="col">DS5</th>
+                                                <th scope="col">DS6</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y-2 divide-[#161616]/80">
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check that the dataset could be released for free?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if there are some agreements with some other partners in order to release the dataset with a reasonable price?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">Did you check if the data platform’s terms of service include a clause of “non liability agreement” regarding the datasetand API provided?</td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                                <td><div class="table-check-container"><img src="./assets/icons/check.svg"></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword"> In case you decide to release the dataset to a reasonable price did you check if the limitation imposed by the new directive 2019/1024/EU are respected?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="paragraph-small text-left keyword">In case you decide to release the dataset to a reasonable price did you check the e-Commerce directive and regulation?</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                                <td>Not needed</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
+
+                    <!--ETHICAL ANALYSIS-->
                     <div id="ethical-analysis" class="analysis-container hidden">
                         <div class="w-full flex flex-col">
                             <div class="w-7/12 prison-padding-bottom">
