@@ -30,10 +30,11 @@
             <div id="nav-h-container" class="h-[100%] flex flex-row items-center justify-between">
                 <a href="#" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold">BhB</a>
                 <div class="hidden leading-[1!important] md:block paragraph">
-                    <a class="pr-5 active-section-inverse" href="">Project</a>
-                    <a class="px-5 inactive-section-inverse" href="">Datasets</a>
-                    <a class="px-5 inactive-section-inverse" href="">Visualizations</a>
-                    <a class="pl-5 inactive-section-inverse" href="">About</a>
+                    <a class="pr-2 lg:pr-5 active-section-inverse" href="">Project</a>
+                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">Datasets</a>
+                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">Visualisations</a>
+                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">License & Metadata</a>
+                    <a class="px-2 lg:pl-5 inactive-section-inverse" href="">About</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -47,7 +48,8 @@
         <div class="w-[100%] h-[100%] flex flex-col px-[7.5%] md:px-[10%] 2xl:px-[15%] items-start justify-center backdrop-blur-lg">
             <a class="prison-h2 active-section pb-[3vh]" href="">Project</a>
             <a class="prison-h2 inactive-section pb-[3vh]" href="">Datasets</a>
-            <a class="prison-h2 inactive-section pb-[3vh]" href="">Visualizations</a>
+            <a class="prison-h2 inactive-section pb-[3vh]" href="">Visualisations</a>
+            <a class="prison-h2 inactive-section pb-[3vh]" href="">License & Metadata</a>
             <a class="prison-h2 inactive-section" href="">About</a>
         </div>
     </div>
@@ -150,7 +152,7 @@
                 <div id="datasets-left-block" class="w-full md:w-[45%] prison-padding-bottom md:pb-0">
                     <p class="paragraph">Datasets have been chosen for the relevance of their contents from <a class="in-text-a" href="https://ec.europa.eu/eurostat/en/" target="_blank">Eurostat</a> and <a class="in-text-a" href="https://dataunodc.un.org/" target="_blank">dataUNODC</a>.</p>
                     <p class="paragraph pt-[3px]">After the downloads, data have been cleaned by deleting irrelevant entries, duplicates, and columns with non-useful charcaterizations.</p>
-                    <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which visualizations and results are derived.</p>
+                    <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which Visualisations and results are derived.</p>
                     <p class="paragraph prison-padding-top"><span class="keyword">SD:</span> Source Dataset</p>
                     <p class="paragraph"><span class="keyword">MUD:</span> Mashed-Up Dataset</p>
                     <div class="prison-padding-top">
@@ -265,7 +267,7 @@
             </div>
 
             <div class="flex flex-col justify-between items-start prison-padding-top">
-                <p class="prison-h3">Datasets analyses</p>
+                <h3 class="prison-h3">Datasets analyses</h3>
                 <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
                     <button id="quality-btn" class="analysis-btn">
                         <h3 id="quality-h3" class="analysis-h3 prison-h3 active-analysis">
@@ -294,6 +296,7 @@
                 </div>
 
                 <div id="tables-container" class="w-full prison-padding-top prison-padding-bottom">
+                    <!--QUALITY ANALYSIS-->
                     <div id="quality-analysis" class="analysis-container">
                         <div id="quality-description" class="w-full prison-padding-bottom flex justify-start">
                             <div class="w-full md:w-7/12">
@@ -364,9 +367,11 @@
                             </table>
                         </div>
                     </div>
+
+                    <!--LEGAL ANALYSIS-->
                     <div id="legal-analysis" class="analysis-container hidden">
                         <div class="w-7/12 prison-padding-bottom">
-                            <p class="paragraph">In order to verify the legal aspects of the source datasets, the following topics are analyzed in different tables: <span class="keyword">privacy issues</span>, <span class="keyword">IPR policy</span>, <span class="keyword">licenses</span>, <span class="keyword">limitations on public access</span>, <span class="keyword">economical conditions</span>, <span class="keyword">temporal aspects</span> of the dataset. In particular, each table contain a checklist to assess the compliance with each different topic, as well as the <span class="keyword">datasets sustainibility</span> from both a service-related and temporal point of view.</p>
+                            <p class="paragraph">In order to verify the legal aspects of the source datasets, the following topics are analysed in different tables: <span class="keyword">privacy issues</span>, <span class="keyword">IPR policy</span>, <span class="keyword">licenses</span>, <span class="keyword">limitations on public access</span>, <span class="keyword">economical conditions</span>, <span class="keyword">temporal aspects</span> of the dataset. In particular, each table contain a checklist to assess the compliance with each different topic, as well as the <span class="keyword">datasets sustainibility</span> from both a service-related and temporal point of view.</p>
                         </div>
                         <div id="legal-checklists-container" class="w-full">
                             <!--PRIVACY ISSUES-->
@@ -832,7 +837,7 @@
                                     </table>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -879,7 +884,7 @@
                                     <p class="paragraph"><span class="keyword">Purpose Limitation:</span>
                                     the clear purpose of data processing, explicitly stated and respected throughout the whole processing phase, goes hand to hand with the lack of explicit personal information.</p>
                                     <p class="paragraph"><span class="keyword">Data Minimization:</span>
-                                    only information necessary to the achievement of the project's aims have been stored and processed. The processing itself had no intention to acquire and publish specific personal information. Quite the opposite: processing led to more generall information and visualizations whit provide the user/readea with more general and not referable information.</p>
+                                    only information necessary to the achievement of the project's aims have been stored and processed. The processing itself had no intention to acquire and publish specific personal information. Quite the opposite: processing led to more generall information and Visualisations whit provide the user/readea with more general and not referable information.</p>
                                     <p class="paragraph"><span class="keyword">Accountability:</span>
                                     the compliance with the principle of the GDPR is assured by the fact that data used have been gathered from already compliant sources. However, the authors of the project are responsible for this statement and able to demonstrate it.</p>
                                 </div>
@@ -890,6 +895,8 @@
 
 
                     </div>
+
+                    <!--TECHNICAL ANALYSIS-->
                     <div id="technical-analysis" class="analysis-container hidden">
                         <div id="quality-description" class="w-full prison-padding-bottom flex justify-start">
                             <div class="w-full md:w-7/12">
@@ -971,10 +978,60 @@
                         </div>
                     </div>
                 </div>
-
-                
+  
             </div>
+        
             
+            <div class="flex flex-col justify-between items-start prison-padding-top">
+                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Project sustainibility</span></h3>
+                
+                <div class="w-full flex flex-col md:flex-row prison-padding-bottom prison-padding-top">
+                    <div class="w-full md:w-4/12">
+                        <p class="sub-section-title roboto-condensed">BARS BEHIND BARS</p>
+                    </div>
+                <div class="w-full md:w-8/12">
+                    <p class="paragraph">This project has been developed for the "Open Access and Digital Ethics" course of the Digital Humanities and Digital Knowledge Master's Degree (University of Bologna, a.y. 2022/2023). Given the purpose of the project, datasets and results are neither updated nor actively maintained.</p>
+                </div>
+            </div>
+
+            
+        </div>
+
+
+        <!--Visualisations-->
+        <div id="visualisations-section-main" class="section-margins">
+            <h2 class="prison-h2 roboto-condensed">Visualisations</h2>
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
+            </div>
+            <div class="flex flex-col justify-between items-start prison-padding-top">
+                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
+                </div>
+            </div>
+        </div>
+
+        <!--License & Metadata-->
+        <div id="license-metadata-section-main" class="section-margins">
+            <h2 class="prison-h2 roboto-condensed">License & Metadata</h2>
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
+            </div>
+            <div class="flex flex-col justify-between items-start prison-padding-top">
+                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">RDF assertion</span></h3>
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
+                </div>
+            </div>
+        </div>
+
+        <!--About-->
+        <div id="about-section-main" class="section-margins">
+            <h2 class="prison-h2 roboto-condensed">About</h2>
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
+            </div>
+            <div class="flex flex-col justify-between items-start prison-padding-top">
+                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">The team</span></h3>
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
+                </div>
+            </div>
         </div>
 
 
