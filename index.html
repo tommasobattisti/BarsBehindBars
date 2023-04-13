@@ -990,7 +990,7 @@
                         <p class="sub-section-title roboto-condensed">Bars Behind Bars</p>
                     </div>
                     <div class="w-full md:w-8/12">
-                        <p class="paragraph">This project has been developed for the "Open Access and Digital Ethics" course of the Digital Humanities and Digital Knowledge Master's Degree (University of Bologna, a.y. 2022/2023). Given the purpose of the project, datasets and results are neither updated nor actively maintained.</p>
+                        <p class="paragraph">This project has been developed for the "Open Access and Digital Ethics" course of the Digital Humanities and Digital Knowledge Master's Degree (University of Bologna, a.y. 2022/2023). Given the purpose of the project, datasets and results will not be neither updated nor actively maintained in the future.</p>
                     </div>
                 </div>
 
@@ -1025,27 +1025,179 @@
         <div id="license-metadata-section-main" class="section-margins">
             <h2 class="prison-h2 roboto-condensed">License & Metadata</h2>
             <div class="flex flex-col justify-between items-start prison-padding-bottom prison-border-bottom">
-                <p>BOZZA:
-                    Following <span class="keyword">FAIR principles</span>, it has been decieded to publish datasets, as well as to provide them with specific metadata, in a machine readable format for a better<span class="keyword">findability</span>, <span class="keyword">accessibility</span>, <span class="keyword">interoperability</span>, and <span class="keyword">reusability</span>.
-                    Given the nature of the data and their European coverage, it has been chosen to employ the common European data model DCAT_AP (v <span style="color: green">SELECT THE PERFECT VERSION (NOTE THAT V.3 IS STILL A WORKING DRAFT)</span>).
-                    In particular, <span style="color: green">SPIEGA PERCHè PRORPIO QUELLA VERSIONE; NOMINA PROV-O E PERCHè LA UTILIZZI; ACCENNA AL FATTO CHE NON ABBIAMO DATASET COMPOSTI DA ALTRI DATASET PER QUANTO RIGUARDA LE SERIALIZZAZIONI</span>.
-                    We provided metadata for the catalogue of all the individual datasets derived from the cleaning process, for the mash-up dataset that has been created and for the entire cataloge.
-                    <span style="color: green">VEDI SE NECESSARIO USARE CC RDF ONTOLOGY PER LE LICENZE.</span>
-                </p>
-                <p>
-                    Each dataset, the catalogue, and the website has well have been published under a Creative Commons license (CC-BY 4.0) following <span style="color: green">EUROPEAN DIRECTIVES?</span> and best practices <span style="color: green">FOR THE OPEN DATA BLA BLA BLA</span>
-                </p>
-                <p>
-                    <span style="color: green">INSERIRE TABLE WITH METADATA</span>
-                </p>
+                <p class="paragraph prison-padding-bottom">Following <a class="in-text-a" href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR principles</a>, datasets, as well as their metadata, have been published in a machine readable format and following a common practice ine European datasets description for a better <span class="keyword">findability</span>, <span class="keyword">accessibility</span>, <span class="keyword">interoperability</span>, and <span class="keyword">reusability</span>.
+                Given the nature of the data and their European coverage, it has been chosen to employ the common European data model <a class="in-text-a" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/200" target="_blank">DCAT_AP 2.0.0</a> integrated by the use of <a class="in-text-a" href="https://www.w3.org/TR/prov-o/" target="_blank">PROV-O</a> for specifying the derivation of the entities (datasets) this project deals with.</p>
+                <p class="paragraph">We provided metadata for the catalogue of all the individual datasets derived from the cleaning process, for the mash-up dataset andfor the entire cataloge. Each dataset, the catalogue, and the website as well have been published under a Creative Commons license (<a class="in-text-a" href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0</a>) following European Commission recommendations and best practices for the re-use of content and data.</p>
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
-                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">RDF assertion</span></h3>
-                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
-                    <p>HERE TO PUT SNIPPETS CODE WITH THE SERIALIZATIONS IMPORTED FROM GITHUB.</p>
+                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Metadata tables and RDF assertions</span></h3>
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">                  
                 </div>
             </div>
-        </div>
+                <!--Metadata tables-->
+                <div id="metadata-table-div" class="w-full">
+                    <!--Catalogue-->
+                    <div id="catalogue-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                        <div id="catalogue-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <p class="paragraph keyword pr-5">Catalogue</p>
+                            <p id="catalogue-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                        </div>
+                        <div id="catalogue-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <table id="catalogue-metadata-table" class="w-full table-auto text-center">
+                                <thead class="prison-border-bottom">
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                
+
+                    <!--Mashup-->
+                    <div id="mashup-table-div">
+                        <div id="mashup-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="mashup-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Mash-up dataset</p>
+                                <p id="mashup-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="mashup-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="mashup-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Clean D1-->
+                    <div id="cds1-table-div">
+                        <div id="cds1-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds1-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS1</p>
+                                <p id="cds1-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds1-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds1-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Clean D2-->
+                    <div id="cds2-table-div">
+                        <div id="cds2-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds2-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS2</p>
+                                <p id="cds2-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds2-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds2-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Clean D3-->
+                    <div id="cds3-table-div">
+                        <div id="cds3-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds3-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS3</p>
+                                <p id="cds3-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds3-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds3-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Clean D4-->
+                    <div id="cds4-table-div">
+                        <div id="cds4-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds4-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS4</p>
+                                <p id="cds4-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds4-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds4-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Clean D3-->
+                    <div id="cds3-table-div">
+                        <div id="cds3-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds3-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS3</p>
+                                <p id="cds3-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds3-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds3-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Clean D4-->
+                    <div id="cds4-table-div">
+                        <div id="cds4-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds4-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS4</p>
+                                <p id="cds4-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds4-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds4-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Clean D5-->
+                    <div id="cds5-table-div">
+                        <div id="cds5-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds5-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS5</p>
+                                <p id="cds5-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds5-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds5-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Clean D6-->
+                    <div id="cds6-table-div">
+                        <div id="cds6-metadata" class="w-full prison-padding-bottom prison-border-bottom">
+                            <div id="cds6-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <p class="paragraph keyword pr-5">Clean DS6</p>
+                                <p id="cds6-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                            </div>
+                            <div id="cds6-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <table id="cds6-metadata-table" class="w-full table-auto text-center">
+                                    <thead class="prison-border-bottom">
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
 
         <!--About-->
         <div id="about-section-main" class="section-margins">
