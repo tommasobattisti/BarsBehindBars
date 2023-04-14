@@ -1261,6 +1261,18 @@ li::before {
   text-decoration-line: none;
 }
 
+.sm-nav-link, .lg-nav-link {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.sm-nav-link:hover, .lg-nav-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(233 81 34 / var(--tw-text-opacity));
+}
+
 td, th {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;

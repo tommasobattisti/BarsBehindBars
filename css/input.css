@@ -102,6 +102,9 @@ li {
     @apply text-[rgba(22,22,22,0.8)] no-underline;
 }
 
+.sm-nav-link, .lg-nav-link {
+    @apply hover:text-[#e95122] transition-all ease-out duration-[400ms];
+}
 
 
 td, th {
