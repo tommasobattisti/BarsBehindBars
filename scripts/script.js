@@ -105,7 +105,7 @@ $(document).ready(function() {
 
     
     // Change the svg icon of the mobile menu button when clicked
-    $('#mobile-menu-btn').click(function() {
+    $('#mobile-menu-btn').click(() => {
         if ($('#mobile-menu-dropdown').hasClass('hidden')) {
             $('#mobile-menu-dropdown').removeClass('hidden');
             $('#mobile-menu-btn').html('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>');
