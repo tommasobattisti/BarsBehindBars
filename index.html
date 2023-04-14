@@ -22,19 +22,22 @@
     
     <script src="./scripts/script.js"></script>
 
+    <!--Waypoints-->
+    <script src="./node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+
 </head>
 <body class="bg-[#ccc8bc] text-[#161616]">
 
     <header class="fixed w-[100%] z-10 text-[#ccc8bc] mix-blend-difference md:text-[#161616] md:mix-blend-normal md:border-[#161616] md:border-b-[3px] 2xl:border-b-4 md:backdrop-blur-xl">
         <nav class="px-[7.5%] md:px-[10%] 2xl:px-[15%] py-4 h-[60px] 2xl:h-[80px]">
             <div id="nav-h-container" class="h-[100%] flex flex-row items-center justify-between">
-                <a href="#" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold">BhB</a>
+                <a id="logo" href="#site-banner" class="leading-[1!important] text-2xl lg:text-3xl 2xl:text-4xl font-semibold">BhB</a>
                 <div class="hidden leading-[1!important] md:block paragraph">
-                    <a class="pr-2 lg:pr-5 active-section-inverse" href="">Project</a>
-                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">Datasets</a>
-                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">Visualisations</a>
-                    <a class="px-2 lg:px-5 inactive-section-inverse" href="">License & Metadata</a>
-                    <a class="px-2 lg:pl-5 inactive-section-inverse" href="">About</a>
+                    <a id="project-lg-nav-link" class="lg-nav-link pr-2 lg:pr-5 inactive-lg-nav-link" href="#project-section-main">Project</a>
+                    <a id="datasets-lg-nav-link" class="lg-nav-link px-2 lg:px-5 inactive-lg-nav-link" href="#datasets-section-main">Datasets</a>
+                    <a id="visualisations-lg-nav-link" class="lg-nav-link px-2 lg:px-5 inactive-lg-nav-link" href="#visualisations-section-main">Visualisations</a>
+                    <a id="license-metadata-lg-nav-link" class="lg-nav-link px-2 lg:px-5 inactive-lg-nav-link" href="#license-metadata-section-main">License & Metadata</a>
+                    <a id="about-lg-nav-link" class="lg-nav-link px-2 lg:pl-5 inactive-lg-nav-link" href="#about-section-main">About</a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -46,18 +49,18 @@
     </header>
     <div id="mobile-menu-dropdown" class="fixed top-0 left-0 w-full h-[100vh] z-[5] bg-[#161616] hidden md:hidden">
         <div class="w-[100%] h-[100%] flex flex-col px-[7.5%] md:px-[10%] 2xl:px-[15%] items-start justify-center backdrop-blur-lg">
-            <a class="prison-h2 active-section pb-[3vh]" href="">Project</a>
-            <a class="prison-h2 inactive-section pb-[3vh]" href="">Datasets</a>
-            <a class="prison-h2 inactive-section pb-[3vh]" href="">Visualisations</a>
-            <a class="prison-h2 inactive-section pb-[3vh]" href="">License & Metadata</a>
-            <a class="prison-h2 inactive-section" href="">About</a>
+            <a id="project-sm-nav-link" class="sm-nav-link prison-h2 inactive-sm-nav-link pb-[3vh]" href="#project-section-main">Project</a>
+            <a id="datasets-sm-nav-link" class="sm-nav-link prison-h2 inactive-sm-nav-link pb-[3vh]" href="#datasets-section-main">Datasets</a>
+            <a id="visualisations-sm-nav-link" class="sm-nav-link prison-h2 inactive-sm-nav-link pb-[3vh]" href="#visualisations-section-main">Visualisations</a>
+            <a id="license-metadata-sm-nav-link" class="sm-nav-link prison-h2 inactive-sm-nav-link pb-[3vh]" href="#license-metadata-section-main">License & Metadata</a>
+            <a id="about-sm-nav-link" class="sm-nav-link prison-h2 inactive-sm-nav-link" href="#about-section-main">About</a>
         </div>
     </div>
 
 
 
     <!--HERO SECTION-->
-    <div id="site-banner" class="w-[100%] h-[100vh] pt-[60px] md:pt-[80px] 2xl:pt-[100px] pb-[8px] 2xl:pb-[10px] flex flex-col md:flex-row items-center justify-between overflow-hidden space-y-10 md:space-y-0 prison-border-bottom">
+    <div id="site-banner" class="section w-[100%] h-[100vh] pt-[60px] md:pt-[80px] 2xl:pt-[100px] pb-[8px] 2xl:pb-[10px] flex flex-col md:flex-row items-center justify-between overflow-hidden space-y-10 md:space-y-0 prison-border-bottom">
         <div id="banner-left" class="w-[90%] md:w-6/12 md:pl-[10%] md:pb-[5%] mt-[8%] md:mt-0">
             <div class="flex flex-col space-y-6 md:space-y-7">
                 <div id="banner-text-container" class="flex flex-col space-y-2 md:space-y-3">
@@ -67,9 +70,11 @@
                     </p>
                 </div>
                 <div  class="w-full flex justify-center md:justify-start">
-                    <button id="banner-btn" class="prison-btn">
+                    <a href="#project-section-main">
+                        <button id="banner-btn" class="prison-btn">
                         Explore the project
-                    </button>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -78,14 +83,13 @@
                 <img id="prisoner-illustration" class="md:object-cover object-contain object-left-top" src="./assets/imgs/prisoner_illustration2.svg">
                 <img id="timeline" class="hidden lg:block lg:h-[100%] md:object-cover" src="./assets/imgs/timeline2.svg">
         </div>
-        </div>
     </div>
 
-    <main class="px-[7.5%] md:px-[10%] 2xl:px-[15%]">
+    <main id="prison-main" class="px-[7.5%] md:px-[10%] 2xl:px-[15%]">
 
         <!--PROJECT-->
-        <div id="the-project-main" class="section-margins w-full">
-            <h2 class="roboto-condensed prison-h2">The project</h2>
+        <div id="project-section-main" class="section section-margins w-full scroll-mt-20">
+            <h2 class="roboto-condensed prison-h2 text-center">The project</h2>
             <div class="flex flex-col-reverse md:flex-row justify-between items-center prison-padding-bottom prison-border-bottom">
                 <div id="project-left-text-block" class="w-full md:w-[45%]">
                     <p class="text-left paragraph">Bars Behind Bars is a project developed for the <a class="in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Open Access and Digital Ethics course</a> of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
@@ -118,7 +122,7 @@
             </div>
         </div>
         <!--Research questions-->
-        <div id="the-project-research-questions" class="flex flex-col md:flex-row justify-between w-full h-fit prison-padding-top">
+        <div id="project-research-questions" class="flex flex-col md:flex-row justify-between w-full h-fit prison-padding-top">
             <div id="rq-left-block" class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
                 <div class="h-1/2 flex justify-start w-full sm:w-[80%] md:w-full xl:w-[80%]">
                     <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">A Good Research Starts With Good Research Questions</span></h3>
@@ -145,8 +149,8 @@
         </div>
 
         <!--DATASETS-->
-        <div id="datasets-section-main" class="section-margins">
-            <h2 class="prison-h2 roboto-condensed">Datasets</h2>
+        <div id="datasets-section-main" class="section section-margins scroll-mt-20">
+            <h2 class="prison-h2 text-center roboto-condensed">Datasets</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
 
                 <div id="datasets-left-block" class="w-full md:w-[45%] prison-padding-bottom md:pb-0">
@@ -162,11 +166,11 @@
 
                 <div id="datasets-right-block" class="w-full md:w-[45%]">
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd1-toggle-btn" class="cursor-pointer flex items-center justify-between ">
+                        <div id="sd1-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between ">
                             <p class="paragraph keyword pr-5">SD1 - Mortality in Prison</p>
-                            <p id="sd1-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd1-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd1-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd1-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD1</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://dataunodc.un.org/" target="_blank"> United Nations - dataUNODC</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> June 6, 2022</p>
@@ -177,11 +181,11 @@
                         </div>
                     </div>
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd2-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="sd2-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">SD2 - Persons Held by Sentence Status</p>
-                            <p id="sd2-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd2-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd2-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd2-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD2</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://dataunodc.un.org/" target="_blank"> United Nations - dataUNODC</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> June 6, 2022</p>
@@ -192,11 +196,11 @@
                         </div>
                     </div>
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd3-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="sd3-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">SD3 - Prisons Capacity and Number of Persons Held</p>
-                            <p id="sd3-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd3-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd3-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd3-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD3</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://ec.europa.eu/eurostat" target="_blank"> Eurostat</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> June 8, 2022</p>
@@ -207,11 +211,11 @@
                         </div>
                     </div>
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd4-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="sd4-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">SD4 - Perceived Independence of the Justice System</p>
-                            <p id="sd4-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd4-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd4-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd4-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD4</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://ec.europa.eu/eurostat" target="_blank"> Eurostat</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> December 6, 2022</p>
@@ -222,11 +226,11 @@
                         </div>
                     </div>
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd5-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="sd5-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">SD5 - Corruption Perceptions Index (source: Transparency Intenational)</p>
-                            <p id="sd5-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd5-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd5-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd5-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD5</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://ec.europa.eu/eurostat" target="_blank"> Eurostat</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> February 14, 2023</p>
@@ -237,11 +241,11 @@
                         </div>
                     </div>
                     <div class="prison-padding-bottom prison-border-bottom">
-                        <div id="sd6-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="sd6-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">SD6 - General Government Expenditure by Function</p>
-                            <p id="sd6-activation-icon" class="plus-icons font-light">+</p>
+                            <p id="sd6-activation-icon" class="dd-activation-icon plus-icons font-light">+</p>
                         </div>
-                        <div id="sd6-toggle-container" class="prison-padding-top hidden">
+                        <div id="sd6-toggle-container" class="dd-toggle-container prison-padding-top hidden">
                             <p class="paragraph"><span class="keyword">Id:</span> SD6</p>
                             <p class="paragraph"><span class="keyword">Source:</span> <a class="in-text-a" href="https://ec.europa.eu/eurostat" target="_blank"> Eurostat</a></p>
                             <p class="paragraph"><span class="keyword">Last update:</span> February 22, 2023</p>
@@ -252,7 +256,7 @@
                         </div>
                     </div>
                     <div>
-                        <div id="mud1-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                        <div id="mud1-toggle-btn" class="dd-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                             <p class="paragraph keyword pr-5">MUD1 - Bars Behind Bars Comprehensive Dataset</p>
                             <p id="mud1-activation-icon" class="plus-icons font-light">+</p>
                         </div>
@@ -379,11 +383,11 @@
                         <div id="legal-checklists-container" class="w-full">
                             <!--PRIVACY ISSUES-->
                             <div id="privacy-issues-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="privacy-issues-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="privacy-issues-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Privacy issues</p>
-                                    <p id="privacy-issues-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="privacy-issues-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="privacy-issues-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="privacy-issues-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="privacy-issues-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                         <tr>
@@ -508,11 +512,11 @@
 
                             <!--DATASETS IPR-->
                             <div id="datasets-ipr-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="datasets-ipr-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="datasets-ipr-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Intellectual Property Rights</p>
-                                    <p id="datasets-ipr-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="datasets-ipr-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="datasets-ipr-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="datasets-ipr-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="datasets-ipr-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                             <tr>
@@ -569,11 +573,11 @@
 
                             <!--LIMITATIONS ON PUBLIC ACCESS-->
                             <div id="lpa-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="lpa-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="lpa-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Limitations on public access</p>
-                                    <p id="lpa-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="lpa-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="lpa-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="lpa-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="lpa-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                             <tr>
@@ -649,11 +653,11 @@
 
                             <!--LICENSES-->
                             <div id="licenses-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="licenses-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="licenses-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Licenses</p>
-                                    <p id="licenses-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="licenses-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="licenses-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="licenses-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="licenses-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                             <tr>
@@ -712,11 +716,11 @@
 
                             <!--ECONOMICAL CONDITIONS-->
                             <div id="economical-conditions-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="economical-conditions-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="economical-conditions-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Economical conditions</p>
-                                    <p id="economical-conditions-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="economical-conditions-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="economical-conditions-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="economical-conditions-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="economical-conditions-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                             <tr>
@@ -782,11 +786,11 @@
 
                             <!--TEMPORARY ASPECTS-->
                             <div id="temporary-aspects-section" class="prison-padding-bottom prison-border-bottom">
-                                <div id="temporary-aspects-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                                <div id="temporary-aspects-toggle-btn" class="tab-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                     <p class="paragraph keyword pr-5">Temporary aspects</p>
-                                    <p id="temporary-aspects-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                    <p id="temporary-aspects-activation-icon" class="tab-activation-icon table-show-icon plus-icons font-light">+</p>
                                 </div>
-                                <div id="temporary-aspects-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                                <div id="temporary-aspects-toggle-container" class="tab-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                     <table id="temporary-aspects-table" class="w-full table-auto text-center">
                                         <thead class="prison-border-bottom">
                                             <tr>
@@ -1013,8 +1017,8 @@
 
 
         <!--Visualisations-->
-        <div id="visualisations-section-main" class="section-margins">
-            <h2 class="prison-h2 roboto-condensed">Visualisations</h2>
+        <div id="visualisations-section-main" class="section section-margins scroll-mt-20">
+            <h2 class="prison-h2 text-center roboto-condensed">Visualisations</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
@@ -1025,8 +1029,8 @@
         </div>
 
         <!--License & Metadata-->
-        <div id="license-metadata-section-main" class="section-margins">
-            <h2 class="prison-h2 roboto-condensed">License & Metadata</h2>
+        <div id="license-metadata-section-main" class="section section-margins scroll-mt-20">
+            <h2 class="prison-h2 text-center roboto-condensed">License & Metadata</h2>
             <div class="flex flex-col justify-between items-start prison-padding-bottom prison-border-bottom">
                 <p class="paragraph prison-padding-bottom">Following <a class="in-text-a" href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR principles</a>, datasets, as well as their metadata, have been published in a machine readable format and following a common practice ine European datasets description for a better <span class="keyword">findability</span>, <span class="keyword">accessibility</span>, <span class="keyword">interoperability</span>, and <span class="keyword">reusability</span>.
                 Given the nature of the data and their European coverage, it has been chosen to employ the common European data model <a class="in-text-a" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/200" target="_blank">DCAT_AP 2.0.0</a> integrated by the use of <a class="in-text-a" href="https://www.w3.org/TR/prov-o/" target="_blank">PROV-O</a> for specifying the derivation of the entities (datasets) this project deals with.</p>
@@ -1057,11 +1061,11 @@
                     <!--Mashup-->
                     <div id="mashup-table-div">
                         <div id="mashup-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="mashup-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="mashup-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Mash-up dataset</p>
-                                <p id="mashup-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="mashup-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="mashup-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="mashup-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="mashup-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1073,11 +1077,11 @@
                     <!--Clean D1-->
                     <div id="cds1-table-div">
                         <div id="cds1-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds1-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds1-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS1</p>
-                                <p id="cds1-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds1-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds1-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds1-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds1-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1089,11 +1093,11 @@
                     <!--Clean D2-->
                     <div id="cds2-table-div">
                         <div id="cds2-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds2-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds2-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS2</p>
-                                <p id="cds2-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds2-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds2-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds2-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds2-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1105,11 +1109,11 @@
                     <!--Clean D3-->
                     <div id="cds3-table-div">
                         <div id="cds3-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds3-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds3-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS3</p>
-                                <p id="cds3-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds3-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds3-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds3-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds3-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1121,43 +1125,11 @@
                     <!--Clean D4-->
                     <div id="cds4-table-div">
                         <div id="cds4-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds4-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds4-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS4</p>
-                                <p id="cds4-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds4-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds4-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
-                                <table id="cds4-metadata-table" class="w-full table-auto text-center">
-                                    <thead class="prison-border-bottom">
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Clean D3-->
-                    <div id="cds3-table-div">
-                        <div id="cds3-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds3-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
-                                <p class="paragraph keyword pr-5">Clean DS3</p>
-                                <p id="cds3-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
-                            </div>
-                            <div id="cds3-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
-                                <table id="cds3-metadata-table" class="w-full table-auto text-center">
-                                    <thead class="prison-border-bottom">
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <!--Clean D4-->
-                    <div id="cds4-table-div">
-                        <div id="cds4-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds4-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
-                                <p class="paragraph keyword pr-5">Clean DS4</p>
-                                <p id="cds4-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
-                            </div>
-                            <div id="cds4-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds4-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds4-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1169,11 +1141,11 @@
                     <!--Clean D5-->
                     <div id="cds5-table-div">
                         <div id="cds5-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds5-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds5-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS5</p>
-                                <p id="cds5-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds5-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds5-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds5-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds5-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1185,11 +1157,11 @@
                     <!--Clean D6-->
                     <div id="cds6-table-div">
                         <div id="cds6-metadata" class="w-full prison-padding-bottom prison-border-bottom">
-                            <div id="cds6-metadata-toggle-btn" class="cursor-pointer flex items-center justify-between prison-padding-top">
+                            <div id="cds6-metadata-toggle-btn" class="meta-toggle-btn cursor-pointer flex items-center justify-between prison-padding-top">
                                 <p class="paragraph keyword pr-5">Clean DS6</p>
-                                <p id="cds6-metadata-activation-icon" class="table-show-icon plus-icons font-light">+</p>
+                                <p id="cds6-metadata-activation-icon" class="meta-activation-icon table-show-icon plus-icons font-light">+</p>
                             </div>
-                            <div id="cds6-metadata-toggle-container" class="prison-padding-top hidden w-full overflow-x-scroll">
+                            <div id="cds6-metadata-toggle-container" class="meta-toggle-container prison-padding-top hidden w-full overflow-x-scroll">
                                 <table id="cds6-metadata-table" class="w-full table-auto text-center">
                                     <thead class="prison-border-bottom">
                                     </thead>
@@ -1203,8 +1175,8 @@
 
 
         <!--About-->
-        <div id="about-section-main" class="section-margins">
-            <h2 class="prison-h2 roboto-condensed">About</h2>
+        <div id="about-section-main" class="section section-margins scroll-mt-20">
+            <h2 class="prison-h2 text-center roboto-condensed">About</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
                 <p class="paragraph">Bars Behind Bars pursue an academic purpose only and has been developed for the final examination of the Open Access and Digital Ethics course of the Master's Degree in Digital Humanities and Digital Knowledge (University of Bologna). </p>
             </div>

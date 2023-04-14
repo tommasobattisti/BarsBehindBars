@@ -4,7 +4,7 @@
 
 
 .prison-h2 {
-    @apply text-center md:text-left text-[2.5rem] sm:text-[3.5rem] md:text-[4.25rem]  2xl:text-[5rem] font-normal tracking-[-0.03em] uppercase mb-6 md:mb-12 2xl:mb-24;
+    @apply md:text-left text-[2.5rem] sm:text-[3.5rem] md:text-[4.25rem]  2xl:text-[5rem] font-normal tracking-[-0.03em] uppercase mb-6 md:mb-12 2xl:mb-24;
 }
 
 .prison-h3 {
@@ -86,19 +86,19 @@ li {
 }
 
 
-.active-section {
+.active-sm-nav-link {
     @apply text-[#ffffff] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
 }
 
-.inactive-section {
+.inactive-sm-nav-link {
     @apply text-[rgba(255,255,255,0.8)] no-underline;
 }
 
-.active-section-inverse {
+.active-lg-nav-link {
     @apply text-[#161616] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px];
 }
 
-.inactive-section-inverse {
+.inactive-lg-nav-link {
     @apply text-[rgba(22,22,22,0.8)] no-underline;
 }
 
