@@ -540,6 +540,10 @@ video {
   float: left;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -605,12 +609,56 @@ video {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[\%\] {
+  height: %;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[fit\] {
+  height: fit;
+}
+
 .w-8 {
   width: 2rem;
 }
 
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .w-\[70\%\] {
@@ -621,17 +669,29 @@ video {
   width: 90%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[45\%\] {
-  width: 45%;
+.w-\[\] {
+  width: ;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .table-auto {
@@ -640,6 +700,11 @@ video {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -665,6 +730,10 @@ video {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -683,6 +752,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-start {
@@ -767,6 +840,10 @@ video {
      object-position: left top;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -782,14 +859,13 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
 .py-\[5\%\] {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pb-\[3vh\] {
@@ -828,16 +904,16 @@ video {
   padding-top: 60px;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -847,6 +923,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -870,6 +951,22 @@ video {
   line-height: 1 !important;
 }
 
+.leading-\[-2\%\!important\] {
+  line-height: -2% !important;
+}
+
+.leading-\[102\%\!important\] {
+  line-height: 102% !important;
+}
+
+.leading-\[\%\!important\] {
+  line-height: % !important;
+}
+
+.leading-\[-10\%\!important\] {
+  line-height: -10% !important;
+}
+
 .tracking-\[-0\.05em\] {
   letter-spacing: -0.05em;
 }
@@ -887,6 +984,16 @@ video {
 .text-\[\#ccc8bc\] {
   --tw-text-opacity: 1;
   color: rgb(204 200 188 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#fdfdfd\] {
+  --tw-text-opacity: 1;
+  color: rgb(253 253 253 / var(--tw-text-opacity));
 }
 
 .mix-blend-difference {
@@ -1250,7 +1357,7 @@ li::before {
 
 .active-sm-nav-link {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(253 253 253 / var(--tw-text-opacity));
   text-decoration-line: underline;
   text-decoration-color: #e95122;
   text-decoration-thickness: 3px;
@@ -1264,7 +1371,7 @@ li::before {
 }
 
 .inactive-sm-nav-link {
-  color: rgba(255,255,255,0.8);
+  color: rgba(253,253,253,0.8);
   text-decoration-line: none;
 }
 
@@ -1342,16 +1449,12 @@ tbody tr:hover {
     margin-left: 0.25rem;
   }
 
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:mr-1 {
-    margin-right: 0.25rem;
-  }
-
   .md\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:block {
@@ -1528,6 +1631,11 @@ tbody tr:hover {
 
   .lg\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 }

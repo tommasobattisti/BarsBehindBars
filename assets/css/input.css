@@ -91,11 +91,11 @@ li {
 
 
 .active-sm-nav-link {
-    @apply text-[#ffffff] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
+    @apply text-[#fdfdfd] decoration-[#e95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[8px];
 }
 
 .inactive-sm-nav-link {
-    @apply text-[rgba(255,255,255,0.8)] no-underline;
+    @apply text-[rgba(253,253,253,0.8)] no-underline;
 }
 
 .active-lg-nav-link {
