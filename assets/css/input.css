@@ -55,6 +55,10 @@ li {
     @apply border-[#161616] border-b-[3px] 2xl:border-b-4;
 }
 
+.prison-border-top {
+    @apply border-[#161616] border-t-[3px] 2xl:border-t-4;
+}
+
 .icon-container {
     @apply flex h-[60px] md:h-[80px] 2xl:h-[120px] aspect-square
 }
