@@ -162,9 +162,6 @@ $(document).ready(function() {
         openDatasetDescription('mud1');
     });
 
-    $('#mud2-toggle-btn').click(function() {
-        openDatasetDescription('mud2');
-    });
 
     // TABLES
     $('#privacy-issues-toggle-btn').click(function() {
