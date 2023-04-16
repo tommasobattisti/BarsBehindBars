@@ -22,8 +22,11 @@
 
     <!--Waypoints-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    
-    <script src="./assets/scripts/script.js"></script>
+    <!--Main script-->
+    <script src="./assets/scripts/main.js"></script>
+    <!--On scoll animations: attribute "defer" to execute script after the HTML elements in the body-->
+    <script defer src="./assets/scripts/animate.js"></script>
+
 
 
 
@@ -93,29 +96,29 @@
 
         <!--PROJECT-->
         <div id="project-section-main" class="section section-margins w-full scroll-mt-20">
-            <h2 class="roboto-condensed prison-h2 text-center">The project</h2>
+            <h2 class="to-animate-h2 roboto-condensed prison-h2 text-center">The project</h2>
             <div class="flex flex-col-reverse md:flex-row justify-between items-center prison-padding-bottom prison-border-bottom">
-                <div id="project-left-text-block" class="w-full md:w-[45%]">
+                <div id="project-left-text-block" class="to-animate-text-block w-full md:w-[45%]">
                     <p class="text-left paragraph">Bars Behind Bars is a project developed for the <a class="in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Open Access and Digital Ethics course</a> of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
                     <p class="text-left paragraph">This website works as a documentation of the process leading from the choice of the datasets along with their ethical, technological, legal, and qualitative analyses, to the visualisation of the results. </p>
                     <p class="text-left paragraph">Further information can be found on <a  class="in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars.git" target="_blank">GitHub</a>.</p>
                 </div>
                 <div id="project-numbers-right-block" class="flex flex-row w-full md:w-[45%] justify-between mb-8 md:mb-0">
-                    <div class="flex flex-col items-center">
+                    <div class="overview-icon-block to-animate-seq flex flex-col items-center">
                         <div class="icon-container mb-4 md:mb-6 2xl:mb-9">
                             <img class="w-[100%]" src="./assets/icons/table_rows_narrow.svg">
                         </div>
                         <p class="roboto-condensed prison-h3">7</p>
                         <p class="paragraph">Datasets</p>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="overview-icon-block to-animate-seq flex flex-col items-center">
                         <div class="icon-container mb-4 md:mb-6 2xl:mb-9">
                             <img class="w-[100%]" src="./assets/icons/flag.svg">
                         </div>
                         <p class="roboto-condensed prison-h3">20</p>
                         <p class="paragraph">Countries</p>
                     </div>
-                    <div class="flex flex-col items-center">
+                    <div class="overview-icon-block to-animate-seq flex flex-col items-center">
                         <div class="icon-container mb-4 md:mb-6 2xl:mb-9">
                             <img class="w-[100%]" src="./assets/icons/timeline.svg">
                         </div>
@@ -137,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <div id="rq-right-block" class="w-full md:w-[45%]">
+            <div id="rq-right-block" class="to-animate-text-block w-full md:w-[45%]">
                 <p class="sub-section-title roboto-condensed mb-[0.15rem]">Money, Government, and Life Conditions</p>
                 <ul>
                     <li class="paragraph pl-5">How does expenditure correlate with justice perception and conditions of living in prison?</li>
@@ -154,10 +157,10 @@
 
         <!--DATASETS-->
         <div id="datasets-section-main" class="section section-margins scroll-mt-20">
-            <h2 class="prison-h2 text-center roboto-condensed">Datasets</h2>
+            <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">Datasets</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
 
-                <div id="datasets-left-block" class="w-full md:w-[45%] prison-padding-bottom md:pb-0">
+                <div id="datasets-left-block" class="to-animate-text-block w-full md:w-[45%] prison-padding-bottom md:pb-0">
                     <p class="paragraph">Datasets have been chosen for the relevance of their contents from <a class="in-text-a" href="https://ec.europa.eu/eurostat/en/" target="_blank">Eurostat</a> and <a class="in-text-a" href="https://dataunodc.un.org/" target="_blank">dataUNODC</a>.</p>
                     <p class="paragraph pt-[3px]">After the downloads, data have been cleaned by deleting irrelevant entries, duplicates, and columns with non-useful charcaterizations.</p>
                     <p class="paragraph">Thus, data have been mashed up with the aim of creating datasets specific for the purposes of this study, from which Visualisations and results are derived.</p>
@@ -311,10 +314,10 @@
                     <div id="quality-analysis" class="analysis-container">
                         <div id="quality-description" class="w-full prison-padding-bottom flex justify-start">
                             <div class="w-full">
-                                <p class="paragraph">
+                                <p class="to-animate-text-block paragraph">
                                     Data quality has been checked for each dataset with respect to four principles derived by the <a class="in-text-a" href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/aspettiorg.html#qualita-dei-dati" target="_blank">Italian National Guidelines</a> for the Enhancement of the Public Information Asset.
                                 </p>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom prison-padding-top">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom prison-padding-top">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Completeness</p>
                                     </div>
@@ -322,7 +325,7 @@
                                         <p class="paragraph">The datum is exhaustive with respect to every expected value and related entity (sources) that contribute to the definition of the procedure.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Accuracy</p>
                                     </div>
@@ -330,7 +333,7 @@
                                         <p class="paragraph">The datum and its attributes correctly represet the real value of the concept or event it refers to.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Coherence</p>
                                     </div>
@@ -338,7 +341,7 @@
                                         <p class="paragraph">The datum and its attributes are not contradictory with respect to other data in the context of use by the administration owner.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Timeliness</p>
                                     </div>
@@ -409,7 +412,7 @@
 
                     <!--LEGAL ANALYSIS-->
                     <div id="legal-analysis" class="analysis-container hidden">
-                        <div class="w-full prison-padding-bottom">
+                        <div class="to-animate-text-block w-full prison-padding-bottom">
                             <p class="paragraph">In order to verify the legal aspects of the source datasets, the following topics are analysed in different tables: <span class="keyword">privacy issues</span>, <span class="keyword">IPR policy</span>, <span class="keyword">licenses</span>, <span class="keyword">limitations on public access</span>, <span class="keyword">economical conditions</span>, <span class="keyword">temporal aspects</span> of the dataset. In particular, each table contain a checklist to assess the compliance with each different topic, as well as the <span class="keyword">datasets sustainibility</span> from both a service-related and temporal point of view.</p>
                         </div>
                         <div id="legal-checklists-container" class="w-full">
@@ -883,12 +886,12 @@
                     <!--ETHICAL ANALYSIS-->
                     <div id="ethical-analysis" class="analysis-container hidden">
                         <div class="w-full flex flex-col">
-                            <div class="w-full prison-padding-bottom">
+                            <div class="to-animate-text-block w-full prison-padding-bottom">
                                 <p class="paragraph">
                                     For understanding whether data ethics principles such as <span class="keyword">transparency</span>, <span class="keyword">accountability</span> and <span class="keyword">privacy</span>, the source websites have been consulted in order to understand whether and how the involved insitutions respect these points about responsible and sustainable use of data.
                                 </p>
                             </div>
-                            <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                            <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                 <div class="w-full md:w-4/12">
                                     <p class="sub-section-title roboto-condensed">Eurostat</p>
                                 </div>
@@ -900,7 +903,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                            <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                 <div class="w-full md:w-4/12">
                                     <p class="sub-section-title roboto-condensed">United Nations - dataUNODC</p>
                                 </div>
@@ -910,7 +913,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                            <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                 <div class="w-full md:w-4/12">
                                     <p class="sub-section-title roboto-condensed">Our ethical data processing</p>
                                 </div>
@@ -939,11 +942,11 @@
                     <div id="technical-analysis" class="analysis-container hidden">
                         <div id="quality-description" class="w-full prison-padding-bottom flex justify-start">
                             <div class="w-full">
-                                <p class="paragraph prison-padding-bottom">
+                                <p class="to-animate-text-block paragraph prison-padding-bottom">
                                     The technical analysis has been performed in order to highlight the main techincal characteristics of the datasets and their relation with the available metadata. In particular, what what concerns the latter, dataset have been evaluated with respect to the scale provided by the <a class="in-text-a" href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html" target="_blank">AGID metadata model</a>.
                                 </p>
 
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Level 1</p>
                                     </div>
@@ -951,7 +954,7 @@
                                         <p class="paragraph">No data-metadata bond or no metadata at all.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Level 2</p>
                                     </div>
@@ -959,7 +962,7 @@
                                         <p class="paragraph">Weak data-metadata bond because data are accompanied by external metadata referring to the whole dataset.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Level 3</p>
                                     </div>
@@ -967,7 +970,7 @@
                                         <p class="paragraph">Strong data-metadata bond since data incorporate the describing metadata. Metadata still refer to the whole dataset.</p>
                                     </div>
                                 </div>
-                                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                                     <div class="w-full md:w-4/12">
                                         <p class="sub-section-title roboto-condensed">Level 4</p>
                                     </div>
@@ -1041,7 +1044,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="prison-padding-top">
+                        <div class="to-animate-text-block prison-padding-top">
                             <p class="paragraph-small">*    <q>All data and metadata provided on UNdata’s website are available free of charge and may be copied freely, duplicated and further distributed provided that UNdata is cited as the reference</q>. <a class="in-text-a" href="https://dataunodc.un.org/termsofuse" target="_blank">See reference here</a>.</p>
                         </div>
                     </div>
@@ -1053,7 +1056,7 @@
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3 prison-padding-bottom"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Project sustainibility</span></h3>
                 
-                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                     <div class="w-full md:w-4/12">
                         <p class="sub-section-title roboto-condensed">Bars Behind Bars</p>
                     </div>
@@ -1062,7 +1065,7 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col md:flex-row prison-padding-bottom">
+                <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
                     <div class="w-full md:w-4/12">
                         <p class="sub-section-title roboto-condensed">Source Datasets</p>
                     </div>
@@ -1079,7 +1082,7 @@
 
         <!--Visualisations-->
         <div id="visualisations-section-main" class="section section-margins scroll-mt-20">
-            <h2 class="prison-h2 text-center roboto-condensed">Visualisations</h2>
+            <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">Visualisations</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
@@ -1091,11 +1094,11 @@
 
         <!--License & Metadata-->
         <div id="license-metadata-section-main" class="section section-margins scroll-mt-20">
-            <h2 class="prison-h2 text-center roboto-condensed">License & Metadata</h2>
+            <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">License & Metadata</h2>
             <div class="flex flex-col justify-between items-start prison-padding-bottom prison-border-bottom">
-                <p class="paragraph prison-padding-bottom">Following <a class="in-text-a" href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR principles</a>, datasets, as well as their metadata, have been published in a machine readable format and following a common practice ine European datasets description for a better <span class="keyword">findability</span>, <span class="keyword">accessibility</span>, <span class="keyword">interoperability</span>, and <span class="keyword">reusability</span>.
+                <p class="to-animate-text-block paragraph prison-padding-bottom">Following <a class="in-text-a" href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR principles</a>, datasets, as well as their metadata, have been published in a machine readable format and following a common practice ine European datasets description for a better <span class="keyword">findability</span>, <span class="keyword">accessibility</span>, <span class="keyword">interoperability</span>, and <span class="keyword">reusability</span>.
                 Given the nature of the data and their European coverage, it has been chosen to employ the common European data model <a class="in-text-a" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/200" target="_blank">DCAT_AP 2.0.0</a> integrated by the use of <a class="in-text-a" href="https://www.w3.org/TR/prov-o/" target="_blank">PROV-O</a> for specifying the derivation of the entities (datasets) this project deals with.</p>
-                <p class="paragraph">We provided metadata for the catalogue of all the individual datasets derived from the cleaning process, for the mash-up dataset andfor the entire cataloge. Each dataset, the catalogue, and the website as well have been published under a Creative Commons license (<a class="in-text-a" href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0</a>) following European Commission recommendations and best practices for the re-use of content and data.</p>
+                <p class="to-animate-text-block paragraph">We provided metadata for the catalogue of all the individual datasets derived from the cleaning process, for the mash-up dataset andfor the entire cataloge. Each dataset, the catalogue, and the website as well have been published under a Creative Commons license (<a class="in-text-a" href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0</a>) following European Commission recommendations and best practices for the re-use of content and data.</p>
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Metadata tables and RDF assertions</span></h3>
@@ -1237,9 +1240,9 @@
 
         <!--About-->
         <div id="about-section-main" class="section section-margins scroll-mt-20">
-            <h2 class="prison-h2 text-center roboto-condensed">About</h2>
+            <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">About</h2>
             <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
-                <p class="paragraph">Bars Behind Bars' purpose if of academic nature only. The project has been developed for the final examination of the Open Access and Digital Ethics course of the Master's Degree in Digital Humanities and Digital Knowledge (University of Bologna).</p>
+                <p class="to-animate-text-block paragraph">Bars Behind Bars' purpose if of academic nature only. The project has been developed for the final examination of the Open Access and Digital Ethics course of the Master's Degree in Digital Humanities and Digital Knowledge (University of Bologna).</p>
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3"><span class="float-left animate-spin text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">The team</span></h3>

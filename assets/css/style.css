@@ -85,3 +85,67 @@ body {
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+/*-------------------*/
+/*---  JS ANIMATIONS  ---*/
+
+.overview-icon-block:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.overview-icon-block:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+
+
+.to-animate-h2 {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-25%);
+    transition: all 1s ease-in-out;
+    transition-delay: 100ms
+}
+
+.animate-h2 {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
+
+
+
+.to-animate-seq {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 800ms ease-in-out;
+}
+
+.animate-seq {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
+
+.to-animate-text-block {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(20%);
+    transition: all 800ms ease-in-out;
+    transition-delay: 150ms;
+}
+
+.animate-text-block {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0%);
+}
