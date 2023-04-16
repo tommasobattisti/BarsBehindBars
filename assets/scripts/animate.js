@@ -45,3 +45,6 @@ const observerTextBlock = new IntersectionObserver((entries) => {
 const toAnimateElementsTextBlock = document.querySelectorAll('.to-animate-text-block');
 
 toAnimateElementsTextBlock.forEach((el) => observerTextBlock.observe(el));
+
+
+
