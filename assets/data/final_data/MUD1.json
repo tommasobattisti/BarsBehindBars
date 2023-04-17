@@ -1,4 +1,6 @@
+
 {
+  "_comment": "The 'p' that can be found in some json value along with the actual numerical value comes from the original dataset and means 'provisional'",
   "2016": {
     "('Estonia', 'FBAD')": 12,
     "('Estonia', 'FGOOD')": 56,
