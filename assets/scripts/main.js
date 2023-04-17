@@ -162,6 +162,22 @@ $(document).ready(function() {
         openDatasetDescription('mud1');
     });
 
+    $('#mud2-toggle-btn').click(function() {
+        openDatasetDescription('mud2');
+    });
+
+    $('#mud3-toggle-btn').click(function() {
+        openDatasetDescription('mud3');
+    });
+
+    $('#mud4-toggle-btn').click(function() {
+        openDatasetDescription('mud4');
+    });
+
+    $('#mud5-toggle-btn').click(function() {
+        openDatasetDescription('mud5');
+    });
+
 
     // TABLES
     $('#privacy-issues-toggle-btn').click(function() {
@@ -193,32 +209,24 @@ $(document).ready(function() {
         openMetadata('catalogue-metadata');
     });
 
-    $('#mashup-metadata-toggle-btn').click(function() {
-        openMetadata('mashup-metadata');
+    $('#mud1-metadata-toggle-btn').click(function() {
+        openMetadata('mud1-metadata');
     });
 
-    $('#cds1-metadata-toggle-btn').click(function() {
-        openMetadata('cds1-metadata');
+    $('#mud2-metadata-toggle-btn').click(function() {
+        openMetadata('mud2-metadata');
     });
 
-    $('#cds2-metadata-toggle-btn').click(function() {
-        openMetadata('cds2-metadata');
+    $('#mud3-metadata-toggle-btn').click(function() {
+        openMetadata('mud3-metadata');
     });
 
-    $('#cds3-metadata-toggle-btn').click(function() {
-        openMetadata('cds3-metadata');
+    $('#mud4-metadata-toggle-btn').click(function() {
+        openMetadata('mud4-metadata');
     });
 
-    $('#cds4-metadata-toggle-btn').click(function() {
-        openMetadata('cds4-metadata');
-    });
-
-    $('#cds5-metadata-toggle-btn').click(function() {
-        openMetadata('cds5-metadata');
-    });
-
-    $('#cds6-metadata-toggle-btn').click(function() {
-        openMetadata('cds6-metadata');
+    $('#mud5-metadata-toggle-btn').click(function() {
+        openMetadata('mud5-metadata');
     });
 
 
