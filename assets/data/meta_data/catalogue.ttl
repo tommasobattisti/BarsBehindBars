@@ -1,6 +1,5 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dcatap: <http://data.europa.eu/r5r/>.
-@prefix dcatapit: <http://dati.gov.it/onto/dcatapit/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
@@ -11,27 +10,31 @@
 
 <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data>
 
-    a       dcatap:Catalogue , dcat:Catalog , dcatapit:Catalogue;
+    a       dcatap:Catalogue , dcat:Catalog;
 
     dct:title       "BarsBehindBars"@en;
+    dct:description     "Catalogue containing BarsBehindBars's custom datasets created for the visualisation of the before mentioned project."@en;
     adms:identifier "BarsBehindBars";
-    dct:description     "Catalogue containing BarsBehindBars's custom datasets created for the visualisation done during this project.";
-    dct:issued      "2023-04-16@"^^xsd:date;
     dct:modified    "2023-04-16@"^^xsd:date;
+    dct:issued      "2023-04-16@"^^xsd:date;
+    dct:publisher   <https://github.com/Prisoner-s-Dilemma/>;
+    dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1.json>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD2.json>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD3.json>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD4.json>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD5.json>;
-    dct:publisher   <https://github.com/Prisoner-s-Dilemma/>; 
+ 
     dct:creator     <https://github.com/ManuSrivastava1>;
     dct:creator     <https://github.com/tommasobattisti>;
     dct:creator     <https://github.com/francescabudel>;
-    dct:language	<http://publications.europa.eu/resource/authority/language/ENG>; 
-    dct:license	    <https://creativecommons.org/licenses/by-nc-sa/4.0/>;
-    dct:rights      "Under this licence you may You are free to share (copy and redistribute the material in any medium or format), adapt (remix, transform, and build upon the material). Under the following terms: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. NonCommercial — You may not use the material for commercial purposes. ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original."
 
     foaf:homepage   <https://prisoner-s-dilemma.github.io/BarsBehindBars/>.
+     
+    dct:license	    <https://creativecommons.org/licenses/by-nc-sa/4.0/>;
+    dct:rights      "Under this licence you are free to share (copy and redistribute the material in any medium or format), adapt (remix, transform, and build upon the material). Under the following terms: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. NonCommercial — You may not use the material for commercial purposes. ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original."
+    
 
 
 <https://github.com/Prisoner-s-Dilemma/BarsBehindBars> 
