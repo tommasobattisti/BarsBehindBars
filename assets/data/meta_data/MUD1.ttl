@@ -22,7 +22,7 @@
             dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
             dct:subject <http://eurovoc.europa.eu/2826>, <http://eurovoc.europa.eu/2831>  ; ????
             dcat:keyword "Prisoners"@en, "Social perception"@en , "Justice"@en , "Corruption"@en , "Death in prison"@en;
-            dcat:keyword  "_"@it, "_"@it, "_"@it ; ???
+            dcat:keyword "Detenuti"@it, "Percezione sociale"@it, "Giustizia"@it, "Corruzione"@it, "Morte in prigione"@it ;
 
             dct:modified "2023-04-16"^^xsd:date ;
             dct:issued "2023-04-16"^^xsd:date ;
