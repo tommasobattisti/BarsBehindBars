@@ -30,7 +30,7 @@
             dct:rightsHolder <https://github.com/Prisoner-s-Dilemma> ;
             dct:creator <https://github.com/Manu_Srivastava> ;                        
             dct:publisher <https://github.com/Prisoner-s-Dilemma>;
-            dcat:distribution <https://github.com/OrsolaMBorrini/blessedfruit/distribution/MD12017-csv> ; 
+            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1.json> ; 
 
             dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER>;
 
