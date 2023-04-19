@@ -12,8 +12,8 @@
             a   dcat:Dataset ,
                 prov:Entity ;
             
-            dct:title   "Deaths in Prison & Governments Expenditure"@en;
-            rdfs:label   "Deaths in Prison & Governments Expenditure"@en;
+            dct:title   "Deaths in Prison and Governments Expenditure"@en;
+            rdfs:label   "Deaths in Prison and Governments Expenditure"@en;
             dct:description   "Custom dataset with info about deaths in prisons and governament expenditure in different sectors for 20 selected countries in europe, for the time span 2016 - 2020"@en;
             dct:identifier  "MUD1" ; 
             dct:modified    "2023-04-17"^^xsd:date ;
