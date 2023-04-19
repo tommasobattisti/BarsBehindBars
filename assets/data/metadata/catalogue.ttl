@@ -7,16 +7,17 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cc: <https://wiki.creativecommons.org/wiki/License_Output>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data>
 
-    a       dcatap:Catalogue , dcat:Catalog;
-
+    a       dcat:Catalog;
     dct:title       "BarsBehindBars"@en;
+    rdfs:label      "BarsBehindBars"@en;
     dct:description     "Catalogue containing BarsBehindBars's custom datasets created for the visualisation of the before mentioned project."@en;
     adms:identifier "BarsBehindBars";
-    dct:modified    "2023-04-16@"^^xsd:date;
-    dct:issued      "2023-04-16@"^^xsd:date;
+    dct:modified    "2023-04-17@"^^xsd:date;
+    dct:issued      "2023-04-17@"^^xsd:date;
     dct:publisher   <https://github.com/Prisoner-s-Dilemma/>;
     dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
 
@@ -54,7 +55,17 @@ a foaf:agent;
     a   foaf:Person;
     foaf:name "Tommaso Battisti"@it.
 
-cc:cc-by-4.0 a cc:License;
-    cc:legalcode   <https://creativecommons.org/licenses/by/4.0/legalcode>;
-    cc:permits    cc:Reproduction, cc:Distribution, cc:DerivativeWorks;
-    cc:requires   cc:Attribution.
+
+<https://creativecommons.org/licenses/by/4.0/>
+            a   dct:LicenseDocument ,
+                cc:License;
+                dct:type         <http://purl.org/adms/licencetype/Attribution> ;
+                foaf:name        "CC BY" ;
+                owl:versionInfo  "4.0" ;
+                cc:legalcode   <https://creativecommons.org/licenses/by/4.0/legalcode>;
+                cc:permits  cc:Reproduction,
+                            cc:Distribution,
+                            cc:DerivativeWorks;
+                cc:requires   cc:Attribution.
+
+
