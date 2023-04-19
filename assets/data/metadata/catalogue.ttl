@@ -21,11 +21,11 @@
     dct:publisher   <https://github.com/Prisoner-s-Dilemma/>;
     dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
 
-    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1.json>;
-    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD2.json>;
-    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD3.json>;
-    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD4.json>;
-    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD5.json>;
+    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure>;
+    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD2_public_perception_of_justice_system_and_corruption_rankings>;
+    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD3_deaths_in_prisons_and_public_perception_of_the_justice_system>;
+    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD4_deaths_in_prison_and_corruption_rankings>;
+    dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_crowded_prisons>;
  
     dct:creator     <https://github.com/ManuSrivastava1>;
     dct:creator     <https://github.com/tommasobattisti>;
