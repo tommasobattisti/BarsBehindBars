@@ -1,0 +1,114 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcatap: <http://data.europa.eu/r5r/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix prov: <https://www.w3.org/TR/prov-o/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD2_public_perception_of_justice_system_and_corruption_rankings>
+            a   dcat:Dataset ,
+                prov:Entity ;
+            
+            dct:title   "Public Perception of Justice System & Corruption Rankings"@en;
+            rdfs:label   " Public Perception of Justice System & Corruption Rankings"@en;
+            dct:description   "Custom dataset with info about public perception of the justice system and the corruption of the country for 20 selected countries in europe, for the time span 2016 - 2020"@en;
+            dct:identifier  "MUD2" ; 
+            dct:modified    "2023-04-17"^^xsd:date ;
+            dct:issued    "2023-04-17"^^xsd:date ;
+            dct:publisher <https://github.com/Prisoner-s-Dilemma>;
+            dct:language    <http://publications.europa.eu/resource/authority/language/ENG/> ;
+            dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER>;
+
+            dct:isPartOf <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data> ;
+
+            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD2_public_perception_of_justice_system_and_corruption_rankings> ; 
+
+
+            dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+            dct:subject <http://eurovoc.europa.eu/-----> ,
+                        <http://eurovoc.europa.eu/-----> ;
+
+            dcat:keyword "Perception of Justice"@en, "corruption"@en;
+
+
+            dcat:landingPage <https://prisoner-s-dilemma.github.io/BarsBehindBars/> ;
+
+
+            dct:rightsHolder <https://github.com/Prisoner-s-Dilemma> ;
+            dct:creator <https://github.com/Manu_Srivastava>; 
+            dct:creator <https://github.com/francescabudel>;
+            dct:creator <https://github.com/tommasobattisti>;                        
+
+
+
+            prov:wasGeneratedBy <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/f709e176de124435b0689e39c474863f54731f6a/assets/data/processed_data/Mashup_datasets.ipynb> ;
+            prov:wasDerivedFrom <https://ec.europa.eu/eurostat/databrowser/view/sdg_16_40/default/table?lang=en>,
+                                <https://ec.europa.eu/eurostat/databrowser/view/sdg_16_50/default/table?lang=en> .
+          
+
+               
+            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D4_perceived_independence_of_the_justice_system_clean.csv> ;
+            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D5_CPI_from_eurostat_clean.csv> ;
+            
+
+
+
+
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/f709e176de124435b0689e39c474863f54731f6a/assets/data/processed_data/Mashup_datasets.ipynb>
+            a prov:Activity ;
+            rdfs:label "the Jupyternotebook used for the process of merging, filtering and aggregating multiple source datasets"@en .
+
+
+<http://publications.europa.eu/resource/authority/data-theme/JUST>
+            a    skos:Concept ;
+            skos:prefLabel  "Percieved independence of justice system"@en .
+
+
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars> 
+            a    foaf:Agent ;
+            dct:identifier "BarsBehindBars" ;
+            foaf:name   "BarsBehindBars" .
+
+
+<https://github.com/francescabudel> 
+    a   foaf:Person;
+    foaf:name "Francesca Budel"@it.
+
+<https://github.com/ManuSrivastava1> 
+    a   foaf:Person;
+    foaf:name "Manu Srivastava"@in.
+
+<https://github.com/tommasobattisti>
+    a   foaf:Person;
+    foaf:name "Tommaso Battisti"@it.
+
+
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure/MUD2.json>
+            a   dcat:Distribution  ;
+            dcat:accessURL <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD2.json> ;
+            dct:format <http://publications.europa.eu/resource/authority/file-type/JSON/> ;
+            dct:license   <https://creativecommons.org/licenses/by/4.0/> ;
+
+            dct:title  "json distribution of Bars Behind Bars MUD2"@en  ;
+            dct:description "Custom dataset with info about public perception of the justice system and the corruption of the country for 20 selected countries in europe, for the time span 2016 - 2020" ;
+
+            dcat:downloadURL <https://raw.githubusercontent.com/Prisoner-s-Dilemma/BarsBehindBars/main/assets/data/final_data/MUD2.json> .
+
+                
+
+
+<https://creativecommons.org/licenses/by/4.0/>
+            a   dct:LicenseDocument ,
+                cc:License;
+                dct:type         <http://purl.org/adms/licencetype/Attribution> ;
+                foaf:name        "CC BY" ;
+                owl:versionInfo  "4.0" ;
+                cc:legalcode   <https://creativecommons.org/licenses/by/4.0/legalcode>;
+                cc:permits  cc:Reproduction,
+                            cc:Distribution,
+                            cc:DerivativeWorks;
+                cc:requires   cc:Attribution.
+            
