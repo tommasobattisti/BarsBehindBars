@@ -26,7 +26,8 @@
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD3_deaths_in_prisons_and_public_perception_of_the_justice_system>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD4_deaths_in_prison_and_corruption_rankings>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_crowded_prisons>;
- 
+    dcat:themeTaxonomy  <http://publications.europa.eu/resource/authority/data-theme>
+
     dct:creator     <https://github.com/ManuSrivastava1>;
     dct:creator     <https://github.com/tommasobattisti>;
     dct:creator     <https://github.com/francescabudel>;
