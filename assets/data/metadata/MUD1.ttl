@@ -8,13 +8,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 
-<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure>
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector>
             a   dcat:Dataset ,
                 prov:Entity ;
             
-            dct:title   "Deaths in Prison and Governments Expenditure"@en;
-            rdfs:label   "Deaths in Prison and Governments Expenditure"@en;
-            dct:description   "Custom dataset with info about deaths in prisons and governament expenditure in different sectors for 20 selected countries in europe, for the time span 2016 - 2020"@en;
+            dct:title   "Deaths in Prison and Governments Expenditure in Justice Sector"@en;
+            rdfs:label   "Deaths in Prison and Governments Expenditure in Justice Sector"@en;
+            dct:description   "Custom dataset with info about deaths in prisons and governament expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020"@en;
             dct:identifier  "MUD1" ; 
             dct:modified    "2023-04-17"^^xsd:date ;
             dct:issued    "2023-04-17"^^xsd:date ;
@@ -24,14 +24,14 @@
 
             dct:isPartOf <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data> ;
 
-            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure/MUD1.json> ; 
+            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> ; 
 
 
             dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
             dct:subject <http://eurovoc.europa.eu/100149> ,
                         <http://eurovoc.europa.eu/100202> ;
 
-            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Justice"@en , "Government expenditure"@en ;
+            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Justice"@en , "Governments expenditure"@en ;
 
 
             dcat:landingPage <https://prisoner-s-dilemma.github.io/BarsBehindBars/> ;
@@ -49,7 +49,7 @@
 
                
             dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D1_deaths_in_prison_clean.csv> ;
-            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D6_general_governments_expenditure_clean.csv> ;
+            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D6_general_governments_expenditure_in_justice_sector_clean.csv> ;
             
 
 
@@ -84,16 +84,16 @@
     foaf:name "Tommaso Battisti"@it.
 
 
-<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure/MUD1.json>
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json>
             a   dcat:Distribution  ;
-            dcat:accessURL <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure/MUD1.json> ;
+            dcat:accessURL <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> ;
             dct:format <http://publications.europa.eu/resource/authority/file-type/JSON/> ;
             dct:license   <https://creativecommons.org/licenses/by/4.0/> ;
 
             dct:title  "json distribution of Bars Behind Bars MUD1"@en  ;
-            dct:description "Custom dataset with info about deaths in prisons and governament expenditure in different sectors for 20 selected countries in europe, for the time span 2016 - 2020" ;
+            dct:description "Custom dataset with info about deaths in prisons and governament expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020" ;
 
-            dcat:downloadURL <https://raw.githubusercontent.com/Prisoner-s-Dilemma/BarsBehindBars/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure/MUD1.json> .
+            dcat:downloadURL <https://raw.githubusercontent.com/Prisoner-s-Dilemma/BarsBehindBars/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> .
 
                 
 
