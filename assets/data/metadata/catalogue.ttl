@@ -7,7 +7,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cc: <https://wiki.creativecommons.org/wiki/License_Output>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data>
 
@@ -26,17 +27,17 @@
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD3_deaths_in_prisons_and_public_perception_of_the_justice_system>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD4_deaths_in_prison_and_corruption_rankings>;
     dcat:datasets   <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_crowded_prisons>;
-    dcat:themeTaxonomy  <http://publications.europa.eu/resource/authority/data-theme>
+    
+    dcat:themeTaxonomy  <http://publications.europa.eu/resource/authority/data-theme>;
 
     dct:creator     <https://github.com/ManuSrivastava1>;
     dct:creator     <https://github.com/tommasobattisti>;
     dct:creator     <https://github.com/francescabudel>;
 
-    foaf:homepage   <https://prisoner-s-dilemma.github.io/BarsBehindBars/>.
+    foaf:homepage   <https://prisoner-s-dilemma.github.io/BarsBehindBars/>;
      
     dct:license	    <https://creativecommons.org/licenses/by/4.0/>;
-    dct:rights      "Under this licence you are free to: Share — copy and redistribute the material in any medium or format; Adapt — remix, transform, and build upon the material for any purpose, even commercially. This license is acceptable for Free Cultural Works. The licensor cannot revoke these freedoms as long as you follow the license terms.Under the following terms: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. Notices:You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
-    No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."@en.
+    dct:rights      "Under this licence you are free to: Share — copy and redistribute the material in any medium or format; Adapt — remix, transform, and build upon the material for any purpose, even commercially. This license is acceptable for Free Cultural Works. The licensor cannot revoke these freedoms as long as you follow the license terms.Under the following terms: Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits. Notices:You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation. No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."@en.
     
 
 
