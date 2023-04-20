@@ -516,10 +516,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -528,24 +524,12 @@ video {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-0 {
   left: 0px;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[80px\] {
-  top: 80px;
 }
 
 .z-10 {
@@ -672,6 +656,10 @@ video {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -928,10 +916,6 @@ video {
 .text-\[\#fdfdfd\] {
   --tw-text-opacity: 1;
   color: rgb(253 253 253 / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .mix-blend-difference {
@@ -1363,6 +1347,21 @@ tbody tr:hover {
   justify-content: center;
 }
 
+.metadata-table-body tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.metadata-table-body tr td:nth-child(1) {
+  width: 16.666667%;
+  font-weight: 600;
+}
+
+.metadata-table-body tr td:nth-child(2) {
+  width: 83.333333%;
+}
+
 @media (min-width: 640px) {
   .sm\:w-\[80\%\] {
     width: 80%;
@@ -1624,3 +1623,4 @@ tbody tr:hover {
     line-height: 1;
   }
 }
+
