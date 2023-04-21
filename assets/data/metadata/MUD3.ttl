@@ -12,8 +12,8 @@
             a   dcat:Dataset ,
                 prov:Entity ;
             
-            dct:title   "Deaths in Prison & Public Perception of the Justice System"@en;
-            rdfs:label   "Deaths in Prison & Public Perception of the Justice System"@en;
+            dct:title   "Deaths in Prison and Public Perception of the Justice System"@en;
+            rdfs:label   "Deaths in Prison and Public Perception of the Justice System"@en;
             dct:description   "Custom dataset with info about deaths in prisons and perceived independence of justice system for 20 selected countries in europe, for the time span 2016 - 2020"@en;
             dct:identifier  "MUD3" ; 
             dct:modified    "2023-04-17"^^xsd:date ;
@@ -28,10 +28,10 @@
 
 
             dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
-            dct:subject <http://eurovoc.europa.eu/---> ,
-                        <http://eurovoc.europa.eu/---> ;
+            dct:subject <http://eurovoc.europa.eu/100181> ,
+                        <http://eurovoc.europa.eu/100184> ;
 
-            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Justice"@en;
+            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Justice"@en, "Perception of Justice"@en;
 
 
             dcat:landingPage <https://prisoner-s-dilemma.github.io/BarsBehindBars/> ;
