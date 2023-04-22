@@ -31,7 +31,7 @@
             dct:subject <http://eurovoc.europa.eu/100184> ,
                         <http://eurovoc.europa.eu/100181> ;
 
-            dcat:keyword "Prisoners"@en, "Death in prison"@en , "prisons population"@en , "Overpopulation"@en, "Unsentenced prisoners"@en , "Justice"@en ;
+            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Prisons Population"@en , "Overpopulation"@en, "Unsentenced prisoners"@en , "Justice"@en ;
 
 
             dcat:landingPage <https://prisoner-s-dilemma.github.io/BarsBehindBars/> ;

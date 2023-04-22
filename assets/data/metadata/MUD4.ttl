@@ -47,8 +47,8 @@
           
 
                
-            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D1_deaths_in_prison_clean.csv> ;
-            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D5_CPI_from_eurostat_clean.csv> ;
+            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D1_deaths_in_prison_clean.csv> ,
+                            <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D5_CPI_from_eurostat_clean.csv> ;
             
 
 
