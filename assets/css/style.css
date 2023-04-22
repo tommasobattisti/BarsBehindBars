@@ -2,10 +2,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scrollbar-color: rgba(204, 200, 188, 1) rgba(253, 253, 253, 1) ;  /* 204 200 188  / 233, 81, 34,*/
+}
+
+::selection {
+    background-color: rgba(233, 81, 34, 0.9);
+    color: rgba(253, 253, 253, 1);
+}
+
+::-moz-selection {
+    background-color: rgba(233, 81, 34, 0.9);
+    color: rgba(253, 253, 253, 1);
+}
+
+
 .roboto-condensed {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+.table-container {
+    overflow-x: auto;
+    scrollbar-color: rgba(204, 200, 188, 1) rgba(253, 253, 253, 1) ;  /* 204 200 188  / 233, 81, 34,*/
+    scrollbar-width: thin;
+}
 
 #timeline {
     animation: timeline 2s ease-in-out 1 forwards;
