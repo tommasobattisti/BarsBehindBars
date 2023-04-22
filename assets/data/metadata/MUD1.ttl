@@ -1,21 +1,23 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
-@prefix dcatap: <http://data.europa.eu/r5r/>.
+@prefix dct:  <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix prov: <https://www.w3.org/TR/prov-o/>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix cc: <https://wiki.creativecommons.org/wiki/License_Output>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 
 
-<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector>
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_prisons_population>
             a   dcat:Dataset ,
                 prov:Entity ;
             
-            dct:title   "Deaths in Prison and Governments Expenditure in Justice Sector"@en;
-            rdfs:label   "Deaths in Prison and Governments Expenditure in Justice Sector"@en;
-            dct:description   "Custom dataset with info about deaths in prisons and governament expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020"@en;
-            dct:identifier  "MUD1" ; 
+            dct:title   "Deaths in Prisons, unsentenced prisoners and prisons population"@en;
+            rdfs:label   "Deaths in Prisons, unsentenced prisoners and prisons population"@en;
+            dct:description   "Custom dataset with info about deaths in prisons, unsentenced prisoners and prisons' population for 20 selected countries in europe, for the time span 2016 - 2020"@en;
+            dct:identifier  "MUD5" ; 
             dct:modified    "2023-04-17"^^xsd:date ;
             dct:issued    "2023-04-17"^^xsd:date ;
             dct:publisher <https://github.com/Prisoner-s-Dilemma>;
@@ -24,14 +26,14 @@
 
             dct:isPartOf <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data> ;
 
-            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> ; 
+            dcat:distribution <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_prisons_population/MUD5.json> ; 
 
 
-            dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
-            dct:subject <http://eurovoc.europa.eu/100149> ,
-                        <http://eurovoc.europa.eu/100202> ;
+            dcat:theme  <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+            dct:subject <http://eurovoc.europa.eu/100184> ,
+                        <http://eurovoc.europa.eu/100181> ;
 
-            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Justice"@en , "Governments expenditure"@en ;
+            dcat:keyword "Prisoners"@en, "Death in prison"@en , "Prisons Population"@en , "Overpopulation"@en, "Unsentenced prisoners"@en , "Justice"@en ;
 
 
             dcat:landingPage <https://prisoner-s-dilemma.github.io/BarsBehindBars/> ;
@@ -44,12 +46,14 @@
 
             prov:wasGeneratedBy <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/f709e176de124435b0689e39c474863f54731f6a/assets/data/processed_data/Mashup_datasets.ipynb> ;
             prov:wasDerivedFrom <https://dataunodc.un.org/dp-prisons-mortality>,
-                                <https://ec.europa.eu/eurostat/databrowser/view/sdg_16_30/default/table?lang=en> .
+                                <https://dataunodc.un.org/dp-prisons-persons-held>,
+                                <https://ec.europa.eu/eurostat/databrowser/view/crim_pris_cap/default/table?lang=en> ;
           
 
                
-            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D1_deaths_in_prison_clean.csv> ;
-            dct:hasPart    <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D6_general_governments_expenditure_in_justice_sector_clean.csv> ;
+            dct:hasPart     <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D2_sentance_status_clean.csv> ,
+                            <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D1_deaths_in_prison_clean.csv> ,
+                            <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/processed_data/clean_data/D3_prison_capacity_clean.csv> .
             
 
 
@@ -60,9 +64,9 @@
             rdfs:label "the Jupyternotebook used for the process of merging, filtering and aggregating multiple source datasets"@en .
 
 
-<http://publications.europa.eu/resource/authority/data-theme/GOVE>
+<http://publications.europa.eu/resource/authority/data-theme/JUST>
             a    skos:Concept ;
-            skos:prefLabel  "sucicide and deaths in prison in europe"@en .
+            skos:prefLabel  "Deaths in Prisons, unsentenced prisoners and prisons population in europe"@en .
 
 
 <https://github.com/Prisoner-s-Dilemma/BarsBehindBars> 
@@ -84,16 +88,16 @@
     foaf:name "Tommaso Battisti"@it.
 
 
-<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json>
+<https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_prisons_population/MUD5.json>
             a   dcat:Distribution  ;
-            dcat:accessURL <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> ;
+            dcat:accessURL <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_prisons_population/MUD5.json> ;
             dct:format <http://publications.europa.eu/resource/authority/file-type/JSON/> ;
             dct:license   <https://creativecommons.org/licenses/by/4.0/> ;
 
-            dct:title  "json distribution of Bars Behind Bars MUD1"@en  ;
-            dct:description "Custom dataset with info about deaths in prisons and governament expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020" ;
+            dct:title  "json distribution of Bars Behind Bars MUD4"@en  ;
+            dct:description "Custom dataset with info about deaths in prisons, unsentenced prisoners and prisons' population for 20 selected countries in europe, for the time span 2016 - 2020" ;
 
-            dcat:downloadURL <https://raw.githubusercontent.com/Prisoner-s-Dilemma/BarsBehindBars/main/assets/data/final_data/MUD1_deaths_in_prison_and_governments_expenditure_in_justice_sector/MUD1.json> .
+            dcat:downloadURL <https://raw.githubusercontent.com/Prisoner-s-Dilemma/BarsBehindBars/main/assets/data/final_data/MUD5_deaths_in_prisons_unsentenced_prisoners_and_prisons_population/MUD5.json> .
 
                 
 
@@ -110,3 +114,4 @@
                             cc:DerivativeWorks;
                 cc:requires   cc:Attribution.
             
+
