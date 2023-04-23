@@ -27,6 +27,16 @@
     <!--On scoll animations: attribute "defer" to execute script after the HTML elements in the body-->
     <script defer src="./assets/scripts/animate.js"></script>
 
+    <!--amchart5 scripts-->
+    <script src="https://cdn.amcharts.com/lib/5/index.js" type="application/javascript"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/data/countries2.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/region/world/europeLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
 
 
 
@@ -1151,6 +1161,62 @@
                 <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>
                 <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
                 </div>
+
+                <!-- VIZ 2.1 -->
+                <div class="w-full">
+                    <p class="to-animate-text-block paragraph prison-padding-bottom">
+                        Some text about the visualisation goes here which talks about what variables are being compared here and also informs the user about what parts of the visualisation they can interact with and how. 
+                    </p>
+                </div>
+                <div id="chartdiv"></div> 
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
+                </div>
+
+                <!-- VIZ 2.2 -->
+                <div class="w-full">
+                    <p class="to-animate-text-block paragraph prison-padding-bottom">
+                        Some text about the visualisation goes here which talks about what variables are being compared here and also informs the user about what parts of the visualisation they can interact with and how. 
+                    </p>
+                </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="openyear(event, '2016')">2016</button>
+                    <button class="tablinks" onclick="openyear(event, '2017')">2017</button>
+                    <button class="tablinks" onclick="openyear(event, '2018')">2018</button>
+                    <button class="tablinks" onclick="openyear(event, '2019')">2019</button>
+                    <button class="tablinks" onclick="openyear(event, '2020')">2020</button>
+                  </div>
+                  
+                  <!-- Tab content -->
+                  <div id="2016" class="tabcontent" style="display: block;">
+                    <h3>Suicides in prison vs corruption index of country for the year of 2016</h3>
+                    <p></p>
+                    <div id="active-viz2-21"></div>
+                      
+                  </div>
+                  
+                  <div id="2017" class="tabcontent" style="display: none;">
+                    <h3>Suicides in prison vs corruption index of country for the year of 2017</h3>
+                    <p></p>
+                    <div id="active-viz2-22"></div>
+                  </div>
+                  
+                  <div id="2018" class="tabcontent" style="display: none;">
+                    <h3>Suicides in prison vs corruption index of country for the year of 2018</h3>
+                    <p></p>
+                    <div id="active-viz2-23"></div>
+                  </div> 
+                  
+                  <div id="2019" class="tabcontent" style="display: none;">
+                    <h3>Suicides in prison vs corruption index of country for the year of 2019</h3>
+                    <p></p>
+                    <div id="active-viz2-24"></div>
+                  </div> 
+                  
+                  <div id="2020" class="tabcontent" style="display: none;">
+                    <h3>Suicides in prison vs corruption index of country for the year of 2020</h3>
+                    <p></p>
+                    <div id="active-viz2-25"></div>
+                  </div> 
             </div>
         </div>
 
@@ -1833,4 +1899,11 @@
     </footer>
 
 </body>
+<script src="assets/scripts/viz2-11.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-21.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-22.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-23.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-24.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-25.js" type="application/javascript"></script>
+<script src="assets/scripts/tabs.js"></script>
 </html>
