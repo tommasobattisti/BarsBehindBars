@@ -37,11 +37,11 @@ am5.ready(function() {
     series.labels.template.set("forceHidden", true);
     series.ticks.template.set("forceHidden", true);
     series.get("colors").set("colors", [
-      am5.color(0xff621f), //fairly bad
-      am5.color(0xffffff), //fairly good
-      am5.color(0xfbfbfb), //unknown
-      am5.color(0xe99000), //very bad
-      am5.color(0xe95122) //very good
+      am5.color(0xff8a44), //fairly bad
+      am5.color(0xffb181), //fairly good
+      am5.color(0x161616), //unknown
+      am5.color(0xff7621f), //very bad
+      am5.color(0xffd7be) //very good
     ]);
     
     var legend = pie.children.push(am5.Legend.new(root, {
@@ -58,18 +58,18 @@ am5.ready(function() {
     },
     {
       name: "Very Bad",
-      color: am5.color(0x47261b)
+      color: am5.color(0xff7621f)
     }, {
       name: "Fairly Bad",
-      color: am5.color(0x7a351f)
+      color: am5.color(0xff8a44)
     },
     {
       name: "Fairly Good",
-      color: am5.color(0xb04321)
+      color: am5.color(0xffb181)
     },
     {
       name: "Very Good",
-      color: am5.color(0xe95122)
+      color: am5.color(0xffd7be)
     }]);
    
     var data = [
