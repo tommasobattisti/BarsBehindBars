@@ -27,74 +27,92 @@ am5.ready(function() {
     }));
     
     var data = [
-    {id:"EE",
-    value: 4,
+    {"countrycode":"EE",
+   "Deaths due to external causes: by suicide": 4,
+   "NR": 27,
 
     }, 
-    {   id: "SE",
-        value: 2,
+    {   "countrycode": "SE",
+       "Deaths due to external causes: by suicide": 2,
+       "NR": 15,
     }, 
-    {   id:"FI",
-        value: 2,
+    {   "countrycode":"FI",
+       "Deaths due to external causes: by suicide": 2,
+       "NR": 15,
     }, 
-    {   id:"DK",
-        value: 5,
+    {   "countrycode":"DK",
+       "Deaths due to external causes: by suicide": 5,
+       "NR": 12,
     }, 
 
-    {   id:"BG",
-        value: 3,
+    {   "countrycode":"BG",
+       "Deaths due to external causes: by suicide": 3,
+       "NR": 42,
     },
 
-    {   id:"HU",
-        value: 6,
+    {   "countrycode":"HU",
+       "Deaths due to external causes: by suicide": 6,
+       "NR": 46,
     },
 
-    {   id:"PL",
-        value: 26,
+    {   "countrycode":"PL",
+       "Deaths due to external causes: by suicide": 26,
+       "NR":40,
     },
 
-    {id:"RO",
-        value: 11,
+    {"countrycode":"RO",
+       "Deaths due to external causes: by suicide": 11,
+       "NR": 47,
     },
 
-    {id:"SK",
-        value: 5,
+    {"countrycode":"SK",
+       "Deaths due to external causes: by suicide": 5,
+       "NR": 50,
     },
 
-    {id:"IT",
-        value: 61,
+    {"countrycode":"IT",
+       "Deaths due to external causes: by suicide": 61,
+       "NR":48,
     },
 
-    {id:"SI",
-        value: 0,
+    {"countrycode":"SI",
+       "Deaths due to external causes: by suicide": 0,
+       "NR": 40, 
     },
 
-    {id:"GR",
-        value: 9,
+    {"countrycode":"GR",
+       "Deaths due to external causes: by suicide": 9,
+       "NR": 45,
     },
 
-    {id:"PT",
-        value: 11,
+    {"countrycode":"PT",
+       "Deaths due to external causes: by suicide": 11,
+       "NR": 36,
     },
 
-    {id:"ES",
-        value: 33, 
+    {"countrycode":"ES",
+       "Deaths due to external causes: by suicide": 33,
+       "NR": 42, 
     },
 
-    {id:"AT",
-        value: 12,
+    {"countrycode":"AT",
+       "Deaths due to external causes: by suicide": 12,
+       "NR":24,
     },
 
-    {id:"FR",
-        value: 103,  
+    {"countrycode":"FR",
+       "Deaths due to external causes: by suicide": 103,
+       "NR":28,  
     },
 
-    {id:"NL",
-        value: 13,
+    {"countrycode":"NL",
+       "Deaths due to external causes: by suicide": 13,
+       "NR":18,
     },
 
-    {id:"BE",
-        value: 16
+    {"countrycode":"BE",
+       "Deaths due to external causes: by suicide": 16,
+       "NR": 25
       },
     ];
     
@@ -125,9 +143,9 @@ am5.ready(function() {
         strokeOpacity: 0.1,
       })
     }));
-    
     // Add series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+    
     
     var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
       name: "NR",
@@ -163,6 +181,7 @@ am5.ready(function() {
       })
     }));
     
+    
     series1.columns.template.setAll({
       width: am5.percent(50),
       tooltipY: 0,
@@ -181,7 +200,7 @@ am5.ready(function() {
         x: am5.percent(50)
     }));
     
-    legend.data.setAll(chart.series.values);
+    legend.data.setAll(chart.series.Suicidess);
     
     
     // Make stuff animate on load
