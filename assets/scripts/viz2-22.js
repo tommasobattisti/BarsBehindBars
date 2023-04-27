@@ -146,7 +146,7 @@ var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 
 var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
-  name: "NR",
+  name: "Corruption Index",
   xAxis: xAxis,
   yAxis: yAxis,
   valueYField: "NR",
@@ -168,7 +168,7 @@ series0.data.setAll(data);
 
 
 var series1 = chart.series.push(am5xy.ColumnSeries.new(root, {
-  name: "Deaths due to external causes: by suicide",
+  name: "Suicides",
   xAxis: xAxis,
   yAxis: yAxis,
   valueYField: "Deaths due to external causes: by suicide",
