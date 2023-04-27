@@ -59,7 +59,7 @@ var polygonSeries =
         geoJSON: am5geodata_region_world_europeLow,
         exclude: (["AQ"], ["TR"]),
         valueField: "value",
-        fill: am5.color(0xbbbbbb)
+        fill: am5.color(0xccc8bc)  //set base color with the same color of the background
       }));
       
     polygonSeries.mapPolygons.template.setAll({
@@ -71,17 +71,17 @@ var polygonSeries =
         target: 
         polygonSeries.mapPolygons.template,
         dataField: "value",
-        min: am5.color(0xff621f),
+        min: am5.color(0xffd7be),
         minValue: 0,
-        max: am5.color(0x661f00),
+        max: am5.color(0xff621f),
         maxValue: 126,
         key: "fill"
       }]);
    
 var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
         orientation: "vertical",
-        startColor: am5.color(0xff621f),
-        endColor: am5.color(0x661f00),
+        startColor: am5.color(0xffd7be),
+        endColor: am5.color(0xff621f),
         startText: "Lowest",
         startValue: 0,
         endText: "Highest",

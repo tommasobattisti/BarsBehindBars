@@ -230,7 +230,29 @@ $(document).ready(function() {
     });
 
 
+
+    // VizTabs
+    $('#viz-2-2016-btn').click(function(){
+            activateVizTabLinks(2, 'viz-2-2016');
+    });
+    $('#viz-2-2017-btn').click(function(){
+        activateVizTabLinks(2, 'viz-2-2017');
+    });
+    $('#viz-2-2018-btn').click(function(){
+        activateVizTabLinks(2, 'viz-2-2018');
+    });
+    $('#viz-2-2019-btn').click(function(){
+        activateVizTabLinks(2, 'viz-2-2019');
+    });
+    $('#viz-2-2020-btn').click(function(){
+        activateVizTabLinks(2, 'viz-2-2020');
+    });
+
+
 });
+
+
+
 
 
 
@@ -243,6 +265,18 @@ function activateAnalysisSection(section) {
     $('#' + section + '-h3').addClass('active-analysis');
     $('#' + section + '-spin').removeClass('hidden');
 };
+
+
+function activateVizTabLinks(viz, tab) {
+    if (viz == 2) {
+        $('.viz-2-tab-spin').addClass('hidden');
+        $('#'+tab+'-spin').removeClass('hidden')
+        $('.viz-2-tablink-btn p').removeClass('viz-tab-text').addClass('inactive-viz-tab-text');
+        $('#'+tab+'-text').removeClass('inactive-viz-tab-text').addClass('viz-tab-text');
+    }
+        
+}
+
 
 
 function openDatasetDescription(dataset) {

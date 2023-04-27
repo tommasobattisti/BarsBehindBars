@@ -24,7 +24,15 @@
   }
 
 .prison-btn {
-    @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-3 py-2 md:px-4 md:py-3 2xl:px-5 2xl:py-4 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[400ms]
+    @apply font-medium text-base lg:text-lg 2xl:text-xl box-border w-[fit-content] px-3 py-2 md:px-4 md:py-3 2xl:px-5 2xl:py-4 md:ml-[0.5px] border-x-[3px] 2xl:border-x-4 border-[#E95122] hover:bg-[#E95122] transition-all ease-out duration-[400ms];
+}
+
+.viz-tab-text {
+    @apply font-medium text-xl md:text-2xl 2xl:text-2xl text-[#161616] pr-2;
+}
+
+.inactive-viz-tab-text {
+    @apply font-medium text-xl md:text-2xl 2xl:text-2xl text-[rgba(22,22,22,0.8)];
 }
 
 

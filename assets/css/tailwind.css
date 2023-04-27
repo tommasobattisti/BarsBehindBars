@@ -564,6 +564,10 @@ video {
   margin-top: 8%;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -767,10 +771,6 @@ video {
   overflow: visible;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
 .bg-\[\#161616\] {
   --tw-bg-opacity: 1;
   background-color: rgb(22 22 22 / var(--tw-bg-opacity));
@@ -821,6 +821,10 @@ video {
 
 .pb-\[8px\] {
   padding-bottom: 8px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .pl-3 {
@@ -1104,6 +1108,50 @@ video {
     padding-bottom: 1rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+.viz-tab-text {
+  padding-right: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(22 22 22 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .viz-tab-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .viz-tab-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.inactive-viz-tab-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: rgba(22,22,22,0.8);
+}
+
+@media (min-width: 768px) {
+  .inactive-viz-tab-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .inactive-viz-tab-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
