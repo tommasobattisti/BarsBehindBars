@@ -15,6 +15,9 @@ am5.ready(function() {
         height: am5.p100
       }))
     
+
+ 
+      
     //create piechart 
     var pie = container.children.push(am5percent.PieChart.new(root, {
         panX: false,
@@ -22,15 +25,53 @@ am5.ready(function() {
         wheelX: "none",
         wheelY: "none",
         layout: root.verticalLayout,
+        radius: am5.percent(55)
       }));
 
     //create series 
     var series = pie.series.push(am5percent.PieSeries.new(root, {
         valueField: "value",
         categoryField: "category"
+        
       }));
-
-
+    series.labels.template.set("forceHidden", true);
+    series.ticks.template.set("forceHidden", true);
+    series.get("colors").set("colors", [
+      am5.color(0xff621f), //fairly bad
+      am5.color(0xffffff), //fairly good
+      am5.color(0xfbfbfb), //unknown
+      am5.color(0xe99000), //very bad
+      am5.color(0xe95122) //very good
+    ]);
+    
+    var legend = pie.children.push(am5.Legend.new(root, {
+      nameField: "name",
+      fillField: "color",
+      strokeField: "color",
+      centerX: am5.percent(50),
+      x: am5.percent(50)
+    }));
+    
+    legend.data.setAll([{
+      name: "Unknown",
+      color: am5.color(0x161616)
+    },
+    {
+      name: "Very Bad",
+      color: am5.color(0x47261b)
+    }, {
+      name: "Fairly Bad",
+      color: am5.color(0x7a351f)
+    },
+    {
+      name: "Fairly Good",
+      color: am5.color(0xb04321)
+    },
+    {
+      name: "Very Good",
+      color: am5.color(0xe95122)
+    }]);
+   
     var data = [
     {id: "EE", value: 12, category: "FBAD"},
     {id: "EE", value: 56, category: "FGOOD"}, 
@@ -59,7 +100,8 @@ var polygonSeries =
         geoJSON: am5geodata_region_world_europeLow,
         exclude: (["AQ"], ["TR"]),
         valueField: "value",
-        fill: am5.color(0xccc8bc)  //set base color with the same color of the background
+        fill: am5.color(0xccc8bc),
+        stroke: am5.color(0x161616)
       }));
       
     polygonSeries.mapPolygons.template.setAll({
