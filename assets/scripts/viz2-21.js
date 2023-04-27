@@ -180,7 +180,7 @@ series1.columns.template.setAll({
   width: am5.percent(20),
   tooltipY: 0,
   strokeOpacity: 0,
-  fill: am5.color(0x161616)
+  fill: am5.color(0x081725)
 });
 
 series1.data.setAll(data);
