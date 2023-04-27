@@ -1156,72 +1156,93 @@
         <div id="visualisations-section-main" class="section section-margins scroll-mt-20">
             <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">Visualisations</h2>
             <div class="flex flex-col justify-between items-start prison-padding-bottom prison-border-bottom">
+
                 <!-- VIZ 2.1 -->
-                <div class="w-full flex flex-row justify-between  prison-padding-bottom">
-                    <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
-                        <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Corruption index and public perception of the justice system</span></h3>
+                <!--Section Title and Description-->
+                <div class="w-full flex flex-col justify-between prison-padding-bottom">
+                    <div class="w-full flex flex-row justify-between prison-padding-bottom">
+                        <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
+                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Corruption index and public perception of the justice system</span></h3>
+                        </div>
+                        <div class="w-full md:w-[45%] h-fill md:pb-0">
+                            <p class="to-animate-text-block paragraph">
+                                <span class="keyword">Interact</span> with the map to change the pie-chart focus on different countries.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                By selecting a country, the map will show the corruption index. The higher the number, the higher the perceive corruption in that country.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                Pie-charts highlight the declarations of people with respect to how they perceived their national country's justice system in that specific year. Data are in percentages and come from a questionnaire. Choices range from very bad to very good.
+                            </p>
+                        </div> 
                     </div>
-                    <div class="w-full md:w-[45%] h-fill md:pb-0">
-                        <p class="to-animate-text-block paragraph">
-                            <span class="keyword">Interact</span> with the map to change the pie-chart focus on different countries.
-                        </p>
-                        <p class="to-animate-text-block paragraph">
-                            
-                        </p>
+                    <!--Section Chart-->
+                    <div id="chartdiv">
+                        
+                    </div> 
+                    <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
                     </div>
-                    
-                    
-                </div>
-                <div id="chartdiv"></div> 
-                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
                 </div>
 
+
                 <!-- VIZ 2.2 -->
-                <div class="w-full">
-                    <p class="to-animate-text-block paragraph prison-padding-bottom">
-                        Some text about the visualisation goes here which talks about what variables are being compared here and also informs the user about what parts of the visualisation they can interact with and how. 
-                    </p>
-                </div>
-                <div class="tab">
-                    <button class="tablinks" onclick="openyear(event, '2016')">2016</button>
-                    <button class="tablinks" onclick="openyear(event, '2017')">2017</button>
-                    <button class="tablinks" onclick="openyear(event, '2018')">2018</button>
-                    <button class="tablinks" onclick="openyear(event, '2019')">2019</button>
-                    <button class="tablinks" onclick="openyear(event, '2020')">2020</button>
-                  </div>
-                  
-                  <!-- Tab content -->
-                  <div id="2016" class="tabcontent" style="display: block;">
-                    <h3>Suicides in prison vs corruption index of country for the year of 2016</h3>
-                    <p></p>
-                    <div id="active-viz2-21"></div>
+                <div class="w-full flex flex-col justify-between prison-padding-bottom">
+                    <div class="w-full flex flex-row justify-between prison-padding-bottom">
+                        <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
+                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Suicides in prisons and countries' corruption index</span></h3>
+                        </div>
+                        <div class="w-full md:w-[45%] h-fill md:pb-0">
+                            <p class="to-animate-text-block paragraph">
+                                Select the year to focus on and look at the relation between suicide rate and corruption index for each of the selected countries. Play with the bar-chart to custom the zoom.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openyear(event, '2016')">2016</button>
+                        <button class="tablinks" onclick="openyear(event, '2017')">2017</button>
+                        <button class="tablinks" onclick="openyear(event, '2018')">2018</button>
+                        <button class="tablinks" onclick="openyear(event, '2019')">2019</button>
+                        <button class="tablinks" onclick="openyear(event, '2020')">2020</button>
+                      </div>
                       
-                  </div>
-                  
-                  <div id="2017" class="tabcontent" style="display: none;">
-                    <h3>Suicides in prison vs corruption index of country for the year of 2017</h3>
-                    <p></p>
-                    <div id="active-viz2-22"></div>
-                  </div>
-                  
-                  <div id="2018" class="tabcontent" style="display: none;">
-                    <h3>Suicides in prison vs corruption index of country for the year of 2018</h3>
-                    <p></p>
-                    <div id="active-viz2-23"></div>
-                  </div> 
-                  
-                  <div id="2019" class="tabcontent" style="display: none;">
-                    <h3>Suicides in prison vs corruption index of country for the year of 2019</h3>
-                    <p></p>
-                    <div id="active-viz2-24"></div>
-                  </div> 
-                  
-                  <div id="2020" class="tabcontent" style="display: none;">
-                    <h3>Suicides in prison vs corruption index of country for the year of 2020</h3>
-                    <p></p>
-                    <div id="active-viz2-25"></div>
-                  </div> 
-            </div>
+                      <!-- Tab content -->
+                      <div id="2016" class="tabcontent" style="display: block;">
+                        <h3>Suicides in prison vs corruption index of country for the year of 2016</h3>
+                        <p></p>
+                        <div id="active-viz2-21"></div>
+                          
+                      </div>
+                      
+                      <div id="2017" class="tabcontent" style="display: none;">
+                        <h3>Suicides in prison vs corruption index of country for the year of 2017</h3>
+                        <p></p>
+                        <div id="active-viz2-22"></div>
+                      </div>
+                      
+                      <div id="2018" class="tabcontent" style="display: none;">
+                        <h3>Suicides in prison vs corruption index of country for the year of 2018</h3>
+                        <p></p>
+                        <div id="active-viz2-23"></div>
+                      </div> 
+                      
+                      <div id="2019" class="tabcontent" style="display: none;">
+                        <h3>Suicides in prison vs corruption index of country for the year of 2019</h3>
+                        <p></p>
+                        <div id="active-viz2-24"></div>
+                      </div> 
+                      
+                      <div id="2020" class="tabcontent" style="display: none;">
+                        <h3>Suicides in prison vs corruption index of country for the year of 2020</h3>
+                        <p></p>
+                        <div id="active-viz2-25"></div>
+                      </div> 
+                </div>
+                </div>
+
+            <!--Results-->
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>
                 <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
