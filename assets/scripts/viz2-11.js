@@ -37,11 +37,11 @@ am5.ready(function() {
     series.labels.template.set("forceHidden", true);
     series.ticks.template.set("forceHidden", true);
     series.get("colors").set("colors", [
+      am5.color(0xff7621f), //very bad
       am5.color(0xff8a44), //fairly bad
       am5.color(0xffb181), //fairly good
-      am5.color(0x161616), //unknown
-      am5.color(0xff7621f), //very bad
-      am5.color(0xffd7be) //very good
+      am5.color(0xffd7be), //very good
+      am5.color(0x081725) //unknown
     ]);
     
     var legend = pie.children.push(am5.Legend.new(root, {
@@ -54,7 +54,7 @@ am5.ready(function() {
     
     legend.data.setAll([{
       name: "Unknown",
-      color: am5.color(0x161616)
+      color: am5.color(0x081725)
     },
     {
       name: "Very Bad",
@@ -73,11 +73,11 @@ am5.ready(function() {
     }]);
    
     var data = [
-    {id: "EE", value: 12, category: "FBAD"},
-    {id: "EE", value: 56, category: "FGOOD"}, 
-    {id: "EE", value: 24, category: "UNK"}, 
     {id: "EE", value: 2, category: "VBAD"},
+    {id: "EE", value: 12, category: "FBAD"},
+    {id: "EE", value: 56, category: "FGOOD"},
     {id: "EE", value: 6, category: "VGOOD"},
+    {id: "EE", value: 24, category: "UNK"}, 
     ];
 
   series.data.setAll(data);
@@ -101,7 +101,7 @@ var polygonSeries =
         exclude: (["AQ"], ["TR"]),
         valueField: "value",
         fill: am5.color(0xccc8bc),
-        stroke: am5.color(0x161616)
+        stroke: am5.color(0x081725)
       }));
       
     polygonSeries.mapPolygons.template.setAll({
