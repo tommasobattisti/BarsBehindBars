@@ -24,8 +24,10 @@ am5.ready(function() {
         panY: false,
         wheelX: "none",
         wheelY: "none",
-        layout: root.verticalLayout,
-        radius: am5.percent(55)
+        layout: root.verticallLayout,
+        radius: am5.percent(65),
+        centerY: am5.percent(50),
+        y: am5.percent(50),
       }));
 
     //create series 
@@ -48,8 +50,10 @@ am5.ready(function() {
       nameField: "name",
       fillField: "color",
       strokeField: "color",
-      centerX: am5.percent(50),
-      x: am5.percent(50)
+      centerX: am5.percent(10),
+      x: am5.percent(10),
+      centerY: am5.percent(0),
+      y: am5.percent(0),
     }));
     
     legend.data.setAll([{
