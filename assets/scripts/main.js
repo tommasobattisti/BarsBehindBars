@@ -232,6 +232,22 @@ $(document).ready(function() {
 
 
     // VizTabs
+    $('#viz-1-2016-btn').click(function(){
+        activateVizTabLinks(1, '2016');
+    });
+    $('#viz-1-2017-btn').click(function(){
+        activateVizTabLinks(1, '2017');
+    });
+    $('#viz-1-2018-btn').click(function(){
+        activateVizTabLinks(1, '2018');
+    });
+    $('#viz-1-2019-btn').click(function(){
+        activateVizTabLinks(1, '2019');
+    });
+    $('#viz-1-2020-btn').click(function(){
+        activateVizTabLinks(1, '2020');
+    });
+
     $('#viz-2-2016-btn').click(function(){
             activateVizTabLinks(2, '2016');
     });
