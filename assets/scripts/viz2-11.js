@@ -39,11 +39,11 @@ am5.ready(function() {
     series.labels.template.set("forceHidden", true);
     series.ticks.template.set("forceHidden", true);
     series.get("colors").set("colors", [
-      am5.color(0xff7621f), //very bad
-      am5.color(0xff8a44), //fairly bad
-      am5.color(0xffb181), //fairly good
-      am5.color(0xffd7be), //very good
-      am5.color(0xffeadd) //unknown
+      am5.color(0x180349), //very bad
+      am5.color(0x773d6e), //fairly bad
+      am5.color(0xc1899d), //fairly good
+      am5.color(0xffdede), //very good
+      am5.color(0xf0d6ce) //unknown
     ]);
     
     var legend = pie.children.push(am5.Legend.new(root, {
@@ -59,22 +59,22 @@ am5.ready(function() {
     legend.data.setAll([
     {
       name: "Very Bad",
-      color: am5.color(0xff7621f)
+      color: am5.color(0x180349)
     }, {
       name: "Fairly Bad",
-      color: am5.color(0xff8a44)
+      color: am5.color(0x773d6e)
     },
     {
       name: "Fairly Good",
-      color: am5.color(0xffb181)
+      color: am5.color(0xc1899d)
     },
     {
       name: "Very Good",
-      color: am5.color(0xffd7be)
+      color: am5.color(0xffdede)
     },
     {
       name: "Unknown",
-      color: am5.color(0xffeadd)
+      color: am5.color(0xf0d6ce)
     }
   ]);
    
@@ -119,16 +119,16 @@ var polygonSeries =
         target: 
         polygonSeries.mapPolygons.template,
         dataField: "value",
-        min: am5.color(0xffd7be),
+        min: am5.color(0xffddc7),
         minValue: 0,
-        max: am5.color(0xff621f),
+        max: am5.color(0xff7621),
         maxValue: 126,
         key: "fill"
       }]);
    
 var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
         orientation: "vertical",
-        startColor: am5.color(0xffd7be),
+        startColor: am5.color(0xffddc7),
         endColor: am5.color(0xff621f),
         startText: "Lowest",
         startValue: 0,

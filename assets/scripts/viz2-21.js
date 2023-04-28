@@ -157,7 +157,7 @@ series0.columns.template.setAll({
   width: am5.percent(80),
   tooltipY: 0,
   strokeOpacity: 0,
-  fill: am5.color(0x264653)
+  fill: am5.color(0x668886)
 });
 
 
@@ -180,7 +180,7 @@ series1.columns.template.setAll({
   width: am5.percent(40),
   tooltipY: 0,
   strokeOpacity: 0,
-  fill: am5.color(0xff8a44)
+  fill: am5.color(0xff7621)
 });
 
 series1.data.setAll(data);
