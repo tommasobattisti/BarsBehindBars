@@ -43,7 +43,7 @@ am5.ready(function() {
       am5.color(0xff8a44), //fairly bad
       am5.color(0xffb181), //fairly good
       am5.color(0xffd7be), //very good
-      am5.color(0x081725) //unknown
+      am5.color(0xffeadd) //unknown
     ]);
     
     var legend = pie.children.push(am5.Legend.new(root, {
@@ -56,10 +56,7 @@ am5.ready(function() {
       y: am5.percent(0),
     }));
     
-    legend.data.setAll([{
-      name: "Unknown",
-      color: am5.color(0x081725)
-    },
+    legend.data.setAll([
     {
       name: "Very Bad",
       color: am5.color(0xff7621f)
@@ -74,7 +71,12 @@ am5.ready(function() {
     {
       name: "Very Good",
       color: am5.color(0xffd7be)
-    }]);
+    },
+    {
+      name: "Unknown",
+      color: am5.color(0xffeadd)
+    }
+  ]);
    
     var data = [
     {id: "EE", value: 2, category: "VBAD"},
@@ -105,7 +107,7 @@ var polygonSeries =
         exclude: (["AQ"], ["TR"]),
         valueField: "value",
         fill: am5.color(0xccc8bc),
-        stroke: am5.color(0x081725)
+        stroke: am5.color(0x161616)
       }));
       
     polygonSeries.mapPolygons.template.setAll({

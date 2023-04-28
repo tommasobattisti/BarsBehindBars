@@ -149,7 +149,7 @@ var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
   categoryXField: "countrycode",
   clustered: false,
   tooltip: am5.Tooltip.new(root, {
-    labelText: "Corruption Index: {valueY}"
+  labelText: "Corruption Index: {valueY}"
   })
 }));
 
@@ -172,7 +172,7 @@ var series1 = chart.series.push(am5xy.ColumnSeries.new(root, {
   categoryXField: "countrycode",
   clustered: false,
   tooltip: am5.Tooltip.new(root, {
-    labelText: "Suicides: {valueY}"
+  labelText: "Suicides: {valueY}"
   })
 }));
 
