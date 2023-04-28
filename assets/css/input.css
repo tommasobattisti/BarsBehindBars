@@ -42,7 +42,7 @@ li {
 
 
 .in-text-a {
-    @apply font-medium decoration-[#E95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px] hover:no-underline hover:text-[#E95122];
+    @apply font-medium decoration-[#E95122] underline decoration-[3px] 2xl:decoration-4 underline-offset-[3px] hover:no-underline hover:text-[#E95122] transition-all duration-300 ease-in-out;
 }
 
 

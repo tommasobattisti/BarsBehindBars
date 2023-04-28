@@ -568,10 +568,6 @@ video {
   margin-top: 8%;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -629,6 +625,14 @@ video {
   height: 100%;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -656,6 +660,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
 }
 
 .table-auto {
@@ -1192,6 +1200,9 @@ li::before {
   text-decoration-color: #E95122;
   text-decoration-thickness: 3px;
   text-underline-offset: 3px;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .in-text-a:hover {
