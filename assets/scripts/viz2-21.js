@@ -157,7 +157,7 @@ series0.columns.template.setAll({
   width: am5.percent(80),
   tooltipY: 0,
   strokeOpacity: 0,
-  fill: am5.color(0xff8a44)
+  fill: am5.color(0x264653)
 });
 
 
@@ -177,10 +177,10 @@ var series1 = chart.series.push(am5xy.ColumnSeries.new(root, {
 }));
 
 series1.columns.template.setAll({
-  width: am5.percent(20),
+  width: am5.percent(40),
   tooltipY: 0,
   strokeOpacity: 0,
-  fill: am5.color(0x081725)
+  fill: am5.color(0xff8a44)
 });
 
 series1.data.setAll(data);
