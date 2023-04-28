@@ -233,19 +233,19 @@ $(document).ready(function() {
 
     // VizTabs
     $('#viz-2-2016-btn').click(function(){
-            activateVizTabLinks(2, 'viz-2-2016');
+            activateVizTabLinks(2, '2016');
     });
     $('#viz-2-2017-btn').click(function(){
-        activateVizTabLinks(2, 'viz-2-2017');
+        activateVizTabLinks(2, '2017');
     });
     $('#viz-2-2018-btn').click(function(){
-        activateVizTabLinks(2, 'viz-2-2018');
+        activateVizTabLinks(2, '2018');
     });
     $('#viz-2-2019-btn').click(function(){
-        activateVizTabLinks(2, 'viz-2-2019');
+        activateVizTabLinks(2, '2019');
     });
     $('#viz-2-2020-btn').click(function(){
-        activateVizTabLinks(2, 'viz-2-2020');
+        activateVizTabLinks(2, '2020');
     });
 
 
@@ -268,13 +268,10 @@ function activateAnalysisSection(section) {
 
 
 function activateVizTabLinks(viz, tab) {
-    if (viz == 2) {
-        $('.viz-2-tab-spin').addClass('hidden');
-        $('#'+tab+'-spin').removeClass('hidden')
-        $('.viz-2-tablink-btn p').removeClass('viz-tab-text').addClass('inactive-viz-tab-text');
-        $('#'+tab+'-text').removeClass('inactive-viz-tab-text').addClass('viz-tab-text');
-    }
-        
+    $('.viz-'+viz+'-tab-spin').addClass('hidden');
+    $('#viz-'+viz+'-'+tab+'-spin').removeClass('hidden')
+    $('.viz-'+viz+'-tablink-btn p').removeClass('viz-tab-text').addClass('inactive-viz-tab-text');
+    $('#viz-'+viz+'-'+tab+'-text').removeClass('inactive-viz-tab-text').addClass('viz-tab-text');
 }
 
 
