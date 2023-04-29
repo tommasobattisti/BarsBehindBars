@@ -1509,6 +1509,109 @@
                 </div>
                 </div>
 
+                <!-- VIZ 2.3 -->
+                <div class="w-full flex flex-col justify-between prison-padding-bottom">
+                    <div class="w-full flex flex-row justify-between prison-padding-bottom">
+                        <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
+                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Suicides in prisons and Life conditions in prison</span></h3>
+                        </div>
+                        <div class="w-full md:w-[45%] h-fill md:pb-0">
+                            <p class="to-animate-text-block paragraph">
+                                Select the year to focus on and look at the <span class="keyword">relation between suicide rate and corruption</span> index for each of the selected countries. Play with the bar-chart to custom the view.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                <span class="keyword">Suicide values</span> are absolute counts and therefore bars for the same country have no aim to be directly compared. Insted, their goal is to show the relation the two variables have if <span class="keyword">comparison</span> is performed <span class="keyword">among different countries</span>.
+                            </p>
+                        </div> 
+                    </div>
+                    <!--Years tabs-->
+                    <div class="tab">
+                        <button id="viz-5-2016-btn" class="viz-5-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2016', '5')">
+                            <p id="viz-5-2016-text" class="viz-tab-text">
+                                <span id="viz-5-2016-spin" class="viz-5-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2016
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-5-2017-btn" class="viz-5-tablink-btn tablinks-viz-5 pr-2" onclick="openyear('2017', '5')">
+                            <p id="viz-5-2017-text" class="inactive-viz-tab-text">
+                                <span id="viz-5-2017-spin" class="viz-5-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2017
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-5-2018-btn" class="viz-5-tablink-btn tablinks-viz-5 pr-2" onclick="openyear('2018', '5')">
+                            <p id="viz-5-2018-text" class="inactive-viz-tab-text">
+                                <span id="viz-5-2018-spin" class="viz-5-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2018
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-5-2019-btn" class="viz-5-tablink-btn tablinks-viz-5 pr-2" onclick="openyear('2019', '5')">
+                            <p id="viz-5-2019-text" class="inactive-viz-tab-text">
+                                <span id="viz-5-2019-spin" class="viz-5-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2019
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-5-2020-btn" class="viz-5-tablink-btn tablinks-viz-5 pr-2" onclick="openyear('2020', '5')">
+                            <p id="viz-5-2020-text" class="inactive-viz-tab-text">
+                                <span id="viz-5-2020-spin" class="viz-5-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2020
+                                </span>
+                            </p>
+                        </button>
+                      </div>
+                      
+                      <!-- Tab content -->
+                      <div id="tabcontent-viz-5-2016" class="tabcontent-viz-5">
+                        <h3>Suicides in prison vs Living conditions in prison for the year of 2016</h3>
+                        <p></p>
+                        <div id="LivSuicide2016"></div>
+                          
+                      </div>
+                      
+                      <div id="tabcontent-viz-5-2017" class="tabcontent-viz-5 hidden">
+                        <h3>Suicides in prison vs Living conditions in prison for the year of 2017</h3>
+                        <p></p>
+                        <div id="LivSuicide2017"></div>
+                      </div>
+                      
+                      <div id="tabcontent-viz-5-2018" class="tabcontent-viz-5 hidden">
+                        <h3>Suicides in prison vs Living conditions in prison for the year of 2018</h3>
+                        <p></p>
+                        <div id="LivSuicide2018"></div>
+                      </div> 
+                      
+                      <div id="tabcontent-viz-5-2019" class="tabcontent-viz-5 hidden" >
+                        <h3>Suicides in prison vs Living conditions in prison for the year of 2019</h3>
+                        <p></p>
+                        <div id="LivSuicide2019"></div>
+                      </div> 
+                      
+                      <div id="tabcontent-viz-5-2020" class="tabcontent-viz-5 hidden" >
+                        <h3>Suicides in prison vs Living conditions in prison for the year of 2020</h3>
+                        <p></p>
+                        <div id="LivSuicide2020"></div>
+                      </div> 
+                </div>
+                </div>
+
             <!--Results-->
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>
@@ -2212,5 +2315,12 @@
 <script src="assets/scripts/viz2-23.js" type="application/javascript"></script>
 <script src="assets/scripts/viz2-24.js" type="application/javascript"></script>
 <script src="assets/scripts/viz2-25.js" type="application/javascript"></script>
+
+<script src="assets/scripts/viz2-31.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-32.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-33.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-34.js" type="application/javascript"></script>
+<script src="assets/scripts/viz2-35.js" type="application/javascript"></script>
+
 <script src="assets/scripts/tabs.js"></script>
 </html>
