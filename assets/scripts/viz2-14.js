@@ -1,7 +1,7 @@
 am5.ready(function() {
     
     // Create root
-    var root = am5.Root.new("HEATMAP2019"); 
+    var root = am5.Root.new("chartdiv4"); 
     
     // Set themes
     root.setThemes([
