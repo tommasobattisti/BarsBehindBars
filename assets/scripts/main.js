@@ -264,6 +264,54 @@ $(document).ready(function() {
         activateVizTabLinks(2, '2020');
     });
 
+    $('#viz-3-2016-btn').click(function(){
+        activateVizTabLinks(3, '2016');
+    });
+    $('#viz-3-2017-btn').click(function(){
+        activateVizTabLinks(3, '2017');
+    });
+    $('#viz-3-2018-btn').click(function(){
+        activateVizTabLinks(3, '2018');
+    });
+    $('#viz-3-2019-btn').click(function(){
+        activateVizTabLinks(3, '2019');
+    });
+    $('#viz-3-2020-btn').click(function(){
+        activateVizTabLinks(3, '2020');
+    });
+
+    $('#viz-4-2016-btn').click(function(){
+        activateVizTabLinks(4, '2016');
+    });
+    $('#viz-4-2017-btn').click(function(){
+        activateVizTabLinks(4, '2017');
+    });
+    $('#viz-4-2018-btn').click(function(){
+        activateVizTabLinks(4, '2018');
+    });
+    $('#viz-4-2019-btn').click(function(){
+        activateVizTabLinks(4, '2019');
+    });
+    $('#viz-4-2020-btn').click(function(){
+        activateVizTabLinks(4, '2020');
+    });
+
+    $('#viz-5-2016-btn').click(function(){
+        activateVizTabLinks(5, '2016');
+    });
+    $('#viz-5-2017-btn').click(function(){
+        activateVizTabLinks(5, '2017');
+    });
+    $('#viz-5-2018-btn').click(function(){
+        activateVizTabLinks(5, '2018');
+    });
+    $('#viz-5-2019-btn').click(function(){
+        activateVizTabLinks(5, '2019');
+    });
+    $('#viz-5-2020-btn').click(function(){
+        activateVizTabLinks(5, '2020');
+    });
+
 
 });
 
