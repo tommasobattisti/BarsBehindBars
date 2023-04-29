@@ -1162,17 +1162,17 @@
                 <div class="w-full flex flex-col justify-between prison-padding-bottom">
                     <div class="w-full flex flex-row justify-between prison-padding-bottom">
                         <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
-                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Government expenditure in justice-related sectors and living conditions in prisons</span></h3>
+                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Governament expenditure on the justice system and Living conditions in prisons</span></h3>
                         </div>
                         <div class="w-full md:w-[45%] h-fill md:pb-0">
                             <p class="to-animate-text-block paragraph">
-                                <span class="keyword">Select the year</span> and look at the relation between the expenditure of countries governments in justice related sectors and the living conditions in their national prisons.
+                                <span class="keyword">Interact</span> with the map to change the pie-chart focus on different countries.
                             </p>
                             <p class="to-animate-text-block paragraph">
-                                The <span class="keyword">expenditure</span> is given as the <span class="keyword">rate of GDP</span> spent by the countries in a given year, while the <span class="keyword">living conditions</span> are expressed as the <span class="keyword">ratio between the national prisons' population and their official capacity</span>.
+                                By <span class="keyword">selecting a country</span>, the map will show the <span class="keyword">number of suicides</span> occurred in the country during the selected year.
                             </p>
                             <p class="to-animate-text-block paragraph">
-                                The term "living conditions" has been used here just for referring to prison population, as an indicator for investigating prisons' overpopulation.
+                                <span class="keyword">Pie-charts</span> highlight the declarations of people with respect to how they perceived their national country's <span class="keyword">justice system</span> in that specific year. Data are in percentages and have been gathered from questionnaires. Values range from very bad to very good.
                             </p>
                         </div> 
                     </div>
@@ -1260,6 +1260,116 @@
                         <h3>viz 1 for the year of 2020</h3>
                         <p></p>
                         <div id=""></div>
+                      </div> 
+                    <!--Section Chart-->
+                    
+                    <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
+                    </div>
+                </div>
+            
+             <!-- VIZ 1.2 -->
+                <!--Section Title and Description-->
+                <div class="w-full flex flex-col justify-between prison-padding-bottom">
+                    <div class="w-full flex flex-row justify-between prison-padding-bottom">
+                        <div class="w-full md:w-[45%] h-fill prison-padding-bottom md:pb-0">
+                            <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Corruption index rank of country and Pepception of Independence of the justice system</span></h3>
+                        </div>
+                        <div class="w-full md:w-[45%] h-fill md:pb-0">
+                            <p class="to-animate-text-block paragraph">
+                                <span class="keyword">Interact</span> with the map to change the pie-chart focus on different countries.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                By <span class="keyword">selecting a country</span>, the map will show the <span class="keyword">number of suicides</span> occurred in the country during the selected year.
+                            </p>
+                            <p class="to-animate-text-block paragraph">
+                                <span class="keyword">Pie-charts</span> highlight the declarations of people with respect to how they perceived their national country's <span class="keyword">justice system</span> in that specific year. Data are in percentages and have been gathered from questionnaires. Values range from very bad to very good.
+                            </p>
+                        </div> 
+                    </div>
+                    <!--Years tabs-->
+                    <div class="tab">
+                        <button id="viz-2-2016-btn" class="viz-2-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2016', '2')">
+                            <p id="viz-2-2016-text" class="viz-tab-text">
+                                <span id="viz-2-2016-spin" class="viz-2-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2016
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-2-2017-btn" class="viz-2-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2017', '2')">
+                            <p id="viz-2-2017-text" class="inactive-viz-tab-text">
+                                <span id="viz-2-2017-spin" class="viz-2-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2017
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-2-2018-btn" class="viz-2-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2018', '2')">
+                            <p id="viz-2-2018-text" class="inactive-viz-tab-text">
+                                <span id="viz-2-2018-spin" class="viz-2-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2018
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-2-2019-btn" class="viz-2-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2019', '2')">
+                            <p id="viz-2-2019-text" class="inactive-viz-tab-text">
+                                <span id="viz-2-2019-spin" class="viz-2-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2019
+                                </span>
+                            </p>
+                        </button>
+                        <button id="viz-2-2020-btn" class="viz-2-tablink-btn tablinks-viz-2 pr-2" onclick="openyear('2020', '2')">
+                            <p id="viz-2-2020-text" class="inactive-viz-tab-text">
+                                <span id="viz-2-2020-spin" class="viz-2-tab-spin float-left animate-spin text-fill text-[#E95122] md:ml-1 hidden">
+                                    +
+                                </span>
+                                <span class="pl-1 roboto-condensed">
+                                    2020
+                                </span>
+                            </p>
+                        </button>
+                      </div>
+
+                      <!-- Tab content -->
+                      <div id="tabcontent-viz-2-2016" class="tabcontent-viz-2">
+                        <h3>viz 1 for the year of 2016</h3>
+                        <p></p>
+                        <div id="NRJust2016"></div>
+                          
+                      </div>
+                      
+                      <div id="tabcontent-viz-2-2017" class="tabcontent-viz-2 hidden">
+                        <h3>viz 1 for the year of 2017</h3>
+                        <p></p>
+                        <div id="NRJust2017"></div>
+                      </div>
+                      
+                      <div id="tabcontent-viz-2-2018" class="tabcontent-viz-2 hidden">
+                        <h3>viz 1 for the year of 2018</h3>
+                        <p></p>
+                        <div id="NRJust2018"></div>
+                      </div> 
+                      
+                      <div id="tabcontent-viz-2-2019" class="tabcontent-viz-2 hidden" >
+                        <h3>viz 1 for the year of 2019</h3>
+                        <p></p>
+                        <div id="NRJust2019"></div>
+                      </div> 
+                      
+                      <div id="tabcontent-viz-2-2020" class="tabcontent-viz-2 hidden" >
+                        <h3>viz 1 for the year of 2020</h3>
+                        <p></p>
+                        <div id="NRJust2020"></div>
                       </div> 
                     <!--Section Chart-->
                     
@@ -1366,32 +1476,32 @@
                       
                       <!-- Tab content -->
                       <div id="tabcontent-viz-2-2016" class="tabcontent-viz-2">
-                        <h3>Suicides in prison and corruption index of countries for the year 2016</h3>
+                        <h3>Suicides in prison vs corruption index of country for the year of 2016</h3>
                         <p></p>
                         <div id="active-viz2-21"></div>
                           
                       </div>
                       
                       <div id="tabcontent-viz-2-2017" class="tabcontent-viz-2 hidden">
-                        <h3>Suicides in prison and corruption index of countries for the year 2017</h3>
+                        <h3>Suicides in prison vs corruption index of country for the year of 2017</h3>
                         <p></p>
                         <div id="active-viz2-22"></div>
                       </div>
                       
                       <div id="tabcontent-viz-2-2018" class="tabcontent-viz-2 hidden">
-                        <h3>Suicides in prison and corruption index of countries for the year 2018</h3>
+                        <h3>Suicides in prison vs corruption index of country for the year of 2018</h3>
                         <p></p>
                         <div id="active-viz2-23"></div>
                       </div> 
                       
                       <div id="tabcontent-viz-2-2019" class="tabcontent-viz-2 hidden" >
-                        <h3>Suicides in prison and corruption index of countries for the year 2019</h3>
+                        <h3>Suicides in prison vs corruption index of country for the year of 2019</h3>
                         <p></p>
                         <div id="active-viz2-24"></div>
                       </div> 
                       
                       <div id="tabcontent-viz-2-2020" class="tabcontent-viz-2 hidden" >
-                        <h3>Suicides in prison and corruption index of countries for the year 2020</h3>
+                        <h3>Suicides in prison vs corruption index of country for the year of 2020</h3>
                         <p></p>
                         <div id="active-viz2-25"></div>
                       </div> 
@@ -1510,7 +1620,7 @@
                                         </tr>
                                         <tr>
                                             <td>Description</td>
-                                            <td>Custom dataset with info about deaths in prisons and government expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020</td>
+                                            <td>Custom dataset with info about deaths in prisons and governament expenditure in different justice-related sectors for 20 selected countries in europe, for the time span 2016 - 2020</td>
                                         </tr>
                                         <tr>
                                             <td>Identifier</td>
@@ -2041,76 +2151,12 @@
         <!--About-->
         <div id="about-section-main" class="section section-margins scroll-mt-20">
             <h2 class="to-animate-h2 prison-h2 text-center roboto-condensed">About</h2>
-            <div class="flex flex-col justify-between items-start prison-padding-bottom prison-border-bottom">
-                <p class="to-animate-text-block paragraph">
-                    Bars Behind Bars' purpose if of academic nature only. The project has been developed for the final examination of the <span class="keyword">Open Access and Digital Ethics</span> course of the Master's Degree in <span class="keyword">Digital Humanities and Digital Knowledge</span> (University of Bologna).
-                </p>
-                <p class="to-animate-text-block paragraph">
-                    The workflow and the website's structure have been derived from the course instructions, while the topic, the choice of the datasets and all the content of the website are resposability of the authors.
-                </p>
+            <div class="flex flex-col md:flex-row justify-between items-start prison-padding-bottom prison-border-bottom">
+                <p class="to-animate-text-block paragraph">Bars Behind Bars' purpose if of academic nature only. The project has been developed for the final examination of the Open Access and Digital Ethics course of the Master's Degree in Digital Humanities and Digital Knowledge (University of Bologna).</p>
             </div>
             <div class="flex flex-col justify-between items-start prison-padding-top">
                 <h3 class="prison-h3"><span class="float-left animate-spin text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">The team</span></h3>
-                <div class="w-full flex flex-col prison-padding-top items-start justify-between space-y-1 md:space-y-0">
-
-                    <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
-                        <div class="w-full md:w-6/12">
-                            <p class="sub-section-title roboto-condensed">Manu Srivastava</p>
-                        </div>
-                        <div class="w-full md:w-6/12 flex flex-row justify-between">
-                            <div class="w-4/12">
-                                <img src="./assets/imgs/prisoner_illustration.svg">
-                            </div>
-                            <div class="w-6/12">
-                                <p class="paragraph">
-                                    Something about project responsibility
-                                </p>
-                                <p class="paragraph">
-                                    <a class="in-text-a">GitHub</a> - <a class="in-text-a">LinkedIn</a> - <a class="in-text-a">E-mail</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
-                        <div class="w-full md:w-6/12">
-                            <p class="sub-section-title roboto-condensed">Francesca Budel</p>
-                        </div>
-                        <div class="w-full md:w-6/12 flex flex-row justify-between">
-                            <div class="w-4/12">
-                                <img src="./assets/imgs/prisoner_illustration.svg">
-                            </div>
-                            <div class="w-6/12">
-                                <p class="paragraph">
-                                    Something about project responsibility
-                                </p>
-                                <p class="paragraph">
-                                    <a class="in-text-a">GitHub</a> - <a class="in-text-a">LinkedIn</a> - <a class="in-text-a">E-mail</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="to-animate-text-block w-full flex flex-col md:flex-row prison-padding-bottom">
-                        <div class="w-full md:w-6/12">
-                            <p class="sub-section-title roboto-condensed">Tommaso Battisti</p>
-                        </div>
-                        <div class="w-full md:w-6/12 flex flex-row justify-between">
-                            <div class="w-4/12">
-                                <img src="./assets/imgs/prisoner_illustration.svg">
-                            </div>
-                            <div class="w-6/12">
-                                <p class="paragraph">
-                                   Something about project responsibility
-                                </p>
-                                <p class="paragraph">
-                                    <a class="in-text-a">GitHub</a> - <a class="in-text-a">LinkedIn</a> - <a class="in-text-a">E-mail</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-
+                <div class="w-full flex flex-col md:flex-row prison-padding-top items-start justify-between space-y-1 md:space-y-0">
                 </div>
             </div>
         </div>
@@ -2125,10 +2171,10 @@
                 <a id="logo-footer" href="#site-banner" class="text-8xl lg:text-9xl 2xl:text-9xl font-semibold">BhB</a>    
             </div>
 
-            <div class="to-animate-text-block flex flex-col prison-padding-bottom justify-between space-y-2">
-                <a class="w-fit in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars.git" target="_blank">GitHub</a>
-                <a class="w-fit in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Project's course</a>
-                <a class="w-fit in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/documentation.ipynb" target="_blank">Online documentation</a>
+            <div class="flex flex-col prison-padding-bottom justify-between space-y-2">
+                <a class="to-animate-text-block w-fit in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars.git" target="_blank">GitHub</a>
+                <a class="to-animate-text-block w-fit in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Project's course</a>
+                <a class="to-animate-text-block w-fit in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars/blob/main/documentation.ipynb" target="_blank">Online documentation</a>
             </div>
             
             <div id="license-block" class="to-animate-text-block">
@@ -2143,8 +2189,8 @@
             <div class="h-[80%] flex justify-center to-animate-text-block">
                 <img class="animate-spin h-full aspect-square" src="assets/icons/add.svg">
             </div>
-            <div class="h-[fit] flex flex-row items-baseline justify-end to-animate-text-block">
-                <a class="in-text-a" href="#site-banner">Back to top</a>
+            <div class="h-[fit] flex flex-row items-baseline justify-end">
+                <a class="in-text-a to-animate-text-block" href="#site-banner">Back to top</a>
             </div>
             
         </div>
@@ -2152,6 +2198,13 @@
 
 </body>
 <script src="assets/scripts/viz1-11.js" type="application/javascript"></script>
+
+<script src="assets/scripts/viz1-21.js" type="application/javascript"></script>
+<script src="assets/scripts/viz1-22.js" type="application/javascript"></script>
+<script src="assets/scripts/viz1-23.js" type="application/javascript"></script>
+<script src="assets/scripts/viz1-24.js" type="application/javascript"></script>
+<script src="assets/scripts/viz1-25.js" type="application/javascript"></script>
+
 <script src="assets/scripts/viz2-11.js" type="application/javascript"></script>
 <script src="assets/scripts/viz2-21.js" type="application/javascript"></script>
 <script src="assets/scripts/viz2-22.js" type="application/javascript"></script>
