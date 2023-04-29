@@ -77,7 +77,27 @@ html {
     height: 500px;
     background-color: rgba(204, 200, 188, 1);
   }
-  #chartdiv {
+  #chartdiv1 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(204, 200, 188, 1);
+  }
+#chartdiv2 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(204, 200, 188, 1);
+  }
+#chartdiv3 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(204, 200, 188, 1);
+  }
+#chartdiv4 {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(204, 200, 188, 1);
+  }
+#chartdiv5 {
     width: 100%;
     height: 500px;
     background-color: rgba(204, 200, 188, 1);
@@ -86,6 +106,64 @@ html {
       width: 100%;
       height: 500px
     }
+#BubbleChart2017 {
+      width: 100%;
+      height: 500px
+    }
+#BubbleChart2018 {
+      width: 100%;
+      height: 500px
+    }
+#BubbleChart2019 {
+      width: 100%;
+      height: 500px
+    }
+#BubbleChart2020 {
+      width: 100%;
+      height: 500px
+    }
+
+#NRJust2016 {
+  width: 100%;
+  height: 650px;
+}
+#NRJust2017 {
+  width: 100%;
+  height: 650px;
+}
+#NRJust2018 {
+  width: 100%;
+  height: 650px;
+}
+#NRJust2019 {
+  width: 100%;
+  height: 650px;
+}
+#NRJust2020 {
+  width: 100%;
+  height: 650px;
+}
+
+#LivSuicide2016 {
+  width: 100%;
+  height: 500px;
+}
+#LivSuicide2017 {
+  width: 100%;
+  height: 500px;
+}
+#LivSuicide2018 {
+  width: 100%;
+  height: 500px;
+}
+#LivSuicide2019 {
+  width: 100%;
+  height: 500px;
+}
+#LivSuicide2020 {
+  width: 100%;
+  height: 500px;
+}
 /* Viz styles end here */
 
 /* Random tab styles added by Manu - need to be removed later */

@@ -1,7 +1,7 @@
 am5.ready(function() {
     
     // Create root
-    var root = am5.Root.new("chartdiv"); 
+    var root = am5.Root.new("chartdiv1"); 
     
     // Set themes
     root.setThemes([
