@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    $('.tabcontent-viz-2').addClass('hidden');
+    $('#tabcontent-viz-2-2016').removeClass('hidden');
+
     // Smooth scrolling to anchor links on the same page
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
