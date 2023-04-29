@@ -160,7 +160,8 @@ var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
 series0.columns.template.setAll({
   width: am5.percent(80),
   tooltipY: 0,
-  strokeOpacity: 0
+  strokeOpacity: 0,
+  fill: am5.color(0x668886)
 });
 
 
@@ -180,9 +181,10 @@ var series1 = chart.series.push(am5xy.ColumnSeries.new(root, {
 }));
 
 series1.columns.template.setAll({
-  width: am5.percent(50),
+  width: am5.percent(40),
   tooltipY: 0,
-  strokeOpacity: 0
+  strokeOpacity: 0,
+  fill: am5.color(0xE96E19)
 });
 
 series1.data.setAll(data);
