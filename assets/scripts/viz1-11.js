@@ -47,7 +47,7 @@ am5.ready(function() {
     
     yAxis.children.moveValue(am5.Label.new(root, {
       rotation: -90,
-      text: "Living conditions in prison",
+      text: "",
     }), 0);
     
     
