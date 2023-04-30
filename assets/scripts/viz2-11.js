@@ -143,27 +143,244 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
       });
 
     polygonSeries.mapPolygons.template.events.on("click", function(ev) {
-        console.log("Clicked on a column", ev.target);
+        //console.log("Clicked on a column", Object.keys(ev.target));
+        console.log("Clicked on a column", ev.target['_dataItem']['_settings']['id']);
         //console.log(ev.target['uid']);
-        switch(ev.target['uid']) {
-          case 102:
+        switch(ev.target['_dataItem']['_settings']['id']) {
+          case 'EE':
             var data = [
-              {id: "IT", value: 00, category: "FBAD"},
-              {id: "IT", value: 00, category: "FGOOD"}, 
-              {id: "IT", value: 00, category: "UNK"}, 
-              {id: "IT", value: 00, category: "VBAD"},
-              {id: "IT", value: 100, category: "VGOOD"},
+              {id: "EE", value: 12, category: "FBAD"},
+              {id: "EE", value: 56, category: "FGOOD"}, 
+              {id: "EE", value: 24, category: "UNK"}, 
+              {id: "EE", value: 2, category: "VBAD"},
+              {id: "EE", value: 6, category: "VGOOD"},
               ];
           
             series.data.setAll(data);
             break;
-          case 82:
+          case 'SE':
             var data = [
-              {id: "SW", value: 10, category: "FBAD"},
-              {id: "SW", value: 00, category: "FGOOD"}, 
-              {id: "SW", value: 00, category: "UNK"}, 
-              {id: "SW", value: 00, category: "VBAD"},
-              {id: "SW", value: 90, category: "VGOOD"},
+              {id: "SE", value: 10, category: "FBAD"},
+              {id: "SE", value: 53, category: "FGOOD"}, 
+              {id: "SE", value: 9, category: "UNK"}, 
+              {id: "SE", value: 4, category: "VBAD"},
+              {id: "SE", value: 24, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'FI':
+            var data = [
+              {id:"FI", value: 10, category: "FBAD"},
+              {id:"FI", value: 65,category: "FGOOD"},
+              {id:"FI", value: 8, category: "UNK"},
+              {id:"FI", value: 2, category: "VBAD"},
+              {id:"FI", value: 15, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'DK':
+            var data = [
+              {id:"DK", value:6, category: "FBAD"},
+              {id:"DK", value: 51, category: "FGOOD"},
+              {id:"DK", value:5, category: "UNK"},
+              {id:"DK", value: 1, category: "VBAD"},
+              {id:"DK", value: 37, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'IE':
+            var data = [
+              {id:"IE", value: 13, category: "FBAD"},
+              {id:"IE", value: 55, category:"FGOOD"},
+              {id:"IE", value: 5, category: "UNK"},
+              {id:"IE", value: 7, category:"VBAD"},
+              {id:"IE", value: 20, category:"VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'BG':
+            var data = [
+              {id:"BG", value:35, category: "FBAD"},
+              {id:"BG", value: 21, category: "FGOOD"},
+              {id:"BG", value: 7, category: "UNK"},
+              {id:"BG", value: 35, category: "VBAD"},
+              {id:"BG", value: 2, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'HG':
+            var data = [
+              {id:"HG", value:22, category: "FBAD"},
+              {id:"HG", value:44, category: "FGOOD"},
+              {id:"HG", value:18, category: "UNK"},
+              {id:"HG", value:11, category: "VBAD"},
+              {id:"HG", value:5, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'PL':
+            var data = [
+              {id:"PL", value:32, category:"FBAD"},
+              {id:"PL", value:40, category:"FGOOD"},
+              {id:"PL", value:11, category:"UNK"},
+              {id:"PL", value:12, category:"VBAD"},
+              {id:"PL", value:5, category:"VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'RO':
+            var data = [
+              {id: "RO", value: 23, category: "FBAD"},
+              {id: "RO", value:43, category: "FGOOD"},
+              {id: "RO", value:11, category: "UNK"},
+              {id: "RO", value:15, category: "VBAD"},
+              {id: "RO", value:8, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'SK':
+            var data = [
+              {id: "SK", value:36, category: "FBAD"},
+              {id: "SK", value:19, category: "FGOOD"},
+              {id: "SK", value:18, category: "UNK"},
+              {id: "SK", value:25, category: "VBAD"},
+              {id: "SK", value:2, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'SI':
+            var data = [
+              {id: "SI", value:32, category: "FBAD"},
+              {id: "SI", value:27, category: "FGOOD"},
+              {id: "SI", value:6, category: "UNK"},
+              {id: "SI", value:32, category: "VBAD"},
+              {id: "SI", value:3, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'GR':
+            var data = [
+              {id: "GR", value:26, category: "FBAD"},
+              {id: "GR", value:41, category: "FGOOD"},
+              {id: "GR", value:11, category: "UNK"},
+              {id: "GR", value:16, category: "VBAD"},
+              {id: "GR", value:6, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'IT':
+            var data = [
+              {id: "IT", value:36, category: "FBAD"},
+              {id: "IT", value:23, category: "FGOOD"},
+              {id: "IT", value:14, category: "UNK"},
+              {id: "IT", value:25, category: "VBAD"},
+              {id: "IT", value:2, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'PT':
+            var data = [
+              {id: "PT",value: 31,  category: "FBAD"},
+              {id: "PT", value:31,  category: "FGOOD"},
+              {id: "PT", value: 23, category: "UNK"},
+              {id: "PT", value:13, category: "VBAD"},
+              {id: "PT", value: 2, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'ES':
+            var data = [
+              {id: "ES", value:38, category:"FBAD"},
+              {id: "ES", value:27, category:"FGOOD"},
+              {id: "ES", value:14, category:"UNK"},
+              {id: "ES", value:18, category:"VBAD"},
+              {id: "ES", value:3, category:"VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'AT':
+            var data = [
+              {id: "AT", value:13, category: "FBAD"},
+              {id: "AT", value:59, category: "FGOOD"},
+              {id: "AT", value:7, category: "UNK"},
+              {id: "AT", value:3, category: "VBAD"},
+              {id: "AT", value:18, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'FR':
+            var data = [
+              {id: "FR", value:29, category: "FBAD"},
+              {id: "FR", value: 49, category: "FGOOD"},
+              {id: "FR", value:7, category: "UNK"},
+              {id: "FR", value:10, category: "VBAD"},
+              {id: "FR", value:5, category: "VGOOD"} ,
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'DE':
+            var data = [
+              {id: "DE", value:13, category: "FBAD"},
+              {id: "DE", value:54, category: "FGOOD"},
+              {id: "DE", value:14, category: "UNK"},
+              {id: "DE", value:4, category: "VBAD"},
+              {id: "DE", value:15, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'NL':
+            var data = [
+              {id: "NL", value:9, category: "FBAD"},
+              {id: "NL", value:56, category: "FGOOD"},
+              {id: "NL", value:16, category: "UNK"},
+              {id: "NL", value:3, category: "VBAD"},
+              {id: "NL", value:16, category: "VGOOD"},
+              ];
+          
+            series.data.setAll(data);
+            break;
+
+          case 'BE':
+            var data = [
+              {id: "BE", value:19, category: "FBAD"},
+              {id: "BE", value:56, category: "FGOOD"},
+              {id: "BE", value:12, category: "UNK"},
+              {id: "BE", value:7, category: "VBAD"},
+              {id: "BE", value:6, category: "VGOOD"},
               ];
           
             series.data.setAll(data);
@@ -205,107 +422,3 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
   });
 
 ;// end am5.ready()
-
-//all country data
-[
-  {id: "EE", value: 12, category: "FBAD"},
-  {id: "EE", value: 56, category: "FGOOD"}, 
-  {id: "EE", value: 24, category: "UNK"}, 
-  {id: "EE", value: 2, category: "VBAD"},
-  {id: "EE", value: 6, category: "VGOOD"},
-  {id: "SE", value: 10, category: "FBAD"},
-  {id: "SE", value: 53, category: "FGOOD"}, 
-  {id: "SE", value: 9, category: "UNK"}, 
-  {id: "SE", value: 4, category: "VBAD"},
-  {id: "SE", value: 24, category: "VGOOD"},
-  {id:"FI", value: 10, category: "FBAD"},
-  {id:"FI", value: 65,category: "FGOOD"},
-  {id:"FI", value: 8, category: "UNK"},
-  {id:"FI", value: 2, category: "VBAD"},
-  {id:"FI", value: 15, category: "VGOOD"},
-  {id:"DK", value:6, category: "FBAD"},
-  {id:"DK", value: 51, category: "FGOOD"},
-  {id:"DK", value:5, category: "UNK"},
-  {id:"DK", value: 1, category: "VBAD"},
-  {id:"DK", value: 37, category: "VGOOD"},
-  {id:"IE", value: 13, category: "FBAD"},
-  {id:"IE", value: 55, category:"FGOOD"},
-  {id:"IE", value: 5, category: "UNK"},
-  {id:"IE", value: 7, category:"VBAD"},
-  {id:"IE", value: 20, category:"VGOOD"},
-  {id:"BG", value:35, category: "FBAD"},
-  {id:"BG", value: 21, category: "FGOOD"},
-  {id:"BG", value: 7, category: "UNK"},
-  {id:"BG", value: 35, category: "VBAD"},
-  {id:"BG", value: 2, category: "VGOOD"},
-  {id:"HG", value:22, category: "FBAD"},
-  {id:"HG", value:44, category: "FGOOD"},
-  {id:"HG", value:18, category: "UNK"},
-  {id:"HG", value:11, category: "VBAD"},
-  {id:"HG", value:5, category: "VGOOD"},
-  {id:"PL", value:32, category:"FBAD"},
-  {id:"PL", value:40, category:"FGOOD"},
-  {id:"PL", value:11, category:"UNK"},
-  {id:"PL", value:12, category:"VBAD"},
-  {id:"PL", value:5, category:"VGOOD"},
-  {id: "RO", value: 23, category: "FBAD"},
-  {id: "RO", value:43, category: "FGOOD"},
-  {id: "RO", value:11, category: "UNK"},
-  {id: "RO", value:15, category: "VBAD"},
-  {id: "RO", value:8, category: "VGOOD"},
-  {id: "SK", value:36, category: "FBAD"},
-  {id: "SK", value:19, category: "FGOOD"},
-  {id: "SK", value:18, category: "UNK"},
-  {id: "SK", value:25, category: "VBAD"},
-  {id: "SK", value:2, category: "VGOOD"},
-  {id: "SI", value:32, category: "FBAD"},
-  {id: "SI", value:27, category: "FGOOD"},
-  {id: "SI", value:6, category: "UNK"},
-  {id: "SI", value:32, category: "VBAD"},
-  {id: "SI", value:3, category: "VGOOD"},
-  {id: "GR", value:26, category: "FBAD"},
-  {id: "GR", value:41, category: "FGOOD"},
-  {id: "GR", value:11, category: "UNK"},
-  {id: "GR", value:16, category: "VBAD"},
-  {id: "GR", value:6, category: "VGOOD"},
-  {id: "IT", value:36, category: "FBAD"},
-  {id: "IT", value:23, category: "FGOOD"},
-  {id: "IT", value:14, category: "UNK"},
-  {id: "IT", value:25, category: "VBAD"},
-  {id: "IT", value:2, category: "VGOOD"},
-  {id: "PT",value: 31,  category: "FBAD"},
-  {id: "PT", value:31,  category: "FGOOD"},
-  {id: "PT", value: 23, category: "UNK"},
-  {id: "PT", value:13, category: "VBAD"},
-  {id: "PT", value: 2, category: "VGOOD"},
-  {id: "ES", value:38, category:"FBAD"},
-  {id: "ES", value:27, category:"FGOOD"},
-  {id: "ES", value:14, category:"UNK"},
-  {id: "ES", value:18, category:"VBAD"},
-  {id: "ES", value:3, category:"VGOOD"},
-  {id: "AT", value:13, category: "FBAD"},
-  {id: "AT", value:59, category: "FGOOD"},
-  {id: "AT", value:7, category: "UNK"},
-  {id: "AT", value:3, category: "VBAD"},
-  {id: "AT", value:18, category: "VGOOD"},
-  {id: "FR", value:29, category: "FBAD"},
-  {id: "FR", value: 49, category: "FGOOD"},
-  {id: "FR", value:7, category: "UNK"},
-  {id: "FR", value:10, category: "VBAD"},
-  {id: "FR", value:5, category: "VGOOD"} ,
-  {id: "DE", value:13, category: "FBAD"},
-  {id: "DE", value:54, category: "FGOOD"},
-  {id: "DE", value:14, category: "UNK"},
-  {id: "DE", value:4, category: "VBAD"},
-  {id: "DE", value:15, category: "VGOOD"},
-  {id: "NL", value:9, category: "FBAD"},
-  {id: "NL", value:56, category: "FGOOD"},
-  {id: "NL", value:16, category: "UNK"},
-  {id: "NL", value:3, category: "VBAD"},
-  {id: "NL", value:16, category: "VGOOD"},
-  {id: "BE", value:19, category: "FBAD"},
-  {id: "BE", value:56, category: "FGOOD"},
-  {id: "BE", value:12, category: "UNK"},
-  {id: "BE", value:7, category: "VBAD"},
-  {id: "BE", value:6, category: "VGOOD"}
-]
