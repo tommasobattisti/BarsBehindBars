@@ -678,6 +678,10 @@ video {
   width: 100%;
 }
 
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -711,6 +715,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1524,6 +1532,14 @@ tbody tr:hover {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .md\:rotate-0 {
