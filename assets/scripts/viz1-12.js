@@ -31,7 +31,7 @@ am5.ready(function() {
     }));
     
     xAxis.children.moveValue(am5.Label.new(root, {
-      text: "Living Conditions and Justice Expenditure",
+      text: "Justice Expenditure",
       x: am5.p50,
       centerX: am5.p50
     }), xAxis.children.length - 1);
@@ -45,7 +45,8 @@ am5.ready(function() {
     
     yAxis.children.moveValue(am5.Label.new(root, {
       rotation: -90,
-      text: "Living conditions in prison",
+      text: "Living conditions",
+      y: am5.p50,
     }), 0);
     
     
