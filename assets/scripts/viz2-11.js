@@ -27,7 +27,7 @@ am5.ready(function() {
         layout: root.verticallLayout,
         radius: am5.percent(65),
         centerY: am5.percent(50),
-        y: am5.percent(50),
+        y: am5.percent(50)
       }));
 
     //create series 

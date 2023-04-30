@@ -22,6 +22,9 @@ am5.ready(function() {
         wheelX: "none",
         wheelY: "none",
         layout: root.verticalLayout,
+        radius: am5.percent(65),
+        centerY: am5.percent(50),
+        y: am5.percent(50)
       }));
 
     //create series 
@@ -29,6 +32,48 @@ am5.ready(function() {
         valueField: "value",
         categoryField: "category"
       }));
+
+      series.labels.template.set("forceHidden", true);
+      series.ticks.template.set("forceHidden", true);
+      series.get("colors").set("colors", [
+        am5.color(0x2A3837), //very bad
+        am5.color(0x4A605F), //fairly bad
+        am5.color(0x4C908D), //fairly good
+        am5.color(0x73BBB8), //very good
+        am5.color(0x668886) //unknown
+      ]);
+      
+      var legend = pie.children.push(am5.Legend.new(root, {
+        nameField: "name",
+        fillField: "color",
+        strokeField: "color",
+        centerX: am5.percent(10),
+        x: am5.percent(10),
+        centerY: am5.percent(0),
+        y: am5.percent(0),
+      }));
+      
+      legend.data.setAll([
+      {
+        name: "Very Bad",
+        color: am5.color(0x2A3837)
+      }, {
+        name: "Fairly Bad",
+        color: am5.color(0x4A605F)
+      },
+      {
+        name: "Fairly Good",
+        color: am5.color(0x4C908D)
+      },
+      {
+        name: "Very Good",
+        color: am5.color(0x73BBB8)
+      },
+      {
+        name: "Unknown",
+        color: am5.color(0x668886)
+      }
+    ]);
 
 
     var data = [
