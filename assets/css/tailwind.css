@@ -682,6 +682,10 @@ video {
   width: 41.666667%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .table-auto {
   table-layout: auto;
 }
