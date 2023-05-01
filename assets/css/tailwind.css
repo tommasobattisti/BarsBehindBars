@@ -1546,6 +1546,14 @@ tbody tr:hover {
     width: 41.666667%;
   }
 
+  .md\:w-\[47\.5\%\] {
+    width: 47.5%;
+  }
+
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
   .md\:rotate-0 {
     --tw-rotate: 0deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
