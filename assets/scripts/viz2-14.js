@@ -77,11 +77,11 @@ am5.ready(function() {
 
 
     var data = [
+    {id: "EE", value: 3, category: "VBAD"},
     {id: "EE", value: 12, category: "FBAD"},
     {id: "EE", value: 49, category: "FGOOD"}, 
-    {id: "EE", value: 30, category: "UNK"}, 
-    {id: "EE", value: 3, category: "VBAD"},
     {id: "EE", value: 6, category: "VGOOD"},
+    {id: "EE", value: 30, category: "UNK"}, 
     ];
     
 

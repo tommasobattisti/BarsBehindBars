@@ -77,11 +77,11 @@ am5.ready(function() {
 
 
     var data = [
-    {id: "EE", value: 11, category: "FBAD"},
-    {id: "EE", value: 54, category: "FGOOD"}, 
-    {id: "EE", value: 27, category: "UNK"}, 
     {id: "EE", value: 1, category: "VBAD"},
-    {id: "EE", value: 7, category: "VGOOD"},
+    {id: "EE", value: 11, category: "FBAD"},
+    {id: "EE", value: 54, category: "FGOOD"},
+    {id: "EE", value: 7, category: "VGOOD"}, 
+    {id: "EE", value: 27, category: "UNK"}, 
     ];
 
   series.data.setAll(data);
@@ -145,11 +145,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
       switch(ev.target['_dataItem']['_settings']['id']) {
         case 'EE':
           var data = [
+            {id: "EE", value: 1, category: "VBAD"},
             {id: "EE", value: 11, category: "FBAD"},
             {id: "EE", value: 54, category: "FGOOD"}, 
-            {id: "EE", value: 27, category: "UNK"}, 
-            {id: "EE", value: 1, category: "VBAD"},
             {id: "EE", value: 7, category: "VGOOD"},
+            {id: "EE", value: 27, category: "UNK"}, 
             ];
         
           series.data.setAll(data);
@@ -157,11 +157,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'SE':
           var data = [
+            {id: "SE", value: 3, category: "VBAD"},
             {id: "SE", value: 11, category: "FBAD"},
             {id: "SE", value: 53, category: "FGOOD"}, 
-            {id: "SE", value: 11, category: "UNK"}, 
-            {id: "SE", value: 3, category: "VBAD"},
             {id: "SE", value: 22, category: "VGOOD"},
+            {id: "SE", value: 11, category: "UNK"}, 
             ];
         
           series.data.setAll(data);
@@ -169,11 +169,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'FI':
           var data = [
+            {id:"FI", value: 1, category: "VBAD"},
             {id:"FI", value: 9, category: "FBAD"},
             {id:"FI", value: 65,category: "FGOOD"},
-            {id:"FI", value: 8, category: "UNK"},
-            {id:"FI", value: 1, category: "VBAD"},
             {id:"FI", value: 17, category: "VGOOD"},
+            {id:"FI", value: 8, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -181,11 +181,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'DK':
           var data = [
+            {id:"DK", value: 2, category: "VBAD"},
             {id:"DK", value:7, category: "FBAD"},
             {id:"DK", value: 49, category: "FGOOD"},
-            {id:"DK", value:4, category: "UNK"},
-            {id:"DK", value: 2, category: "VBAD"},
             {id:"DK", value: 38, category: "VGOOD"},
+            {id:"DK", value:4, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -193,11 +193,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'IE':
           var data = [
+            {id:"IE", value: 7, category:"VBAD"},
             {id:"IE", value: 12, category: "FBAD"},
             {id:"IE", value: 55, category:"FGOOD"},
-            {id:"IE", value: 6, category: "UNK"},
-            {id:"IE", value: 7, category:"VBAD"},
             {id:"IE", value: 20, category:"VGOOD"},
+            {id:"IE", value: 6, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -205,11 +205,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'BG':
           var data = [
+            {id:"BG", value: 26, category: "VBAD"},
             {id:"BG", value:31, category: "FBAD"},
             {id:"BG", value: 27, category: "FGOOD"},
-            {id:"BG", value: 13, category: "UNK"},
-            {id:"BG", value: 26, category: "VBAD"},
             {id:"BG", value: 3, category: "VGOOD"},
+            {id:"BG", value: 13, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -217,11 +217,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'HG':
           var data = [
+            {id:"HG", value:8, category: "VBAD"},
             {id:"HG", value:22, category: "FBAD"},
             {id:"HG", value:42, category: "FGOOD"},
-            {id:"HG", value:22, category: "UNK"},
-            {id:"HG", value:8, category: "VBAD"},
             {id:"HG", value:6, category: "VGOOD"},
+            {id:"HG", value:22, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -229,11 +229,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'PL':
           var data = [
+            {id:"PL", value:16, category:"VBAD"},
             {id:"PL", value:29, category:"FBAD"},
             {id:"PL", value:37, category:"FGOOD"},
-            {id:"PL", value:13, category:"UNK"},
-            {id:"PL", value:16, category:"VBAD"},
             {id:"PL", value:5, category:"VGOOD"},
+            {id:"PL", value:13, category:"UNK"},
             ];
         
           series.data.setAll(data);
@@ -241,11 +241,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'RO':
           var data = [
+            {id: "RO", value:15, category: "VBAD"},
             {id: "RO", value: 24, category: "FBAD"},
             {id: "RO", value:42, category: "FGOOD"},
-            {id: "RO", value:14, category: "UNK"},
-            {id: "RO", value:15, category: "VBAD"},
             {id: "RO", value:5, category: "VGOOD"},
+            {id: "RO", value:14, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -253,11 +253,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'SK':
           var data = [
+            {id: "SK", value:19, category: "VBAD"},
             {id: "SK", value:39, category: "FBAD"},
             {id: "SK", value:26, category: "FGOOD"},
-            {id: "SK", value:13, category: "UNK"},
-            {id: "SK", value:19, category: "VBAD"},
             {id: "SK", value:3, category: "VGOOD"},
+            {id: "SK", value:13, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -265,11 +265,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'SI':
           var data = [
+            {id: "SI", value:22, category: "VBAD"},
             {id: "SI", value:32, category: "FBAD"},
             {id: "SI", value:31, category: "FGOOD"},
-            {id: "SI", value:13, category: "UNK"},
-            {id: "SI", value:22, category: "VBAD"},
             {id: "SI", value:2, category: "VGOOD"},
+            {id: "SI", value:13, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -277,11 +277,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'GR':
           var data = [
+            {id: "GR", value:9, category: "VBAD"},
             {id: "GR", value:22, category: "FBAD"},
             {id: "GR", value:48, category: "FGOOD"},
-            {id: "GR", value:10, category: "UNK"},
-            {id: "GR", value:9, category: "VBAD"},
             {id: "GR", value:11, category: "VGOOD"},
+            {id: "GR", value:10, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -289,11 +289,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'IT':
           var data = [
+            {id: "IT", value:21, category: "VBAD"},
             {id: "IT", value:32, category: "FBAD"},
             {id: "IT", value:29, category: "FGOOD"},
-            {id: "IT", value:15, category: "UNK"},
-            {id: "IT", value:21, category: "VBAD"},
             {id: "IT", value:3, category: "VGOOD"},
+            {id: "IT", value:15, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -301,11 +301,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'PT':
           var data = [
+            {id: "PT", value:11, category: "VBAD"},
             {id: "PT",value: 32,  category: "FBAD"},
             {id: "PT", value:48,  category: "FGOOD"},
-            {id: "PT", value: 7, category: "UNK"},
-            {id: "PT", value:11, category: "VBAD"},
             {id: "PT", value: 2, category: "VGOOD"},
+            {id: "PT", value: 7, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -313,11 +313,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'ES':
           var data = [
+            {id: "ES", value:17, category:"VBAD"},
             {id: "ES", value:32, category:"FBAD"},
             {id: "ES", value:32, category:"FGOOD"},
-            {id: "ES", value:12, category:"UNK"},
-            {id: "ES", value:17, category:"VBAD"},
             {id: "ES", value:7, category:"VGOOD"},
+            {id: "ES", value:12, category:"UNK"},
             ];
         
           series.data.setAll(data);
@@ -325,11 +325,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'AT':
           var data = [
+            {id: "AT", value:2, category: "VBAD"},
             {id: "AT", value:7, category: "FBAD"},
             {id: "AT", value:58, category: "FGOOD"},
-            {id: "AT", value:10, category: "UNK"},
-            {id: "AT", value:2, category: "VBAD"},
             {id: "AT", value:23, category: "VGOOD"},
+            {id: "AT", value:10, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -337,11 +337,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'FR':
           var data = [
+            {id: "FR", value:8, category: "VBAD"},
             {id: "FR", value:23, category: "FBAD"},
             {id: "FR", value: 52, category: "FGOOD"},
+            {id: "FR", value:6, category: "VGOOD"},
             {id: "FR", value:11, category: "UNK"},
-            {id: "FR", value:8, category: "VBAD"},
-            {id: "FR", value:6, category: "VGOOD"} ,
             ];
         
           series.data.setAll(data);
@@ -349,11 +349,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'DE':
           var data = [
+            {id: "DE", value:3, category: "VBAD"},
             {id: "DE", value:14, category: "FBAD"},
             {id: "DE", value:55, category: "FGOOD"},
-            {id: "DE", value:9, category: "UNK"},
-            {id: "DE", value:3, category: "VBAD"},
             {id: "DE", value:19, category: "VGOOD"},
+            {id: "DE", value:9, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -361,11 +361,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'NL':
           var data = [
+            {id: "NL", value:3, category: "VBAD"},
             {id: "NL", value:7, category: "FBAD"},
             {id: "NL", value:54, category: "FGOOD"},
-            {id: "NL", value:11, category: "UNK"},
-            {id: "NL", value:3, category: "VBAD"},
             {id: "NL", value:25, category: "VGOOD"},
+            {id: "NL", value:11, category: "UNK"},
             ];
         
           series.data.setAll(data);
@@ -373,11 +373,11 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
 
         case 'BE':
           var data = [
+            {id: "BE", value:5, category: "VBAD"},
             {id: "BE", value:18, category: "FBAD"},
             {id: "BE", value:55, category: "FGOOD"},
-            {id: "BE", value:13, category: "UNK"},
-            {id: "BE", value:5, category: "VBAD"},
             {id: "BE", value:9, category: "VGOOD"},
+            {id: "BE", value:13, category: "UNK"},
             ];
         
           series.data.setAll(data);
