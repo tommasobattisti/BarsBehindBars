@@ -364,7 +364,7 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
               color: am5.color(0x668886)
             },
             {
-              name: "Country - Belgium",
+              name: "Country - Bulgaria",
               color: am5.color(0xCCC8BC)
             }
           ]);
