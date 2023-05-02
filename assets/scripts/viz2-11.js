@@ -75,6 +75,10 @@ am5.ready(function() {
     {
       name: "Unknown",
       color: am5.color(0x668886)
+    },
+    {
+      name: "Country - Estonia",
+      color: am5.color(0xCCC8BC)
     }
   ]);
    
@@ -302,6 +306,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
               ];
           
             series.data.setAll(data);
+
+            legend.data.setAll([
+              {
+                name: "Very Bad",
+                color: am5.color(0x2A3837)
+              }, {
+                name: "Fairly Bad",
+                color: am5.color(0x4A605F)
+              },
+              {
+                name: "Fairly Good",
+                color: am5.color(0x4C908D)
+              },
+              {
+                name: "Very Good",
+                color: am5.color(0x73BBB8)
+              },
+              {
+                name: "Unknown",
+                color: am5.color(0x668886)
+              },
+              {
+                name: "Country - "+'Italy',
+                color: am5.color(0x668886)
+              }
+            ]);
             break;
 
           case 'PT':

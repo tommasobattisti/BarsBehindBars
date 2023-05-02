@@ -44,7 +44,7 @@ am5.ready(function() {
       topDepth: 1,
       innerRadius: 100,
       valueField: "value",
-      categoryField: "name",
+      categoryField: "name",   //this is the thing which shows the 100 on hover
       childDataField: "children"
     }));
     
