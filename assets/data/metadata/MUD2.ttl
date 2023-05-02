@@ -25,6 +25,10 @@
             dct:language    <http://publications.europa.eu/resource/authority/language/ENG/> ;
             dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER>;
             dct:spatial <http://dbpedia.org/ontology/europe>;
+            dct:temporal    [   a dct:PeriodOfTime ;
+                                dcat:startDate "2016-01-01"^^xsd:date ;
+                                dcat:endDate   "2020-12-31"^^xsd:date ;
+                            ] ;
 
             dct:isPartOf <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data> ;
 
