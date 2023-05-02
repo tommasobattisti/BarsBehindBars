@@ -604,6 +604,14 @@ video {
   height: 100vh;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
@@ -623,22 +631,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[550\] {
-  height: 550;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .w-4\/12 {
@@ -678,10 +670,6 @@ video {
   width: 100%;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
-}
-
 .grow {
   flex-grow: 1;
 }
@@ -719,10 +707,6 @@ video {
 
 .flex-row {
   flex-direction: row;
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -817,10 +801,6 @@ video {
   background-color: rgb(204 200 188 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -849,11 +829,6 @@ video {
 .py-\[5\%\] {
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-5 {
@@ -892,16 +867,16 @@ video {
   padding-right: 1.25rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .pt-\[3px\] {
   padding-top: 3px;
 }
 
 .pt-\[60px\] {
   padding-top: 60px;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
 }
 
 .text-left {
@@ -931,16 +906,16 @@ video {
   font-weight: 300;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .uppercase {
@@ -1125,7 +1100,7 @@ video {
   font-weight: 500;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 400ms;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -1518,12 +1493,24 @@ tbody tr:hover {
     height: 550px;
   }
 
+  .md\:w-3\/12 {
+    width: 25%;
+  }
+
   .md\:w-4\/12 {
     width: 33.333333%;
   }
 
+  .md\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .md\:w-8\/12 {
@@ -1536,22 +1523,6 @@ tbody tr:hover {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-7\/12 {
-    width: 58.333333%;
-  }
-
-  .md\:w-5\/12 {
-    width: 41.666667%;
-  }
-
-  .md\:w-\[47\.5\%\] {
-    width: 47.5%;
-  }
-
-  .md\:w-3\/12 {
-    width: 25%;
   }
 
   .md\:rotate-0 {

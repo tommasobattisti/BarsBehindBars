@@ -110,9 +110,16 @@
             <h2 class="to-animate-h2 roboto-condensed prison-h2 text-center">The project</h2>
             <div class="flex flex-col-reverse md:flex-row justify-between items-center prison-padding-bottom prison-border-bottom">
                 <div id="project-left-text-block" class="to-animate-text-block w-full md:w-[45%]">
-                    <p class="text-left paragraph">Bars Behind Bars is a project developed for the <a class="in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Open Access and Digital Ethics course</a> of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna.The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
-                    <p class="text-left paragraph">This website works as a documentation of the process leading from the choice of the datasets along with their ethical, technological, legal, and qualitative analyses, to the visualisation of the results. </p>
+                    <p class="text-left paragraph">Bars Behind Bars is a project developed for the <a class="in-text-a" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/424645" target="_blank">Open Access and Digital Ethics course</a> of the Master’s degree in Digital Humanities and Digital Knowledge of the University of Bologna. The project aims at analysing the impact of different factors in the context of suicide in prisons across Europe.</p>
+                    <p class="text-left paragraph">This website works as a documentation of the process leading from the choice of the datasets along with their ethical, technological, legal, and qualitative analyses, to the visualisation of the results. The documentation as Jupyter Notebook can be downloaded from the button below.</p>
                     <p class="text-left paragraph">Further information can be found on <a  class="in-text-a" href="https://github.com/Prisoner-s-Dilemma/BarsBehindBars.git" target="_blank">GitHub</a>.</p>
+                    <div  class="w-full flex justify-center md:justify-start prison-padding-top">
+                        <a href="./documentation.ipynb" download="barsBehindBarsDocumentation.ipynb">
+                            <button id="banner-btn" class="prison-btn">
+                            Download documentation
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div id="project-numbers-right-block" class="flex flex-row w-full md:w-[45%] justify-between mb-8 md:mb-0">
                     <div class="overview-icon-block to-animate-seq flex flex-col items-center">
@@ -1659,7 +1666,7 @@
 
             <!--Results-->
             <div class="flex flex-col justify-between items-start prison-padding-top">
-                <h3 class="prison-h3"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>                
+                <h3 class="prison-h3 prison-padding-bottom"><span class="float-left animate-spin text-fill text-[#E95122] md:ml-1">+</span><span class="pl-3 md:pl-[1.2rem] roboto-condensed">Results</span></h3>                
             </div>
 
 
@@ -1670,13 +1677,13 @@
                 </div>
                 <div class="w-full md:w-8/12">
                     <p class="paragraph">
-                        What is clear from the first sight is that countries with a lower corruption index recorded also a positive perception of the justice system. In fact, focusing on the countries whose corruption index is below 25, it is possible to see how negative opinions are generally the minority. Virtuous examples are northern countries such as Finland, Sweden, and Denmark, which register the lower values of corruption during the years, and also a potive perception above 70%.
+                        What is clear from the first sight is that countries with a <span class="keyword">lower corruption index</span> recorded also a <span class="keyword">positive perception of the justice system</span>. In fact, focusing on the countries whose corruption index is below 25, it is possible to see how negative opinions are generally the minority. Virtuous examples are <span class="keyword">northern countries</span> such as Finland, Sweden, and Denmark, which register the lower values of corruption during the years, and also a potive perception above 70%.
                     </p>
                     <p class="paragraph">
-                        The other side of the coin presents a slightly heterogeneous landscape. Public perception change a lot among the countries with a higher corruption index and there are also exceptions such as Hungary, where a high corruption index correspond to a solid preference for a positive opinion towards the justice system.
+                        The other side of the coin presents a slightly <span class="keyword">heterogeneous landscape</span>. Public perception change a lot among the countries with a higher corruption index and there are also exceptions such as Hungary, where a high corruption index correspond to a solid preference for a positive opinion towards the justice system.
                     </p>
                     <p class="paragraph">
-                        Other countries, however, show how negative opinions commonly grow when the corruption index is higher. In conclusion, it seems that there is a relation between the two variables, but we should also consider that they express values derived from public opinions, therefore not objective measures. Data in general show what it is to some extent natural: it seems that countries where corruption is perceived more tend to record more negative opinions on justice system too. The contrary holds too. 
+                        Other countries, however, show how <span class="keyword">negative opinions commonly grow when the corruption index is higher</span>. In conclusion, it seems that there is a relation between the two variables, but we should also consider that values expressed derive from public opinions. Overall, data show what it is to some extent natural: it seems that countries where corruption is perceived more, also tend to record more negative opinions about the justice system. The contrary holds too. 
                     </p>
                 </div>
             </div>
@@ -1688,10 +1695,10 @@
                 </div>
                 <div class="w-full md:w-8/12">
                     <p class="paragraph">
-                        The double chart with the heatmap depicts a miscellaneous scenario. In fact, by selecting the countries with a high suicide rate (such as France) is is possible to see that the perception of the justice system is not necessarily negative. On the contrary, countries with a low suicide rate sometimes show a more negative opinion towards the justice system. This is the case, for example, of Balkan countries.
+                        The double chart with the heatmap depicts a <span class="keyword">miscellaneous scenario</span>. In fact, by selecting the countries with a high suicide rate (such as France) is is possible to see that the perception of the justice system is not necessarily negative. On the contrary, countries with a low suicide rate sometimes show a more negative opinion towards the justice system. This is the case, for example, of <span class="keyword">Balkan countries</span>.
                     </p>
                     <p class="paragraph">
-                        The only realtion holding between these two variables appear to exists for countries a Italy and Spain, where to a "medium-score" for suicide rate correspond a much more negative opinion towards the national justice system. However, since the absence of enough evidences for other countries, we cannot conclude that, overall, there exists a general relation that bond these two variables. For what concerns countries where this relation seems to hold, it should be necessary to perform a more detailed study on the topic before deriving any further conclusion. 
+                        The only realtion holding between these two variables appear to exists for countries a <span class="keyword">Italy</span> and <span class="keyword">Spain</span>, where to a "medium-score" for suicide rate correspond a much more negative opinion towards the national justice system. However, given the absence of enough evidences for other countries, <span class="keyword">we cannot conclude</span> that, overall, there exists a <span class="keyword">general relation</span> that bond these two variables. For what concerns countries where this relation seems to hold, it should be necessary to perform a more detailed study on the topic before deriving any further conclusion. 
                     </p>
                     
                 </div>
@@ -1704,13 +1711,13 @@
                 </div>
                 <div class="w-full md:w-8/12">
                     <p class="paragraph">
-                        Given the data and the visualization (barchart with corruption index and rate of suicide), we can state that no particular and clear relation exists between the two variables in the general scenario. In fact, corruption index and rate of suicides appear to be pretty independent from one another and no particular trend can be grasped from the visualization in all the considered years.
+                        Given the data and the visualization (barchart with corruption index and rate of suicide), we can state that <span class="keyword">no particular and clear relation exists</span> between the two variables in the <span class="keyword">general scenario</span>. In fact, corruption index and rate of suicides appear to be rather independent from one another and no particular trend can be grasped from the visualization in contemplated years.
                     </p>
                     <p class="paragraph">
-                        However, there are still some peculiarities to be considered. On one hand, France seems to be the country with the highest suicide rate in each of the five years, while its corruption index is, on the other hand, not even close to the highests in the chart.
+                        However, there are still some <span class="keyword">peculiarities</span> to be considered. On one hand, <span class="keyword">France</span> seems to be the country with the highest suicide rate in each of the five years, while its corruption index is, on the other hand, not even close to the highests in the chart.
                     </p>
                     <p class="paragraph">
-                        Moreover, a "special" focus should be dedicated to Italy. Even if we cannot directy compare and derive conclusions from the comparison of the corruption index and the suicide rate (since their values belong to different scales), it is possible to observe how the country recorded one among the highest corruption index and suicide rate along the years. This correspondence, however, cannot be officially established with this instruments only. In other words, the visualisation shows a relation that, nevertheless, cannot be declared to have a statistical significance.
+                        Moreover, some focus should be dedicated to <span class="keyword">Italy</span>. Even if we cannot directy compare and derive conclusions from the comparison of the corruption index and the suicide rate (since their values belong to different scales), it is possible to observe how the country recorded one of the <span class="keyword">highest corruption indexes and suicide rates</span> along the years. This correspondence, however, cannot be officially established with this instruments only. In other words, the visualisation shows a relation that, nevertheless, <span class="keyword">cannot be declared to have a statistical significance</span>.
                     </p>
                 </div>
             </div>
