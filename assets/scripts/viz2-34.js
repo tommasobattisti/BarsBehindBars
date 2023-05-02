@@ -29,10 +29,22 @@ am5.ready(function() {
       tooltip: am5.Tooltip.new(root, {})
     }));
     
+    xAxis.children.moveValue(am5.Label.new(root, {
+      text: "Number of Suicides",
+      x: am5.p50,
+      centerX: am5.p50
+    }), xAxis.children.length - 1);
+    
     var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
       renderer: am5xy.AxisRendererY.new(root, {}),
       tooltip: am5.Tooltip.new(root, {})
     }));
+
+    yAxis.children.moveValue(am5.Label.new(root, {
+      rotation: -90,
+      text: "Living conditions",
+      y: am5.p50,
+    }), 0);
     
     // Create series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
