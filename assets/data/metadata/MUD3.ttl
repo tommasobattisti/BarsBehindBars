@@ -24,6 +24,7 @@
             dct:publisher <https://github.com/Prisoner-s-Dilemma>;
             dct:language    <http://publications.europa.eu/resource/authority/language/ENG/> ;
             dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER>;
+            dct:spatial <http://dbpedia.org/ontology/europe>;
 
             dct:isPartOf <https://github.com/Prisoner-s-Dilemma/BarsBehindBars/tree/main/assets/data/final_data> ;
 
