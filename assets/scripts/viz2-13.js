@@ -153,6 +153,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Estonia",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'SE':
@@ -165,6 +191,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Sweeden",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'FI':
@@ -177,6 +229,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Finland",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'DK':
@@ -189,6 +267,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Denmark",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'IE':
@@ -201,6 +305,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Ireland",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'BG':
@@ -213,6 +343,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Bulgaria",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'HG':
@@ -225,6 +381,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Hungary",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'PL':
@@ -237,6 +419,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Poland",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'RO':
@@ -249,6 +457,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Romania",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'SK':
@@ -261,6 +495,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Slovakia",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'SI':
@@ -273,6 +533,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Slovenia",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'GR':
@@ -285,6 +571,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Greece",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'IT':
@@ -297,6 +609,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Italy",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'PT':
@@ -309,6 +647,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Portugal",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'ES':
@@ -321,6 +685,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Spain",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'AT':
@@ -333,6 +723,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Austria",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'FR':
@@ -345,6 +761,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - France",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'DE':
@@ -357,6 +799,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Germany",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'NL':
@@ -369,6 +837,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Netherland",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
 
         case 'BE':
@@ -381,6 +875,32 @@ var heatLegend = heatmap.children.push(am5.HeatLegend.new(root, {
             ];
         
           series.data.setAll(data);
+
+          legend.data.setAll([
+            {
+              name: "Very Bad",
+              color: am5.color(0x2A3837)
+            }, {
+              name: "Fairly Bad",
+              color: am5.color(0x4A605F)
+            },
+            {
+              name: "Fairly Good",
+              color: am5.color(0x4C908D)
+            },
+            {
+              name: "Very Good",
+              color: am5.color(0x73BBB8)
+            },
+            {
+              name: "Unknown",
+              color: am5.color(0x668886)
+            },
+            {
+              name: "Country - Belgium",
+              color: am5.color(0xCCC8BC)
+            }
+          ]);
           break;
       }
     });
