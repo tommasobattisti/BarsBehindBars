@@ -1,7 +1,7 @@
 # Bars Behind Bars
 
 #### A project developed for the course "[Open Access and Digital Ethics](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/424645)" of the University of Bologna.
-<a href="https://tommasobattisti.github.io/BarsBehindBars/" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Ftommasobattisti.github.io%2Ftommasobattistiph%2Findex.html">
+<a href="https://tommasobattisti.github.io/BarsBehindBars/" target="_blank"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Ftommasobattisti.github.io%2FBarsBehindBars%2F">
 </a>
 ____________
 
